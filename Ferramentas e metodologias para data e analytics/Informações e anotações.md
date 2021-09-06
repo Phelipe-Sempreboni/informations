@@ -1,4 +1,4 @@
-#### Ferramentas e metodologias úteis Data & Analytics e Planejamento.
+#### Ferramentas e metodologias Data & Analytics e Planejamento.
 
 ---
 
@@ -45,6 +45,14 @@ Neste caso, irei focar um pouco mais na área de dados, como Business Intelligen
 
 * Confluence da Atlassian:
   - O Confluence é um espaço de trabalho da equipe pronto para ambiente remoto em que o conhecimento e a colaboração andam lado a lado. Crie, organize e colabore no trabalho em um só lugar, de qualquer lugar. Essa ferramenta nos dá a possibilidade de mapear, documentar, escrever processos, em um só lugar na web, de forma segura e prática. O melhor de tudo é a possibilidade do trabalho em equipe para quem possuir acesso ao Confluence. Uma ótima ferramenta para documentação, processos e colaboração em equipe.
+
+---
+
+#### Ferramentas para versionamento de arquivos e armazenamento.
+
+* Git, GitHub Destkop, GitHub Web:
+  - Este creio que seja uma ferramenta que deve fazer parte do ambiente de Data & Analytcs quanto do de programação. Ter uma ferramenta para versionamento de versões e armazenamento é indispensável para essas áreas. Imagine salvar um arquivo com o nome (Relatório) e á partir deste salvar diversas vezes com acréscimos de nomes na área de trabalho e acabar se perdendendo. Com o GitHub conseguimos controlar o versionamento de arquivos de forma muito mais eficaz e confiável, logo, um GitHub corporativo pessoal e/ou corporativo serial uma ferramenta indispensável.
+
 
 ---
 
@@ -126,3 +134,12 @@ Neste caso, irei focar um pouco mais na área de dados, como Business Intelligen
 * Redash.
 
 ---
+
+### Ferramentas para File Transfer Protocol (Protocolo de Transferência de Arquivos).
+
+* FilleZilla
+  - Ferramenta de cliente FTP (File Transfer Protocol / Protocolo de Transferência de Arquivos). Com essa ferramenta é possível realizar a transferência de arquivos entre máquinas e servidores por um protocolo padrão/genérico.
+
+---
+
+_Espero ajudar_ :smiley:
