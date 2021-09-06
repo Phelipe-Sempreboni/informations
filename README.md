@@ -2,7 +2,7 @@
 
 ---
 
-Repositório para informações gerais e anotações, onde teremos diversos assuntos tratados neste repositório.
+Repositório para tutoriais, informações e anotações, porém, de forma mais didática e não técnica.
 
 ---
 
