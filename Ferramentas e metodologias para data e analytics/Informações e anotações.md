@@ -56,6 +56,13 @@ Neste caso, irei focar um pouco mais na área de dados, como Business Intelligen
 
 ---
 
+#### Ferramentas ágeis para equipes remotas.
+
+* Miro:
+  - É a plataforma de quadro colaborativo online, Miro facilita a colaboração em equipes e organizações de todos os tamanhos. Com essa ferramenta é possível fazer desde brainstorming com “notas adesivas” digitais até o planejamento e o gerenciamento de fluxos de trabalho ágeis. Essa ferramenta é extremamente útil, por exemplo, levar ideias abstratas para uma primeira visão, onde esse tipo de método é muito útil em desenvolvimento de uma versão inicial de um dashboard.
+
+---
+
 #### Ferramentas de IDLE para acessar praticamente qualquer tipo de aplicação, desde bancos de dados até programação:
 
 * Visual Studio Code.
