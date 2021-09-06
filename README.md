@@ -1,4 +1,4 @@
-# Informações gerais e anotações.
+# Tutoriais, informações e anotações.
 
 ---
 
