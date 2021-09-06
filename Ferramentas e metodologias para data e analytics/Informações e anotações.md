@@ -1,4 +1,4 @@
-#### Ferramentas e metodologias Data & Analytics e Planejamento.
+#### Ferramentas e metodologias para Data & Analytics e Planejamento de TI.
 
 ---
 
