@@ -67,6 +67,12 @@ Neste tutorial você aprenderá:
   - Caso você não possua algum método de segurança, na próxima tela você receberá orientações para realizar essa verificação de seguranção. Siga as etapas conforme instruções onde possivelmente serão realizadas por meio de um aplicativo de autenticação da Microsoft.
   
   - Caso tenha seguido as orientações corretamente, abrirá um tela para registrar um novo gateway no computador. Clique na opção (Registre um novo gateway neste computador) e clique em (Avançar).
+  
+  - Na próxima tela você terá que dar um nome para seu gateway e digitar uma chave de segurança. Salve tanto o nome quanto a chave de segurança em um local seguro e e sua confiança. Após essa etapa clique em (Configurar).
+
+- Na próxima tela e caso os passos tenham ocorridos com êxito, teremos uma mensagem que o gateway está online e pronto para ser usado. Clique em (Fechar).
+
+- Se houve alguma atualização disponível, aproveite e instale, visando o bom funcionamento do gateway e dados.
 
 ![image](https://user-images.githubusercontent.com/57469401/132396825-df4b33b1-0530-4760-9ffa-d93e87f70367.png)
 
@@ -90,3 +96,10 @@ Neste tutorial você aprenderá:
 
 ![image](https://user-images.githubusercontent.com/57469401/132400048-32628f85-0084-4eaa-9df9-06dee511a12d.png)
 
+![image](https://user-images.githubusercontent.com/57469401/132400163-74a66af7-f3b5-4266-8ae5-838eb34ee1ac.png)
+
+![image](https://user-images.githubusercontent.com/57469401/132400712-4480d349-aa96-40ad-a353-9d9f3d985f61.png)
+
+---
+
+5º - 
