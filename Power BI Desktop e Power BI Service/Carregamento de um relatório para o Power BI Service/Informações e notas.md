@@ -24,7 +24,7 @@ Neste tutorial você aprenderá:
  
 * Tem uma maneira de criar uma conta corporativa e de teste de 1 mês na Microsoft, e, com essa conta, você consegue entrar no Power BI e solicitar um teste grátis da versão PRO por 60 dias.
 
-* Consulte o tutorial de criação de conta no repositório (https://github.com/Phelipe-Sempreboni/Tutoriais-informacoes-anotacoes/blob/main/Power%20BI/Cria%C3%A7%C3%A3o%20de%20conta%20gratuita%20de%20teste/Informa%C3%A7%C3%B5es%20e%20notas.md).
+* Consulte o tutorial de criação de conta no repositório (https://github.com/Phelipe-Sempreboni/Tutoriais-informacoes-anotacoes/blob/main/Power%20BI%20Desktop%20e%20Power%20BI%20Service/Cria%C3%A7%C3%A3o%20de%20conta%20gratuita%20de%20teste%20para%20o%20Power%20BI/Informa%C3%A7%C3%B5es%20e%20notas.md).
 
 ---
 
