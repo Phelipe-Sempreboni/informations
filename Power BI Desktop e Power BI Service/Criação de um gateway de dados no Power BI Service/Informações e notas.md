@@ -42,3 +42,24 @@ Neste tutorial você aprenderá:
 
 ---
 
+4º - Na sua conta, você deverá:
+
+* No canto superior direito, clica no ícone que tem uma seta para baixo ou se você deixar o mouse encima do ícone, aparecerá como (Download). Clique neste local em (Gateway de Dados).
+
+* Ao clicar, uma página será aberta em outra aba.
+
+* Nessa aba clique em (Download do modo pessoal), pois, nosso intuito é somente a utilização para o Power BI e o outro modo disponível nos dá mais funções, porém, não será utilizado.
+
+* O download irá iniciar. Aguarde o término. Ao finalizar, clique sobre ou download ou na pasta de destino e execute o aplicativo do Gateway de Dados.
+
+* 
+
+![image](https://user-images.githubusercontent.com/57469401/132396825-df4b33b1-0530-4760-9ffa-d93e87f70367.png)
+
+![image](https://user-images.githubusercontent.com/57469401/132397141-0e6af49a-c445-48f7-8941-95221d3f21c2.png)
+
+![image](https://user-images.githubusercontent.com/57469401/132397173-db81b3aa-6b58-4c9e-9e91-ab376eba9eda.png)
+
+![image](https://user-images.githubusercontent.com/57469401/132397312-3ba89ba2-1388-4da7-838f-b6e08776b23c.png)
+
+
