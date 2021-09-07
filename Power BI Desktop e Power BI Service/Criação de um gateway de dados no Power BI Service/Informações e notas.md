@@ -6,7 +6,7 @@
 
 Criar e utilizar um gateway de dados no Power BI nos dá a facilidade de atualização de datasets (conjunto de dados), relatórios e dashboards de forma automatizada, onde não é necessário a ação manual (em casos especificos somente), de atualização dos arquivos do Power BI.
 
-Iremos combinar a utilização do gateway juntamente de uma Workspace e um Aplicativo no Power BI.
+Iremos combinar a utilização do gateway juntamente de uma Workspace e um Aplicativo no Power BI, mas é possível realizar o processo de atualização no espaço de trabalho (Meu workspace) ou (My workspace).
 
 Neste tutorial você aprenderá:
 
@@ -38,7 +38,7 @@ Neste tutorial você aprenderá:
 
 * Caso possua a versão PRO, utilize sua versão, mas certifique-se que essa sua versão e de sua conta, são liberadas para criação de Workspaces.
 
-* Notar que iremos considerar que você possua uma Workspace criada já e também um aplicativo criado, porém, não seria necessário o Aplicativo, mas era bom ter um aplicativo criado. Se quiser saber mais sobre a criação de um aplicativo, consulte o tutorial no repositório (https://github.com/Phelipe-Sempreboni/Tutoriais-informacoes-anotacoes/blob/main/Power%20BI%20Desktop%20e%20Power%20BI%20Service/Cria%C3%A7%C3%A3o%20de%20um%20aplicativo%20no%20Power%20BI%20Service/Informa%C3%A7%C3%B5es%20e%20notas.md).
+* Notar que iremos considerar que você possua uma Workspace criada já e também um aplicativo criado, porém, não seria necessário a Workspace criada e um  Aplicativo criado, mas era bom ter uma Workspace e um Aplicativo criado. Se quiser saber mais sobre a criação de um aplicativo, consulte o tutorial no repositório (https://github.com/Phelipe-Sempreboni/Tutoriais-informacoes-anotacoes/blob/main/Power%20BI%20Desktop%20e%20Power%20BI%20Service/Cria%C3%A7%C3%A3o%20de%20um%20aplicativo%20no%20Power%20BI%20Service/Informa%C3%A7%C3%B5es%20e%20notas.md).
 
 ---
 
