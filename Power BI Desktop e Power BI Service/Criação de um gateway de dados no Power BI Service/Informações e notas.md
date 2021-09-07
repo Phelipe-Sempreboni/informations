@@ -124,11 +124,15 @@ Neste tutorial você aprenderá:
 
 ---
 
-9º - Se for a primeira na aplicação do Gateway de Dados, será necessário a configuração da fonte de dados. No meu caso configurei a fonte de dados de um banco de dados, o SQL Server, mas aqui não tem segredo, é o nome de usuário e a credencial e um arquivo em Excel. 
+9º - Se for a primeira na aplicação do Gateway de Dados, será necessário a configuração da fonte de dados. 
 
-* Notar que para arquivos que não sejam conexões com bancos de dados que possuem credenciais de acesso, por exemplo, quando for editar a credencial, selecione a permissão de Windows, ou seja, a () que aparece na hora da liberação da fonte de dados no Power BI Service - Nuvem.
+* No meu caso configurei a fonte de dados de um banco de dados, o SQL Server, mas aqui não tem segredo, é o nome de usuário e a credencial do banco de dados. 
+
+* Também tenho uma fonte de dados em uma pasta de repositório local em formato Excel, e é mesma coisa, seriam as credenciais de usuário e senha do Windows.  
 
 ![image](https://user-images.githubusercontent.com/57469401/132405481-80d3ee60-149d-4ed0-83c8-98d015349dd0.png)
+
+![image](https://user-images.githubusercontent.com/57469401/132407370-718b370b-af3c-4417-ba32-92c2eb9913f1.png)
 
 ---
 
