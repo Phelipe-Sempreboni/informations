@@ -96,10 +96,46 @@ Neste tutorial você aprenderá:
 
 ![image](https://user-images.githubusercontent.com/57469401/132400048-32628f85-0084-4eaa-9df9-06dee511a12d.png)
 
-![image](https://user-images.githubusercontent.com/57469401/132400163-74a66af7-f3b5-4266-8ae5-838eb34ee1ac.png)
+![image](https://user-images.githubusercontent.com/57469401/132404047-b1c74070-3351-463e-9663-2b2db36540bc.png)
 
 ![image](https://user-images.githubusercontent.com/57469401/132400712-4480d349-aa96-40ad-a353-9d9f3d985f61.png)
 
 ---
 
-5º - 
+5º - Agora com o Gateway instalado, vá até a página inicial do Power BI Service - Nuvem, a (https://app.powerbi.com/).
+
+---
+
+6º - Clique em alguma Workspace do seu critério e onde estejam alocados seus datasets (conjunto de dados), relatórios e dashboards.
+
+![image](https://user-images.githubusercontent.com/57469401/132404408-570e3917-6456-4711-8159-b180213f674c.png)
+
+---
+
+7º - No seu conjunto de dados, selecione na linha a opção (Agendar atualização).
+
+![image](https://user-images.githubusercontent.com/57469401/132404591-8537d21e-b9a4-427e-99df-c9df71301edf.png)
+
+---
+
+8º - Nessa página, cliquem em (Conexão de gateway) e selecione uma opção. Pode ser que apareceram dois gateways, o (Gateway Pessoal) e o gateway que você deu um nome, se você tiver dado um nome. Selecione um dos dois, no meu caso irei selecionar o que dei um nome e clique em (Aplica).
+
+![image](https://user-images.githubusercontent.com/57469401/132405206-5f64acb7-d3c1-4c27-83f4-a41c61e6b1a8.png)
+
+---
+
+9º - Se for a primeira na aplicação do Gateway de Dados, será necessário a configuração da fonte de dados. No meu caso configurei a fonte de dados de um banco de dados, o SQL Server, mas aqui não tem segredo, é o nome de usuário e a credencial e um arquivo em Excel. 
+
+* Notar que para arquivos que não sejam conexões com bancos de dados que possuem credenciais de acesso, por exemplo, quando for editar a credencial, selecione a permissão de Windows, ou seja, a () que aparece na hora da liberação da fonte de dados no Power BI Service - Nuvem.
+
+![image](https://user-images.githubusercontent.com/57469401/132405481-80d3ee60-149d-4ed0-83c8-98d015349dd0.png)
+
+---
+
+Pronto! 
+
+Gateway de Dados instalado e configurado com sucesso no Power BI Service e pronto para utilização!
+
+---
+
+_Espero ajudar_ :smiley:
