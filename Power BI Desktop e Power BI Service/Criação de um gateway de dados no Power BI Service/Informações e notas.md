@@ -50,9 +50,23 @@ Neste tutorial você aprenderá:
 
 * Nessa aba clique em (Download do modo pessoal), pois, nosso intuito é somente a utilização para o Power BI e o outro modo disponível nos dá mais funções, porém, não será utilizado.
 
-* O download irá iniciar. Aguarde o término. Ao finalizar, clique sobre ou download ou na pasta de destino e execute o aplicativo do Gateway de Dados.
+* O download irá iniciar. Aguarde o término. Ao finalizar, clique sobre ou download ou na pasta de destino e execute o aplicativo do Gateway de Dados. Se estiver disponível, execute com a operação (Executar com administrador).
 
-* 
+* Ao abrir a instalação, faça:
+
+  - Aceite os termos e clique em (Instalar).
+  
+  - Aguarde a instalação.
+  
+  - Insira o seu endereço de e-mail na próxima tela. É neecessário utilizar o mesmo e-mail de conta de estudante, corporativa ou de teste grátis conectada ao Power BI Service - Nuvem. 
+  
+  - Caso abra uma próxima tela para escolher a conta, escolha a conta digitada na tela anterior e a conectada no Power BI Service - Nuvem e insira logo em seguida sua senha. 
+  
+  - Caso abra uma tela com (Ajude-nos a proteger sua conta), clique em (Avançar).
+  
+  - Caso você não possua algum método de segurança, na próxima tela você receberá orientações para realizar essa verificação de seguranção. Siga as etapas conforme instruções onde possivelmente serão realizadas por meio de um aplicativo de autenticação da Microsoft.
+  
+  - Caso tenha seguido as orientações corretamente, abrirá um tela para registrar um novo gateway no computador. Clique na opção (Registre um novo gateway neste computador) e clique em (Avançar).
 
 ![image](https://user-images.githubusercontent.com/57469401/132396825-df4b33b1-0530-4760-9ffa-d93e87f70367.png)
 
@@ -62,4 +76,17 @@ Neste tutorial você aprenderá:
 
 ![image](https://user-images.githubusercontent.com/57469401/132397312-3ba89ba2-1388-4da7-838f-b6e08776b23c.png)
 
+![image](https://user-images.githubusercontent.com/57469401/132397682-9d94c2e2-b9e5-43dc-9c48-2fb88e09e751.png)
+
+![image](https://user-images.githubusercontent.com/57469401/132397726-a795c94a-a476-41d6-97d7-bc90ce0aabe7.png)
+
+![image](https://user-images.githubusercontent.com/57469401/132397948-271701e6-8298-470e-9120-04e0a8e0fa4a.png)
+
+![image](https://user-images.githubusercontent.com/57469401/132398437-dbc32bbd-a1f8-4249-b8c5-4dce46dcfbb2.png)
+
+![image](https://user-images.githubusercontent.com/57469401/132398519-0602a50b-e2cf-4757-a60b-4c9212fb6d98.png)
+
+![image](https://user-images.githubusercontent.com/57469401/132399381-bb336f89-c7d9-4df2-a3d3-24523da270f9.png)
+
+![image](https://user-images.githubusercontent.com/57469401/132400048-32628f85-0084-4eaa-9df9-06dee511a12d.png)
 
