@@ -40,7 +40,7 @@ sudo apt install ./google-chrome-stable_current_amd64.deb # Instalar o pacote.
 google-chrome # Iniciar o Google Chrome.
 ```
 ---
-Atualizaçaõ do Google Chrome.
+atualização do Google Chrome.
 ```linux
 cat /etc/apt/sources.list.d/google-chrome.list # Durante o processo de instalação, o repositório oficial do Google será adicionado ao seu sistema. Você pode usar o comando cat para verificar o conteúdo do arquivo.
 ```
