@@ -60,6 +60,12 @@ ap install htop
 htop
 ```
 ---
+Aumentar a resolução da tela do Linux na máquina virtual, nessa caso, a Hyper-V, mas pode ser aplicados em outras.
+```linux
+ap install htop
+htop
+```
+---
 
 
 
