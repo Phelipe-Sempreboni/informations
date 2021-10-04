@@ -56,15 +56,35 @@ Nota: Isso garante que a instalação do Google Chrome seja atualizada automatic
 ---
 Verificação dos processos no Linux. Por padrão esse comando não vem no Linux, logo, execute os comandos abaixo para instalar e executar a visualização no terminal.
 ```linux
-ap install htop
+apt install htop
 htop
 ```
 ---
-Aumentar a resolução da tela do Linux na máquina virtual, nessa caso, a Hyper-V, mas pode ser aplicados em outras.
+Aumentar a resolução da tela do Linux na máquina virtual, nessa caso, a Hyper-V.
+
+* Instale o linux-image-extras (drivers hyperv) com o comando abaixo.
 ```linux
-ap install htop
-htop
+sudo apt-get install linux-image-extra-virtual
 ```
+
+* Abra o terminal e digite do Linux e digite o comando abaixo.
+```linux
+sudo gedit /etc/default/grub
+```
+
+* Encontre a linha que começa com (GRUB_CMDLINE_LINUX_DEFAULT) e adicione (video=hyperv_fb:1920x1080), ou a sua resolução preferida, entre aspas (a resolução máxima possível é 1920x1080). Se seguirmos ficará dessa maneira.
+```linux
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash video=hyperv_fb:1920x1080"
+```
+
+* Salvar e sair.
+
+* Execute o comando abaixo.
+```linux
+sudo update-grub
+```
+
+* Reinicie o Hyper-V (reiniciar o Ubuntu (Linux) pode ser suficiente)
 ---
 
 
