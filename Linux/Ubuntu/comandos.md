@@ -20,19 +20,6 @@ Realizar a atualização e o upgrade juntos no sistema.
 sudo apt update && sudo apt upgrade
 ```
 ---
-Utilizar o usuário (root) no terminal.
-```linux
-sudo passwd root # Primeiramente é necessário alterar a senha para uma de sua preferência.
-su # Após alterar a senha, utilize este comando para acessar o usuário root.
-```
----
-Sair do usuário (root) e retornar ao usuário normal.
-```linux
-exit
-ou
-CTRL+D
-```
----
 Instalação do Google Chrome.
 ```linux
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb # Baixar o pacote.
@@ -51,14 +38,9 @@ Uma mensagem parecida com essa será exibida.
 deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main
 ```
 
-Nota: Isso garante que a instalação do Google Chrome seja atualizada automaticamente quando uma nova versão for lançada por meio da ferramenta de atualização de software padrão da área de trabalho.
+### Nota: Isso garante que a instalação do Google Chrome seja atualizada automaticamente quando uma nova versão for lançada por meio da ferramenta de atualização de software padrão da área de trabalho.
 
----
-Verificação dos processos no Linux. Por padrão esse comando não vem no Linux, logo, execute os comandos abaixo para instalar e executar a visualização no terminal.
-```linux
-apt install htop
-htop
-```
+### Nota2: Você também pode instalar o Google Chrome pelo aplicativo de instalação de programas do próprio Linux. É só baixar o Google Chorme pelo Firefox ou outro navegador do Linux e instalar.
 ---
 Aumentar a resolução da tela do Linux na máquina virtual, nessa caso, a Hyper-V.
 
@@ -76,7 +58,6 @@ sudo gedit /etc/default/grub
 ```linux
 GRUB_CMDLINE_LINUX_DEFAULT="quiet splash video=hyperv_fb:1920x1080"
 ```
-
 * Salvar e sair.
 
 * Execute o comando abaixo.
@@ -85,6 +66,25 @@ sudo update-grub
 ```
 
 * Reinicie o Hyper-V (reiniciar o Ubuntu (Linux) pode ser suficiente)
+---
+Utilizar o usuário (root) no terminal.
+```linux
+sudo passwd root # Primeiramente é necessário alterar a senha para uma de sua preferência.
+su # Após alterar a senha, utilize este comando para acessar o usuário root.
+```
+---
+Sair do usuário (root) e retornar ao usuário normal.
+```linux
+exit
+ou
+CTRL+D
+```
+---
+Verificação dos processos no Linux. Por padrão esse comando não vem no Linux, logo, execute os comandos abaixo para instalar e executar a visualização no terminal.
+```linux
+apt install htop
+htop
+```
 ---
 
 
