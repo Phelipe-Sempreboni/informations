@@ -20,6 +20,47 @@ Realizar a atualização e o upgrade juntos no sistema.
 sudo apt update && sudo apt upgrade
 ```
 ---
+Para verificar o repositório atual que o usuário encontra-se.
+```linux
+pwd
+```
+---
+Para listar os repositórios abaixo do repositório atual que o usuário enconta-se.
+```linux
+ls
+```
+---
+Para listar os repositórios abaixo do repositório atual que o usuário enconta-se e mostrar algumas informações e o que contém dentro dos repositórios, porém, não todos arquivos. Notar que o arquivo que começa com a letra (d) é um diretório, caso contrário, não será um diretório.
+```linux
+ls -l
+```
+---
+Para listar os repositórios abaixo do repositório atual que o usuário enconta-se e mostrar o que contém dentro dos repositórios, e neste caso, irá mostrar todos os diretórios e arquivos, inclusive os invisíveis ou ocultos. Arquivos e diretórios invisíveis começar com o (.). Notar que o arquivo que começa com a letra (d) é um diretório, caso contrário, não será um diretório. 
+```linux
+ls -la
+```
+---
+É um comando que apresenta um texto na tela de um terminal de computador. É um comando utilizado em scripts para exibir mensagens na tela ou em um arquivo.
+```linux
+echo
+```
+
+Digite os comandos abaixo em sequência como exemplo e testar o comando.
+```linux
+echo Bem Vindo #Irá imprmir o resultado na tela.
+
+echo "Bem Vindo" > bemvindo.txt #Irá criar um arquivo com o nome (bemvindo.txt) e escreverá dentro do arquivo (Bem Vindo).
+
+cat bemvindo.txt #O comando cat é mais comumente usado para exibir o conteúdo de um ou vários arquivos de texto, combinar arquivos anexando o conteúdo de um arquivo ao final de outro arquivo e criar novos.
+```
+---
+Comando para ajuda e verificação de como utilizar os comandos. Sempre digite o comando abaixo e logo na frente o comando que você gostaria de saber mais sobre. Se quiser sair, aperte (q). Exemplos abaixo.
+```linux
+man ls
+man echo
+man pwd
+```
+---
 Instalação do Google Chrome.
 ```linux
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb # Baixar o pacote.
