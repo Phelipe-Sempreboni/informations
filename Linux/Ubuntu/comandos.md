@@ -61,6 +61,11 @@ man echo
 man pwd
 ```
 ---
+Para verificar o usuário atual da sessão que está em utilização do terminal, ou seja, verificar o usuário que está sendo utilziado no momento.
+```linux
+whoami
+```
+---
 Instalação do Google Chrome.
 ```linux
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb # Baixar o pacote.
