@@ -115,11 +115,11 @@ mkdir novo-diretorio
 ---
 Deletar arquivos de um repositório.
 ```linux
-rmdir diretorio #Deletar repositório vazios, ou seja, que não contém nenhuma arquivo dentro.
+rmdir diretorio #Deletar repositórios vazios, ou seja, que não contém nenhuma arquivo dentro.
 
 rm arquivo.txt #Deletar um arquivo. Notar que não é válido somente para .txt, mas também para outros tipos.
 
-rm -r #Deletar repositórios que contenham arquivos dentro.
+rm -r #Deletar repositórios que contenham arquivos dentro, ou repositório que não contenham arquivos, ou até remover somente arquivos. Esse comando remove recursivamente.
 ```
 ---
 Aumentar a resolução da tela do Linux na máquina virtual, nessa caso, a Hyper-V.
