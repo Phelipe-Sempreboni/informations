@@ -99,6 +99,20 @@ deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main
 
 ### Nota2: Você também pode instalar o Google Chrome pelo aplicativo de instalação de programas do próprio Linux. É só baixar o Google Chorme pelo Firefox ou outro navegador do Linux e instalar.
 ---
+Navegar entre diretório com o comando abaixo.
+```linux
+cd diretorio #Comando para entrar em um diretório especifico.
+
+cd .. #Comando para voltar no repositório anterior.
+
+cd #Comando para voltar ao repositório inicial.
+```
+---
+Criação de um novo diretório com o comando abaixo.
+```linux
+mkdir novo-diretorio
+```
+---
 Aumentar a resolução da tela do Linux na máquina virtual, nessa caso, a Hyper-V.
 
 * Instale o linux-image-extras (drivers hyperv) com o comando abaixo.
