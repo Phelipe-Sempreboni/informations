@@ -113,6 +113,15 @@ Criação de um novo diretório com o comando abaixo.
 mkdir novo-diretorio
 ```
 ---
+Deletar arquivos de um repositório.
+```linux
+rmdir diretorio #Deletar repositório vazios, ou seja, que não contém nenhuma arquivo dentro.
+
+rm arquivo.txt #Deletar um arquivo. Notar que não é válido somente para .txt, mas também para outros tipos.
+
+rm -r #Deletar repositórios que contenham arquivos dentro.
+```
+---
 Aumentar a resolução da tela do Linux na máquina virtual, nessa caso, a Hyper-V.
 
 * Instale o linux-image-extras (drivers hyperv) com o comando abaixo.
