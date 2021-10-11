@@ -47,11 +47,22 @@ echo
 
 Digite os comandos abaixo em sequência como exemplo e testar o comando.
 ```linux
-echo Bem Vindo #Irá imprmir o resultado na tela.
+echo "Gustavo Cerbasi" #Irá imprmir o resultado na tela.
 
-echo "Bem Vindo" > bemvindo.txt #Irá criar um arquivo com o nome (bemvindo.txt) e escreverá dentro do arquivo (Bem Vindo).
+echo "Gustavo Cerbasi" > Investimentos.txt #Irá criar um arquivo com o nome (Investimentos.txt) e escreverá dentro do arquivo ("Gustavo Cerbasi").
 
-cat bemvindo.txt #O comando cat é mais comumente usado para exibir o conteúdo de um ou vários arquivos de texto, combinar arquivos anexando o conteúdo de um arquivo ao final de outro arquivo e criar novos.
+cat Investimentos.txt #O comando cat é mais comumente usado para exibir o conteúdo de um ou vários arquivos de texto, combinar arquivos anexando o conteúdo de um arquivo ao final de outro arquivo e criar novos.
+```
+
+Para adicionar mais palavras ou caracteres do arquivo utilize o comando abaixo, que diferente do primeiro, utilizar duas setas para direita (>>), querendo dizer que, queremos adicionar palavras ou caracteres no arquivo. Uma seta só para direita (>) escreve e sobrescreve algo já existente.
+```linux
+echo "Gustavo Cerbasi" #Irá imprmir o resultado na tela.
+
+echo "Gustavo Cerbasi" > Investimentos.txt #Irá criar um arquivo com o nome (Investimentos.txt) e escreverá dentro do arquivo ("Gustavo Cerbasi").
+
+echo "Primo Rico" >> Investimentos.txt #Irá adicionar o nome ("Primo Rico") dentro do arquivo (Investimentos.txt).
+
+cat Investimentos.txt #O comando cat é mais comumente usado para exibir o conteúdo de um ou vários arquivos de texto, combinar arquivos anexando o conteúdo de um arquivo ao final de outro arquivo e criar novos.
 ```
 ---
 Comando para ajuda e verificação de como utilizar os comandos. Sempre digite o comando abaixo e logo na frente o comando que você gostaria de saber mais sobre. Se quiser sair, aperte (q). Exemplos abaixo.
