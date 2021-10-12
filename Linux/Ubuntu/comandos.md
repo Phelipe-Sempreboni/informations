@@ -113,13 +113,53 @@ Criação de um novo diretório com o comando abaixo.
 mkdir novo-diretorio
 ```
 ---
-Deletar arquivos de um repositório.
+Deletar arquivos de um repositório e também repositórios.
 ```linux
 rmdir diretorio #Deletar repositórios vazios, ou seja, que não contém nenhuma arquivo dentro.
 
 rm arquivo.txt #Deletar um arquivo. Notar que não é válido somente para .txt, mas também para outros tipos.
 
 rm -r #Deletar repositórios que contenham arquivos dentro, ou repositório que não contenham arquivos, ou até remover somente arquivos. Esse comando remove recursivamente.
+```
+---
+Verificar processos rodando atualmente, porém, somente no terminal ativo.
+```linux
+ps
+```
+---
+Verificar processos rodando atualmente, porém, em todo sistema operacional.
+```linux
+ps -e
+```
+---
+Verificar processos rodando atualmente, porém, em todo sistema operacional e com mais informações.
+```linux
+ps -ef
+```
+---
+Verificar processos rodando atualmente, porém, em todo sistema operacional, com mais informações e filtrando um determinado programa.
+```linux
+ps -ef | grep nome do programa
+```
+---
+Encerrar ou matar programas abertos, porém, neste caso, utilizando o comando abaixo, o programa tem uma chance de recuperação ainda.
+```linux
+kill número do processo ou id
+```
+---
+Encerrar ou matar programas abertos, porém, neste caso, utilizando o comando abaixo, o programa é encerrado em seu total, ou seja, sem chances de recuperação.
+```linux
+kill -9 número do processo ou id
+```
+---
+Encerrar ou matar todos os programas abertos de um determinado processo, porém, neste caso, utilizando o comando abaixo, o programa tem uma chance de recuperação ainda.
+```linux
+killall número do processo ou id ou programa
+```
+---
+Encerrar ou matar todos os programas abertos de um determinado processo, porém, neste caso, utilizando o comando abaixo, o programa é encerrado em seu total, ou seja, sem chances de recuperação.
+```linux
+killall -9 número do processo ou id ou programa
 ```
 ---
 Aumentar a resolução da tela do Linux na máquina virtual, nessa caso, a Hyper-V.
