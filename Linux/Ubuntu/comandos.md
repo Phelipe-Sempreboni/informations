@@ -162,6 +162,38 @@ Encerrar ou matar todos os programas abertos de um determinado processo, porém,
 killall -9 número do processo ou id ou programa
 ```
 ---
+Outra maneira de encerrar ou matar um programar.
+```linux
+CTLR+C
+```
+---
+Colocar algum programa que está rodando no basch e/ou terminal em pausa. 
+```linux
+CTRL+Z
+```
+---
+Verificar quais jobs estão rodando ou estão em pausa.
+```linux
+jobs
+```
+---
+Colocar um programa que está pausado no background, assim liberando a utilização do basch e/ou terminal.
+```linux
+bg 1 #O número vai depender do número que você verificar com o comando (jobs) logo acima. Se estiver no processo (2), utilize (bg 2) e assim por diante. Se nenhum número de processo for informado, sempre haverá a seleção do último processo.
+```
+---
+Colocar um programa que está no background para o forground, ou seja, de volta para o basch e/ou terminal.
+```linux
+fg 1 #O número vai depender do número que você verificar com o comando (jobs) logo acima. Se estiver no processo (2), utilize (fg 2) e assim por diante. Se nenhum número de processo for informado, sempre haverá a seleção do último processo.
+```
+---
+Abrir um programa pelo terminal e informar que queremos que esse programa abra diretamente no backgroun.
+```linux
+nome do programa &
+
+gedit & #Exemplo
+```
+---
 Aumentar a resolução da tela do Linux na máquina virtual, nessa caso, a Hyper-V.
 
 * Instale o linux-image-extras (drivers hyperv) com o comando abaixo.
