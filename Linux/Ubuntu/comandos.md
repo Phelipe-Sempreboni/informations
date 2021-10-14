@@ -20,6 +20,32 @@ Realizar a atualização e o upgrade juntos no sistema.
 sudo apt update && sudo apt upgrade
 ```
 ---
+Mudar a senha do usuário atual terminal.
+```linux
+passwd
+```
+---
+Mudar a senha de determinado usuário do sistema.
+```linux
+sudo passwd usuário
+
+sudo passwd luiz #Exemplo.
+```
+--
+Mudar a senha do usuário root, ou seja, do sistema.
+```linux
+sudo passwd
+```
+---
+Logar no sistema com outro usuário.
+```linux
+su usuário
+
+su luiz #Exemplo.
+
+exit #Exemplo de como sair do usuário.
+```
+---
 Para verificar o repositório atual que o usuário encontra-se.
 ```linux
 pwd
@@ -38,6 +64,11 @@ ls -l
 Para listar os repositórios abaixo do repositório atual que o usuário enconta-se e mostrar o que contém dentro dos repositórios, e neste caso, irá mostrar todos os diretórios e arquivos, inclusive os invisíveis ou ocultos. Arquivos e diretórios invisíveis começar com o (.). Notar que o arquivo que começa com a letra (d) é um diretório, caso contrário, não será um diretório. 
 ```linux
 ls -la
+```
+---
+Para listar um repositório especifico e verificar as permissões, por exemplo.
+```linux
+ls -l /usr #Exemplo.
 ```
 ---
 É um comando que apresenta um texto na tela de um terminal de computador. É um comando utilizado em scripts para exibir mensagens na tela ou em um arquivo.
@@ -193,6 +224,60 @@ nome do programa &
 
 gedit & #Exemplo
 ```
+---
+Executar um arquivo.
+```linux
+sh arquivo
+```
+---
+Dar permissões para arquivos.
+```linux
+chmod +r arquivo #O (+r) significa que estamos dando permissão de leitura ao arquivo.
+chmod +w arquivo #O (+w) significa que estamos dando permissão de escrita ao arquivo.
+chmod +x arquivo #O (+x) significa que estamos dando permissão de execucação ao arquivo.
+```
+---
+Retirar permissões para arquivos.
+```linux
+chmod -r arquivo #O (-r) significa que estamos retirando a permissão de leitura ao arquivo.
+chmod -w arquivo #O (-w) significa que estamos retirando a permissão de escrita ao arquivo.
+chmod -x arquivo #O (-x) significa que estamos retirando a permissão de execucação ao arquivo.
+```
+---
+Executar um arquivo que possuí a permissão de (x), ou seja, de execução.
+```linux
+./arquivo
+```
+---
+Localizar um programa instalado no Linux.
+```linux
+locate programa
+
+locate firefox #Exemplo.
+```
+---
+Atualizar o banco de dados interno do Linux para utilizar com o locate atualizado.
+```linux
+sudo updatedb
+```
+---
+Verificar onde e qual arquivo será executado. Comando parecido com o (locate) conforme acima.
+```linux
+which programa
+
+which firefox #Exemplo.
+```
+---
+Mover um arquivo de lugar. Aqui vale lembrar que é bom verificar se o repositório de destino te dá permissão para movimentar o arquivo para o novo local. Para isso use o comando (ls -l /repositório), assim será possível verificar as permissões.
+```linux
+sudo mv programa /repositório
+
+sudo mv firefox /usr/bin #Exemplo.
+
+ls /usr/bin | grep firefox #Exemplo de como verificar se o arquivo realmente foi movido.
+```
+---
+
 ---
 Aumentar a resolução da tela do Linux na máquina virtual, nessa caso, a Hyper-V.
 
