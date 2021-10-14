@@ -106,6 +106,33 @@ sudo snap install --classic code
 ---
 
 9º - Instalação do GitHub Desktop.
+```linux
+
+1º - Procure no navegador o GitHub do endereço ao lado -> https://github.com/shiftkey
+
+2º - Vá e clique na aba (Repositories).
+
+3º - Procure pelo repositório chamado (desktop) e entre.
+
+4º - Role até embaixo e chegue no README.md.
+
+5º - No README.md, localize o bloco (What is this repository for?).
+
+6º - Neste bloco, localize a frase (Check out the latest releases to help out with testing on your distribution) e clique em (latest releases).
+
+7º - Clique sobre a versão mais recente que irá aparecer, onde, na data de criação deste tutorial, é a versão (2.9.3 Linux RC3). Pode ser que essa versão seja atualizada. Ao clicar, você será direcionado para a página que só terá essa versão.
+
+8º - Baixe o arquivo com extensão (.deb), pois, é o arquivo e extensão para instalação no Linux. No caso e na data de criação deste tutorial, é o arquivo (GitHubDesktop-linux-2.9.3-linux3.deb).
+
+9º - Procure pelo arquivo que foi baixado, possívelmente estará no repositório de downloads.
+
+10º - Clique duas vezes sobre o arquivo. Ao abrir a janela de instalação, clique em (Instalar) e se necessário digite sua senha para realizar a instalação.
+
+11º - Aguarde pela instalação e pronto, GitHub Desktop instalado com sucesso.
+
+```
+
+Referência para instalação do GitHub Desktop: https://www.youtube.com/watch?v=CSyEYiG8sFI
 
 ---
 
