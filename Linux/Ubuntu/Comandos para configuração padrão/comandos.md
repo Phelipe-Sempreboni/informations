@@ -101,15 +101,7 @@ deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main
 
 8º - Instalação do Visual Studio Code (VSCode). Siga os passos em sequencia e aguarde suas respectivas finalizações para executar o próximo comando.
 ```linux
-sudo apt update
-
-sudo apt install software-properties-common apt-transport-https wget
-
-wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add –
-
-sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
-
-sudo apt install code
+sudo snap install --classic code
 ```
 ---
 
