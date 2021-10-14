@@ -178,7 +178,8 @@ Atualização do Google Chrome.
 cat /etc/apt/sources.list.d/google-chrome.list # Durante o processo de instalação, o repositório oficial do Google será adicionado ao seu sistema. Você pode usar o comando cat para verificar o conteúdo do arquivo.
 ```
 ```linux
-Uma mensagem parecida com essa será exibida.
+Uma mensagem parecida com essa abaixo será exibida.
+
 ### THIS FILE IS AUTOMATICALLY CONFIGURED ###
 # You may comment out this entry, but any other modifications may be lost.
 deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main
@@ -360,7 +361,7 @@ GRUB_CMDLINE_LINUX_DEFAULT="quiet splash video=hyperv_fb:1920x1080"
 sudo update-grub
 ```
 
-* Reinicie o Hyper-V (reiniciar o Ubuntu (Linux) pode ser suficiente)
+* Reinicie o Hyper-V (reiniciar o Ubuntu (Linux) pode ser suficiente).
 ---
 Utilizar o usuário (root) no terminal.
 ```linux
@@ -377,11 +378,14 @@ CTRL+D
 ---
 Verificação dos processos no Linux. Por padrão esse comando não vem no Linux, logo, execute os comandos abaixo para instalar e executar a visualização no terminal.
 ```linux
-apt install htop
+sudo apt install htop
 htop
 ```
 ---
-
-
+Instalação do Visual Studio Code (VSCode). Siga os passos em sequencia e aguarde suas respectivas finalizações para executar o próximo comando.
+```linux
+sudo snap install --classic code
+```
+---
 
 
