@@ -99,8 +99,18 @@ deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main
 ### Nota2: Você também pode instalar o Google Chrome pelo aplicativo de instalação de programas do próprio Linux. É só baixar o Google Chorme pelo Firefox ou outro navegador do Linux e instalar.
 ---
 
-8º - Instalação do Visual Studio Code (VSCode).
+8º - Instalação do Visual Studio Code (VSCode). Siga os passos em sequencia e aguarde suas respectivas finalizações para executar o próximo comando.
+```linux
+sudo apt update
 
+sudo apt install software-properties-common apt-transport-https wget
+
+wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add –
+
+sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
+
+sudo apt install code
+```
 ---
 
 9º - Instalação do GitHub Desktop.
