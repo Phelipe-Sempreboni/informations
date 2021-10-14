@@ -71,12 +71,32 @@ GRUB_CMDLINE_LINUX_DEFAULT="quiet splash video=hyperv_fb:1920x1080"
 sudo update-grub
 ```
 
-* Reinicie o Hyper-V (reiniciar o Ubuntu (Linux) pode ser suficiente)
+* Reinicie o Hyper-V (reiniciar o Ubuntu (Linux) pode ser suficiente).
 
 ---
 
 7º - Instalação do navegador Google Chrome. Uma dica seria exportar seus favoritos da máquina e navegador local e importar para a máquina e navegador do virtualizado.  
+```linux
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb # Baixar o pacote.
+sudo apt install ./google-chrome-stable_current_amd64.deb # Instalar o pacote.
+google-chrome # Iniciar o Google Chrome.
+```
+---
+Atualização do Google Chrome.
+```linux
+cat /etc/apt/sources.list.d/google-chrome.list # Durante o processo de instalação, o repositório oficial do Google será adicionado ao seu sistema. Você pode usar o comando cat para verificar o conteúdo do arquivo.
+```
+```linux
+Uma mensagem parecida com essa abaixo será exibida.
 
+### THIS FILE IS AUTOMATICALLY CONFIGURED ###
+# You may comment out this entry, but any other modifications may be lost.
+deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main
+```
+
+### Nota: Isso garante que a instalação do Google Chrome seja atualizada automaticamente quando uma nova versão for lançada por meio da ferramenta de atualização de software padrão da área de trabalho.
+
+### Nota2: Você também pode instalar o Google Chrome pelo aplicativo de instalação de programas do próprio Linux. É só baixar o Google Chorme pelo Firefox ou outro navegador do Linux e instalar.
 ---
 
 8º - Instalação do Visual Studio Code (VSCode).
