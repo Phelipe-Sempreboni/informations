@@ -335,8 +335,6 @@ sudo mv firefox /usr/bin #Exemplo.
 ls /usr/bin | grep firefox #Exemplo de como verificar se o arquivo realmente foi movido.
 ```
 ---
-
----
 Aumentar a resolução da tela do Linux na máquina virtual, nessa caso, a Hyper-V.
 
 * Instale o linux-image-extras (drivers hyperv) com o comando abaixo.
@@ -381,7 +379,3 @@ apt install htop
 htop
 ```
 ---
-
-
-
-
