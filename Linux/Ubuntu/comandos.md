@@ -20,6 +20,48 @@ Realizar a atualização e o upgrade juntos no sistema.
 sudo apt update && sudo apt upgrade
 ```
 ---
+Procurar programas para futura instalação.
+```linux
+apt-cache search programa
+
+apt-cache search mysql-server #Exemplo.
+```
+---
+Instalação de um programa com apt.
+```linux
+sudo apt-get install programa
+
+sudo apt-get install mysql-server #Exemplo.
+```
+---
+Instalar programas que não estão na lista de pesquisa com (apt-cache search programa) conforme acima. As extensões aceitas são (dpkg), arquivos (.deb).
+```linux
+sudo dpkg -i instalador #O (-i) sigfica (instalação). Notar que é preciso estar no repositório que o instalador encontra-se.
+
+sudo dpkg -i google.deb #Exemplo.
+```
+---
+Desinstalar um pacote/programa.
+```linux
+sudo dpkg -r pacote #O (-r) sigfica (remoção).
+
+sudo dpkg -r google #Exemplo.
+```
+---
+Paralisar um serviço ativo.
+```linux
+sudo service programa stop
+
+sudo service firefox stop #Exemplo.
+```
+---
+Iniciar um serviço paralisado.
+```linux
+sudo service programa start
+
+sudo service firefox start #Exemplo.
+```
+---
 Mudar a senha do usuário atual terminal.
 ```linux
 passwd
@@ -44,6 +86,22 @@ su usuário
 su luiz #Exemplo.
 
 exit #Exemplo de como sair do usuário.
+```
+---
+Adição de um novo usuário no sistema.
+```linux
+sudo adduser usuario
+
+sudo adduser phelipe
+```
+---
+Retirar permissões para que outros usuários não consiga ver e acessar seu repositório de home.
+```linux
+cd home #No se usuário atual e que deseja retirar o acesso de outros usuários, digite este comando.
+
+ls -l #Utilize este comando para verificar as permissões dos outros usuários.
+
+chmod o-rx luiz #Neste caso estamos retirando as permissões de (leitura e execução) de outros usuários para o usuário e home do luiz.
 ```
 ---
 Para verificar o repositório atual que o usuário encontra-se.
