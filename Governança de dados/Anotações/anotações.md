@@ -12,10 +12,34 @@
 
 ---
 
+- [x] **Quais alguns dos beneficios de ter uma Governança de Dados ?**
+
+- Conseguir governar os dados de forma adequada.
+- Melhorar a gestão sobre os dados.
+- Melhorar a qualidade dos dados.
+- Melhorar a compreensão sobre os dados, principalmente com os metadados.
+- Implantar e melhorar a linhagem de informação, ou seja, da ponta que inicia até a ponta final onde é distribuída.
+- Conseguir fica em dia com as conformidades regulatórias.
+- Implantar e melhorar a cultura _Data Driven_, ou seja, tomadas de decisão orientada por dados.
+- Ter um Catálogo de Dados, onde qualquer colaborador da companhia consiga visualizar as informações sobre os dados.
+
+---
+
 - [x] **Um pouco sobre o Framework DAMA para Governança de Dados**
 
 - Neste pontos iremos ver um pouco do Framework DAMA para Governança de dados, onde é algo que pode ajudar uma empresa a criar as suas primeiras iniciativas e diretrizes de _Governança de Dados_.
 
+#### O que temos no Framework DAMA ?
 
+- Governança de Dados.
+  - Gerenciamento de metadados.
+  - Gerenciamento da qualidade de dados.
+  - Gerenciamento da arquitetura de dados.
+  - Desenvolvimento de dados.
+  - Gerenciamento de operação database.
+  - Gerenciamento da segurança de dados.
+  - Gerenciamento de dados mestres e referência.
+  - Gerenciamento de DW e BI.
+  - Gerenciamento da documentação e conteúdo.
 
 ---
