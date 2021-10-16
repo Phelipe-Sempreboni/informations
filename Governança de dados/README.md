@@ -31,7 +31,8 @@
 
 - [x] **O que temos no Framework DAMA ?**
 
-- Governança de Dados.
+- As 11 áreas de conhecimento e/ou funções notados abaixo:
+  - Governança de Dados.
   - Arquitetura de dados.
   - Modelagem e Design de Dados.
   - Armazenamento e Operações de Dados.
