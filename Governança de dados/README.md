@@ -6,9 +6,37 @@
 
 - Segundo o DAMA-DMBOK (Data Management Body of Knowledge), Governança de Dados é o exercicio de autoridade, controle, planejamento, monitoramento, disponibilidade, segurança e execução dos ativos de dados e seu respectivo consumo.
 
+- Estruturas, pessoas.
+
+- Papéis e responsabilidades.
+
+- Suporte estratégico para o negócio.
+
+- Meio para evolução analitica consistente.
+
+- Área base para conformidade (LGPD).
+
 - É sempre bom lembrar que _Governança de Dados_ não é um projeto com inicio, meio e fim, é algo muito diferente disso, é uma jornada.
 
 - Também é bom apontar que com uma boa _Governança de Dados_, a cultura _Data Driven_, ou seja, tomadas de decisão orientada por dados, fica mais fácil de ser adotada e utilizada.
+
+---
+
+- [x] **O que não é Governança de Dados ?**
+
+- Um projeto.
+
+- Um software.
+
+- Governança de TI.
+
+- Segurança da Informação.
+
+- DPO.
+
+- Algo que é gerado de um projeto de Self Service BI/Analytics.
+
+- Burocracia.
 
 ---
 
