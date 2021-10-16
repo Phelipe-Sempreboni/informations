@@ -57,6 +57,12 @@
 
 ---
 
+- [x] **Qual a diferença entre Gestão de Dados e Governança de Dados ?**
+
+- Segundo a versão atual do guia DAMA-DMBOK, a Gestão de Dados é uma disciplina formada pelo conjunto de onze funções de gerenciamento de dados integradas. A integração dessas funções é feita pela função de Governança de Dados, por esta razão ela está localizada como elemento central do framework do DAMA-DMBOK. 
+
+---
+
 - [x] **Um pouco sobre o Framework DAMA para Governança de Dados:**
 
 - Neste pontos iremos ver um pouco do Framework DAMA para Governança de dados, onde é algo que pode ajudar uma empresa a criar as suas primeiras iniciativas e diretrizes de _Governança de Dados_.
@@ -75,6 +81,33 @@
   - Data Warehousing & Business Intelligence.
   - Metadados.
   - Qualidade dos dados.
+
+---
+
+- [x] **Um pouco sobre as 11 áres de conhecimento do Framework DAMA:**
+
+- Governança de dados: planejamento, supervisão e controle sobre o gerenciamento de dados e o uso de dados e recursos relacionados a dados.
+
+- Arquitetura de dados: a estrutura geral de dados e recursos relacionados a dados como uma parte da arquitetura da empresa.
+
+- Modelagem e Design de Dados: análise, projeto, construção, teste e manutenção (área de conhecimento renomeada, pois foi Desenvolvimento na DAMA-DMBOK 1ª edição).
+
+- Armazenamento e Operações de Dados: implantação de armazenamento de ativos de dados físicos estruturados e gestão (área de conhecimento renomeada, pois foi Operações de Dados na 1ª edição do DAMA-DMBOK).
+
+- Segurança de Dados: garantindo privacidade, confidencialidade e acesso apropriado.
+
+- Integração de Dados e Interoperabilidade: aquisição, extração, transformação, movimento, entrega, replicação, federação, virtualização e suporte operacional (uma área de conhecimento novo em DMBOKv2).
+
+- Documentos e Conteúdo: armazenar, proteger, indexar e habilitar o acesso aos dados encontrados em fontes não estruturadas (arquivos eletrônicos e registros físicos) e disponibilizando esses dados para integração e interoperabilidade com dados estruturados (banco de dados).
+
+- Dados Mestre e Referência: gerenciando dados compartilhados para reduzir a redundância e garantir qualidade de dados através da definição padronizada e uso de valores de dados.
+
+- Data Warehousing & Business Intelligence: gerenciamento de processamento de dados analíticos e permitindo acesso a dados de suporte à decisão para relatórios e análises.
+
+- Metadados: coletando, categorizando, mantendo, integrando, controlando, gerenciando e entrega de metadados.
+
+- Qualidade dos dados: definindo, monitorando, mantendo a integridade dos dados e melhorando a qualidade dos dados.
+
 ---
 
 - [x] **Um pouco sobre os papéis do _Data Owner_ e suas responsabildiades.**
