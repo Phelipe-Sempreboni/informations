@@ -1,4 +1,4 @@
-# Indicadores de Desempenho
+# Indicadores de Desempenho - KPIs
 
 ---
 
@@ -6,7 +6,7 @@
 
 ---
 
-- [x] Pontos de atenção sobre os indicadores de desempenho:
+- [x] **Pontos de atenção sobre os indicadores de desempenho:**
 
  - Cuidado com o uso de métricas invés de indicadores.
 
@@ -16,7 +16,7 @@
 
 --- 
 
-- [x] Passos para iniciar a construção de um indicador de desempenho:
+- [x] **Passos para iniciar a construção de um indicador de desempenho:**
 
  - O que medir e qual o motivo ?
  
@@ -32,25 +32,25 @@
 
 ---
 
-- [x] Conceitos para desenvolvimento de indicadores de desempenho e diferenças de conceitos: Métricas, Indicadores (KPIs), Índices e Unidade de medida:
+- [x] **Conceitos para desenvolvimento de indicadores de desempenho e diferenças de conceitos: Métricas, Indicadores (KPIs), Índices e Unidade de medida:**
 
-1. Métricas:
+**1. Métricas:**
    - São dados simples que informam em apenas uma medida um acontecimento. Pouco úteis para tomada de decisão.
      - Exemplo: Nº de boletos, quantidade de visita no site, número de funcionáros, número de produtos.
  
-2. Indicador (KPI):
+**2. Indicador (KPI):**
    - São uma relação matemática entre duas métricas que permitem comparações e medem a real performance do negócio em seus níveis estratégico, tático e operacional.
      - Exemplo: Faturamento por colaborador, custo de arquisição por cliente, custo de lançamento por produto.
 
-3. Unidade de medida:
-   - É o nome que se dá ao resultado do indicador, como ele é representado-
+**3. Unidade de medida:**
+   - É o nome que se dá ao resultado do indicador, como ele é representado.
      - Exemplo: M2, M3, R$/colaborador, R$/KG, KWH, toneladas, %, quantidade.
 
-4. Índice:
+**4. Índice:**
    - Siginifica simplesmente o valor do indicador em determinado momento estático.
      - Exemplo: O índice geral de participação do comércio digital sobre o total de vendas digitais gira em torno de 3%.
 
-5. Meta:
+**5. Meta:**
    - Meta é sempre composta de objeto de um valor e de um prazo. Ela é onde queremos chegar com o indicador ou métrica.
      - Exemplo: Reduzir o custo de aquisição por cliente de 500 reais para 450 reais até dezembro de 2021.
 
@@ -58,7 +58,7 @@
 
 ---
 
-- [x] Comporisção dos indicadores de desempenho:
+- [x] **Composição dos indicadores de desempenho:**
 
 - Os indicadores são relações matemáticas entre duas métricas. Suas unidades de medida dependem da relação entre elas. Confira a figura abaixo que ilustra alguns cenários.
 
@@ -66,9 +66,37 @@
 
 ---
 
+- [x] **Sobre os indicadores de desempenho de Estratégia, Táticos e Operacionais, que podem ser divididos em 3 pilares:**
 
+## Estratégia:
+- **São os indicadores macro da empresa que medem se o posicionamento e direcionamento estratégico dado pelo CEO e diretoria estão dando resultados.**
 
- 
- 
+## Táticos:
+- **São indicadores que buscam trazer maior eficiência e disrupção para a empresa alavancar os indicadores estratégicos.**
+
+## Operacional ou de Rotina:
+- **São os indicadores que medem se a operação está rodando de forma mais eficiente possível em relação aos seus padrões.**
+
+É possível observar um pouco melhor na ilustração abaixo:
+
+![image](https://user-images.githubusercontent.com/57469401/137639444-0ab76341-e809-408c-885a-94fa45b7babf.png)
+
+---
+
+- [x] **Alguns exemplos de indicadores para ficar claro:**
+
+## Estratégia:
+- **Indicadores Tradicionais**: Market Share; Margem Operacional; Margem Líquida; Satisfação do Consumidor; Custo por Receita Liquída.
+
+## Táticos:
+- **Indicadores Tradicionais**: Market Share com pequenas empresas; Custo fixo da frota/Total de veículos; Taxa de conversão de vendas; Custo de Aquisição de Clientes; Índice de desempenho do prazo dos projetos.
+
+## Operacional ou de Rotina:
+- **Indicadores Tradicionais**: Acurácia de estoque; Tempo de descarregamento de carga; Índice de boletos pagos no prazo.
+
+![image](https://user-images.githubusercontent.com/57469401/137639695-54eb8483-a0bb-4c8e-89d1-64d06afec1b6.png)
+
+---
+
 
 
