@@ -178,4 +178,38 @@
 
 ---
 
+**3. Indicadores tradicionais da área.**
+
+- Existe os chamados indicadores clássicos que toda área e empresa praticamente utiliza para medir sua eficiência. Vamos falar de alguns deles aqui por área/tema.
+
+**É possível observar um pouco melhor na ilustração abaixo:**
+
+![image](https://user-images.githubusercontent.com/57469401/137648117-4d9034ac-4beb-4648-bf8f-dbd8c3a25079.png)
+
+---
+
+**4. Indicadores ligados ás entregas dos processos da área.**
+
+**Todo departamento possui processos e suas saídas (entregáveis). O indicador server para medir as saídas.**
+
+- **Exemplo de um departamento de RH**
+  - Visão do dapartamento:
+    - Fomentar e garantir a maior produtividade e satisfação dos nossos colaboradores retendo os melhores talentos do segmento.
+
+**É possível observar um pouco melhor na ilustração abaixo:**
+
+![image](https://user-images.githubusercontent.com/57469401/137648162-cc457963-5afd-4866-b631-0eb128184f0a.png)
+
+---
+
+**5. Medição á partir das dimensões da qualidade: Qualidade; Custo (cuso e preço); Entrega (prazo, local e quantidade certa); Moral (empregado); Segunraça (empresas e usuários).**
+
+**É possível observar um pouco melhor na ilustração abaixo:**
+
+![image](https://user-images.githubusercontent.com/57469401/137648332-acc2ef8f-c34a-42bd-bea9-3c077ba7dbc8.png)
+
+---
+
+
+
 
