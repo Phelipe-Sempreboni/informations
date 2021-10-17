@@ -122,5 +122,60 @@
 
 ---
 
+- [x] **Como estabelecer Indicadores de Desempenho:**
+
+- Existem diversas formas de estabelecer indicadores, uma delas é verificar quais são os entregáveis do seu departamento e quais são os seus processos.
+
+1. Desdobramento á partir da estratégia da empresa.
+
+2. Problemas conhecidos que precisam ser resolvidos.
+
+3. Indicadores tradicionais da área.
+
+4. Indicadores ligados ás entregas dos processos da área.
+
+5. Medição á partir das dimensões da qualidade: Qualidade; Custo (cuso e preço); Entrega (prazo, local e quantidade certa); Moral (empregado); Segunraça (empresas e usuários).
+
+![image](https://user-images.githubusercontent.com/57469401/137641157-9b02285e-e525-4b54-979d-8264b88a9a7e.png)
+
+---
+
+**1. Desdobramento á partor da estratégia da empresa.**
+
+ - No planejamento estratégico a empresa estabelece metas estratégicas medidas por indicadores. A sua área/departamento e seus processos devem estar alinhados a isso para que haja uma ligação lógica para constribuir com os esforços da organização.
+
+#### Meta Estratégica da Organização
+
+- Aumentar o Market Share de 35% para 45% até dezembro de 2021.
+
+#### Indicador Market Share
+
+- Vendas da Empresa / Tamanho do mercado
+
+1. **Departamento:** Marketing
+   - **Indicador:** % de produtos lançados com menos de 1 ano de vida.
+     - Fórmula do Indicador: Receita produtos lançados menos 1 ano / Total da receita.
+
+2. **Departamento:** Comercial
+   - **Indicador:** Índice de clientes inativos
+     - Fórmula do Indicador: Clientes que não compraram em 6 meses / Total de clientes ativos.
+
+3. **Departamento:** Logística
+   - **Indicador:** Índice de rotas atendidas
+     - Fórmula do Indicador: Nº de rotas não atendidas / Total de rotas mapeadas
+
+![image](https://user-images.githubusercontent.com/57469401/137641357-cfbc2854-4f32-4eea-b02b-4ac76f7d0c12.png)
+
+---
+
+**2. Problemas conhecidos que precisam ser resolvidos.**
+
+- É necessário colocar indicadores para medir a resolução dos problemas da empresa que podem ser estabelecidos de cima para baixo (pelo presidente, diretoria, gerentes) ou são conhecidos pelo próprio departamento ou são problemas do mercado.
+
+**É possível observar um pouco melhor na ilustração abaixo:**
+
+![image](https://user-images.githubusercontent.com/57469401/137641454-98056401-a627-4705-b2d0-d1fb1a39ac45.png)
+
+---
 
 
