@@ -6,11 +6,21 @@
 
 ---
 
-- [x] Passos para iniciar a construção de um indicador:
+- [x] Pontos de atenção sobre os indicadores de desempenho:
+
+ - Cuidado com o uso de métricas invés de indicadores.
+
+ - Dashboard (painél de indicadores) não significa gestão.
+
+ - Comece devagar: Um indicador de desempenho finalístico, ou seja, que entrega valor ao segmento, bem calculado e consistente, tem mais valor do que ter algo feito rapidamente e sem testes e usabilidade.
+
+--- 
+
+- [x] Passos para iniciar a construção de um indicador de desempenho:
 
  - O que medir e qual o motivo ?
  
- - Estabela critérios.
+ - Estabelaça critérios.
  
  - Colete os dados e monte as fórmulas.
  
@@ -18,6 +28,6 @@
  
  - Análise os dados e faça o plano de ação.
  
- 
+ ![image](https://user-images.githubusercontent.com/57469401/137635020-20c8a747-13cb-460f-924e-83c8730d1e42.png)
 
 ---
