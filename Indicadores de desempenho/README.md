@@ -6,6 +6,28 @@
 
 ---
 
+- [x] **Alguns pontos para lembrar porquê os indicadores e seu desenvolvimento é realizado e necessário:**
+
+ - Acompanhar a performance de determinado setor, produto, serviço, time ou qualquer métrica que tem a necessidade de um acompanhamento em tempo real, diário, semanal, mensal ou anual.
+ 
+ - Medir a evolução e eficiência para o segmento de desenvolvimento do indicador.
+ 
+ - Tomada de decisão mais ágil, simplificada e confiável para os líderes.
+
+ - Medir e verificar a veracidade de uma suposição com fatos e comprovações reais, pois, as vezes uma suposição pode estar incorreta, logo, os indicadores irão ajudar a provar a veracidade do problema.
+ 
+ - Medir se temos problemas, ocorrências ou qualquer tipo de impedimento dentro do segmento de desenvolvimento do indicador.
+
+ - Medir taxas de conversão visitas em um site.
+ 
+ - Medir taxas de conversão de vendas em um site.
+ 
+ - Acompanhmento de indicadores como _Planejado x Realizado x Executado_ de determinado segmento.
+ 
+ - Utilização de ferramentas como Miro para esboçar os possíveis indicadores que serão elaborados, onde esse tipo de hábito facilita o trabalho de quem for desenvolver ou até mesmo se você que irá elaborar.
+
+---
+
 - [x] **Pontos de atenção sobre os indicadores de desempenho:**
 
  - Cuidado com o uso de métricas invés de indicadores.
@@ -77,7 +99,7 @@
 ## Operacional ou de Rotina:
 - **São os indicadores que medem se a operação está rodando de forma mais eficiente possível em relação aos seus padrões.**
 
-É possível observar um pouco melhor na ilustração abaixo:
+**É possível observar um pouco melhor na ilustração abaixo:**
 
 ![image](https://user-images.githubusercontent.com/57469401/137639444-0ab76341-e809-408c-885a-94fa45b7babf.png)
 
@@ -93,6 +115,8 @@
 
 ## Operacional ou de Rotina:
 - **Indicadores Tradicionais**: Acurácia de estoque; Tempo de descarregamento de carga; Índice de boletos pagos no prazo.
+
+**É possível observar um pouco melhor na ilustração abaixo:**
 
 ![image](https://user-images.githubusercontent.com/57469401/137639695-54eb8483-a0bb-4c8e-89d1-64d06afec1b6.png)
 
