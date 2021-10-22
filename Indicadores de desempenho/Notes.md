@@ -1,5 +1,3 @@
----
-
 - Maior dificuldade hoje na sua Governança de Dados:
 Falta de classificação seguindo um fluxo já definido, principalmente na classificação de colunas.
 
