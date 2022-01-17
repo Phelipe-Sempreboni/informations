@@ -12,6 +12,12 @@ Leitura: Data Management: uma definição de termos - Escola Superior de Redes
 
 ---
 
+Leitura: Gerenciamento de Dados - Gerencie seus dados como um recurso valioso - SAS:
+
+* https://www.sas.com/pt_br/insights/data-management/gerenciamento-de-dados.html
+
+---
+
 _Espero ajudar_ :smiley:
 
 ---
