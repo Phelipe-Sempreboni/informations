@@ -30,3 +30,11 @@ Leitura: Governança de Dados - Novos caminhos - Data Mesh
 - https://pt.linkedin.com/pulse/governan%C3%A7a-de-dados-novos-caminhos-data-mesh-carlos-barbieri
 
 ---
+
+* Um modelo de conceito do Data Mesh:
+
+![image](https://user-images.githubusercontent.com/57469401/149786084-8efbcea8-2f9a-4d44-8419-eee5739506aa.png)
+
+---
+
+_Espero ajudar_ :smiley:
