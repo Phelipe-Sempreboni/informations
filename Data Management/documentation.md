@@ -18,6 +18,12 @@ Leitura: Gerenciamento de Dados - Gerencie seus dados como um recurso valioso - 
 
 ---
 
+Leitura: Gerenciamento de dados mestre com o Azure e o CluedIn
+
+* https://docs.microsoft.com/pt-br/azure/architecture/reference-architectures/data/cluedin
+
+---
+
 _Espero ajudar_ :smiley:
 
 ---
