@@ -89,6 +89,7 @@
 
 13º - Configurando o (IAM - Identity Access Management) ou (IAM - Gerenciamento de Identidade e Acesso).
 
+        - Ativação do MFA:
         - Dentro da sua conta AWS, procure a barra de pesquisa na parte superior central, digite "IAM" e selecione a primeira opção.
         - Se ao entrar no painel já haver a opção "Adicionar MFA para usuário raiz" e ao lado "Adicionar MFA", clique em "Adicionar MFA".
         - Será aberta uma tela chamada "Suas credenciais de segurança" e logo abaixo um item chamado "Autenticação Multifator (MFA). Clique no botão "Ativa MFA".
@@ -103,6 +104,15 @@
         - Agora abra o aplicativo, abra a conta adicionada da AWS e volte para tela da AWS.
         - No 3º passo você deve digitar dois códigos do autenticador do seu ceular na tela. Precisa ser consecutivos.
         - Feito isso, clique em "Atribuir MFA". Se o processo for bem sucedido, será emitida uma mensagem de sucesso no processo.
+        - Aperte Ok e continue na tela "Suas credenciais de segurança".
+        
+        - Ativar chaves de acesso:
+        - Clique no item "Chave de acesso (ID da chave de acesso e a chave de acesso secreta).
+        - Clique em "Criar nova chave de acesso".
+        - Realize o download do arquivo.
+        - Guarde o arquivo do download ou a chave em um lugar seguro de sua preferência e que somente você tenha acesso.
+        
+        - Conta configurada.
 
 ![image](https://user-images.githubusercontent.com/57469401/164122820-1bfb3b1e-d2d1-4159-a791-539b2a6acc01.png)
 
