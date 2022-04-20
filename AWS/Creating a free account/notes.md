@@ -87,6 +87,39 @@
 
 ---
 
+13º - Configurando o (IAM - Identity Access Management) ou (IAM - Gerenciamento de Identidade e Acesso).
+
+        - Dentro da sua conta AWS, procure a barra de pesquisa na parte superior central, digite "IAM" e selecione a primeira opção.
+        - Se ao entrar no painel já haver a opção "Adicionar MFA para usuário raiz" e ao lado "Adicionar MFA", clique em "Adicionar MFA".
+        - Será aberta uma tela chamada "Suas credenciais de segurança" e logo abaixo um item chamado "Autenticação Multifator (MFA). Clique no botão "Ativa MFA".
+        - Neste caso, abrirá outro tela, nessa tela selecione a opção "Dispositivo MFA virtual" e clique em continuar.
+        - Será aberto uma tela chamada "Definir dispositivo MFA virtual".
+        - Você pode usar, por exemplo, um Microsoft Authenticator ou um Google Authenticator", dependerá da sua preferência.
+        - Você deverá baixar ou ter instalar um desses autenticadores. Para consultar a lista, clique na mesma tela em "lista de aplicativos compatíveis".
+        - Aperte a opção "Exibir código QR".
+        - Abra o aplicativo no celular e clique para adicionar uma nova conta.
+        - Scaneie o QR Code que apareceu na tela da AWS.
+        - Se tudo der certo a conta será adicionada no aplicativo.
+        - Agora abra o aplicativo, abra a conta adicionada da AWS e volte para tela da AWS.
+        - No 3º passo você deve digitar dois códigos do autenticador do seu ceular na tela. Precisa ser consecutivos.
+        - Feito isso, clique em "Atribuir MFA". Se o processo for bem sucedido, será emitida uma mensagem de sucesso no processo.
+
+![image](https://user-images.githubusercontent.com/57469401/164122820-1bfb3b1e-d2d1-4159-a791-539b2a6acc01.png)
+
+![image](https://user-images.githubusercontent.com/57469401/164122957-b24f261b-6dd3-4f72-98c9-4e7659cb2073.png)
+
+![image](https://user-images.githubusercontent.com/57469401/164123086-ef19d040-a73a-4399-ad9b-4013181516ba.png)
+
+![image](https://user-images.githubusercontent.com/57469401/164123147-582f1dff-a57d-4074-9a10-68bf166b4445.png)
+
+![image](https://user-images.githubusercontent.com/57469401/164123999-60d9b0eb-b5fa-4b5b-932c-73e375029984.png)
+
+![image](https://user-images.githubusercontent.com/57469401/164124209-cbd02f7d-7978-4c19-94bd-8781440d20ba.png)
+
+![image](https://user-images.githubusercontent.com/57469401/164124224-47cd8580-ded4-4583-88f1-87fb31c04af1.png)
+
+---
+
 Notas:
 
 - Sempre antes de utilizar um serviço na sua conta Amazon Web Services (AWS), verifique se o serviço é gratuito e qual seu limite de utilização.
