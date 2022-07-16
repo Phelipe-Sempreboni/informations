@@ -6,6 +6,8 @@
 
 Documentação para virtualizar com o WSL 2 o Linux no Windows. Essa é uma virtualização que fica mais leve, principalmente para máquinas que tem um valor igual ou menor de 8GB de RAM e não tem uma performance tão boa com máquinas virtuais, como um Hyper-V do próprio Windows ou uma VirtualBox da Oracle. 
 
+Também iremos instalar o Python juntamente deste tutorial, pois pode ser também do nosso interesse.
+
 Notar que você deve estar executando o Windows 10 versão 2004 e superior (Build 19041 e superior) ou o Windows 11.
 
 ### Nota: Este tutorial também pode ser executado utilizando uma máquina virtual como o Hyper-V ou VirtualBox, pois, os comandos são muito semelhantes.
@@ -272,122 +274,17 @@ Nota: Recrie e ative a virtualenv, pois iremos utilizá-la. Lembre-se de manter 
 ```
 (venv) usuario@local:/mnt/c/Users/zézinho/Desktop/Projeto/Pipeline$
 ```
----
-
-13º - Iremos utilizar o comando abaixo para exportar o airflow. Por padrão ele irá para o repositório raíz do local de instalação, porém, neste caso iremos mantê-lo no repositório (/Pipeline), que é onde está alocada a virtualenv. Um ponto a destacar é que o repositório (airflow) não existe, e o comando abaixo irá criar esse repositório e alocar os arquivos necessários. Execute o comando abaixo no terminal do Linux.
-```linux
-export AIRFLOW_HOME=$(pwd)/airflow
-```
-
-Documentação de referência: https://airflow.apache.org
-Documentação de referência: https://airflow.apache.org/docs/apache-airflow/stable/start/local.html
 
 ---
 
-14º - Iremos utilizar os comandos abaixo para instalar o Apache Airflow. Neste caso e na escrita dessa documentação, este é o Apache Airflow mais atual. Aconselho sempre a verificar na documentação qual é a versão mais atual, porém, observe também a versão que está mais estável para utilização. Execute o comando abaixo no terminal do Linux.
-
-Nota: Aqui o processo de instalação pode demorar um pouco, então aguarde e não cancele a execução.
-```linux
-AIRFLOW_VERSION=2.1.4
-PYTHON_VERSION="$(python --version | cut -d " " -f 2 | cut -d "." -f 1-2)"
-CONSTRAINT_URL="https://raw.githubusercontent.com/apache/airflow/constraints-${AIRFLOW_VERSION}/constraints-${PYTHON_VERSION}.txt"
-pip3 install "apache-airflow==${AIRFLOW_VERSION}" --constraint "${CONSTRAINT_URL}"
-```
----
-
-15º - Após finalizar a instalação, vamos utilizar o comando abaixo para verificar se o Apache Airflow foi instalado corretamente e de acordo com as espeficicações, como os repositórios que foram destinados.
-```linux
-airflow info
-```
----
-
-16º - Após realizar a instalação e ser concluída com sucesso, sem nenhum erro, é necessário reiniciar o computador para quem estiver utilizando o (WSL 2) ou reiniciar o ambiente da máquina virtual para quem estiver utilizando, por exempo, Hyper-V ou VirtualBox. Lembrando que esse passo é muito importante, pois, caso não seja reiniciado, irá ocorrer um erro na inicialização do comando (airflow db init) e consequentemente o comando (airflow webserver --8080) e (airflow scheduler). Reinicie o sistema.
-
-Caso você tenha seguido e não reiniciado o sistema e tenha ocorrido um erro, será criado um repositório chamado (logs) no repositório (airflow) e a partir de agora você não conseguirá rodar sem que ocorra erros. Pode ser que esse repositório esteja em uma pasta mais pra dentro, logo, procure essa pasta de logs antes. Siga os passos abaixo para tentar resolver esse problema.
-
-1º - Entrar no repositório do airflow. Aqui seguiremos o que foi criado e utilizado neste projeto. Notar que excluíremos a pasta por linha de comando, pois, pode ocorrer erro ao tentar excluir manualmente, visto que o repositório foi criado com o usuário (root).
-```linux
-cd Desktop/Projeto/Pipeline/Airflow # Caso seja no (WSL 2)
-rm -r logs
-
-ou
-
-cd Área de trabalho/Projeto/Pipeline/Airflow # Caso seja no Linux em uma máquina virtual (VM).
-rm -r logs
-```
-
-Documentação de referência: https://stackoverflow.com/questions/57515434/why-do-i-get-no-such-table-error-when-installing-apache-airflow-on-mac
-
-
-### Reinicie o sistema.
----
-
-17º - Após reiniciar o sistema, siga os passos abaixo para entrar novamente no ambiente.
-
-I. Abra o Windows Terminal no modo administrador e selecione a distribuição Linux que você instalou.
-
-II. Entre novamente com o usuário (root). Digite o comando abaixo e digite a senha que será solicitada.
-```linux
-su
-```
-
-III. Teste a conexão com a internet utilizando o comando abaixo. Você pode voltar e consultar o passo (4) deste bloco que é sobre a configuração da internet. Se a comunição estiver funcionando, prossiga para o próximo passo.
-```linux
-ping google.com
-```
-
-IV. Entrar no repositório da virtualenv, chamado (venv) e ativar novamente. Iremos utilizar os repositórios criados neste projeto.
-```linux
-cd Desktop/Projeto/Pipeline # Para utilizar na WSL 2.
-ou
-cd Área de trabalho/Projeto/Pipeline # Para utilizar caso esteja em uma máquina virtual no Linux.
-
-source venv/bin/activate # Para ativar novamente a virtualenv.
-```
-
-#### Prossiga para o próximo passo se tudo ocorrer com sucesso.
----
-
-18º - Iremos utilizar o comando abaixo para inicializar o banco de dados. Notar que neste tutorial iremos utilizar o banco de dados padrão da instalação, que é um SQLite, porém, você pode instalar um banco de dados especifico. Essa informação fica no repositório do (airflow) criado anteriormente, e o nome do arquivo é (airflow.db). Execute o comando abaixo no terminal do Linux.
-```linux
-airflow db init
-```
----
-
-19º - Iremos utilizar o comando abaixo para criar um usuário e senha para acessar o Apache Airflow na interface web. Podemos executar em dois modelos conforme abaixo. Preencha com as informações de sua escolha e guarde em segurança essas informações. Execute o comando abaixo no terminal do Linux.
-
-Após executar os comandos será solicitado que seja realizado a inserção e confirmação de uma senha. Se o comando for executado corretamente, devemos uma receber uma mensagem parecidado com (Admin user admin created).
-
-1º modelo de execução:
-```linux
-airflow users create --username admin --firstname Zezinho --lastname Pitanga --role Admin --email zezinho_pitanga.org
-```
-
-2º modelo de execução:
-```linux
-airflow users create \
-    --username admin \
-    --firstname Joao \
-    --lastname Meteoro \
-    --role Admin \
-    --email joao_meteoro.org
-```
----
-
-20º -  Iremos utilizar o comando abaixo para iniciar o serviço do Apache Airflow na web. Este serviço será iniciado de forma local. 
-```linux
-airflow webserver --port 8080
-```
-
-Após executado comando, abra uma página da web na sua máquina e digite o endereço abaixo. Será solicitado o login e senha do usuário que foi criado no (20º) passo. Insira essas informações para prosseguir.
-```linux
-http://localhost:8080
-```
+Pronto, agora temos uma máquina virtualizada e com o Python instalado para utilização !
 
 ---
 
-21º - Iremos utilizar o comando abaixo para executar o agendador (scheduler) do Apache Airflow. Aqui será necessário abrir uma nova aba e executar os comandos do (17º) passo, juntamente do comando abaixo. Sua ativação é necessária para conseguirmos agendar os jobs.
-```linux
-airflow scheduler
-```
+[Acesse meu GitHub :cat:](https://github.com/Phelipe-Sempreboni)
+
+[Acesse meu LinkedIn :computer:](https://www.linkedin.com/in/luiz-phelipe-utiama-sempreboni-319902169/)
+
 ---
+
+_Espero ajudar_ :smiley:
