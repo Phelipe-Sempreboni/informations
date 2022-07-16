@@ -12,16 +12,6 @@ Notar que você deve estar executando o Windows 10 versão 2004 e superior (Buil
 
 ---
 
-- [x] - Sobre o projeto:
-
-Este projeto tem o intuito de construir, do zero, um projeto com o Twitter e o Apache Airflow. 
-
-Falaremos desde como virtualizar um Linux no Windows com o WSL 2, até a alimentação dos dados em um Datalake.
-
-Ressaltamos que iremos utilizar um Linux, no caso um Ubumtu, pois, o Apache Airflow só roda em Linux e MacOs.
-
----
-
 ## Pré Requisitos para utilização da WLS 2:
 
 * Você deve estar executando o Windows 10 versão 2004 e superior (Build 19041 e superior) ou o Windows 11.
