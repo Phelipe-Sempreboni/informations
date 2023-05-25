@@ -1,4 +1,4 @@
-## Neste arquivo de informações e anotações iremos falar um pouco sobre quando usar um Data Warehouse como tecnologia e ferramenta de armazenamento de dados.
+## Neste arquivo de informações e anotações iremos falar um pouco sobre quando usar um Data Warehouse como conceito para armazenamento de dados.
 
 ---
 
