@@ -1,26 +1,24 @@
-## Neste arquivo de informações e anotações iremos falar um pouco sobre quando usar um Data Lake como conceito para armazenamento de dados.
+## Neste arquivo de informações e anotações iremos falar um pouco sobre quando usar um Data Store como conceito para armazenamento de dados.
 
 ---
 
-#### Abaixo conceitos importantes sobre quando usar um Data Lake como conceito para armazenamento de dados.
+#### Abaixo conceitos importantes sobre quando usar um Data Store como conceito para armazenamento de dados.
 
-![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/a56e4517-443b-41e3-b387-11ec8c8ad22a)
+![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/79d5647f-7e09-465e-9c04-e04f35538b60)
 
-![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/507c5e19-cbab-4a61-a934-71becf588230)
+![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/473c4c6f-562c-4b2f-b27d-f456d8c8272d)
 
-![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/fec290d9-3328-416e-a2d7-44b0113a7b7d)
+![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/d1646fda-1b7d-43e3-8b4f-84a78534d824)
 
-![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/ac041c09-60fb-451f-a5c6-554acc7f4432)
+![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/9002c5a8-852a-41c8-944f-ca5966fb61e3)
 
-![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/0e201e40-37cb-462a-9c74-3d29ccb263c3)
+![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/fd63b686-38f2-433b-8cc2-44c6741b6541)
 
-![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/19bf6451-68bb-4bcf-81a9-bbc9d312b47a)
+![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/d08d59d5-a61f-48c6-8edf-e585c15672fe)
 
-![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/213cc83c-d6d4-4a92-af9e-8ac52a1d8a03)
+![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/dd6a9be1-c5b4-4afa-bba7-cf4cf683acea)
 
-![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/d8e6cba4-b99b-44c5-89ea-7f8bb494f124)
-
-![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/a0448a85-97d1-42d5-8241-43802ce522b1)
+![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/f6daa7a3-11cf-4a15-bb7e-58ad446466a9)
 
 ---
 
