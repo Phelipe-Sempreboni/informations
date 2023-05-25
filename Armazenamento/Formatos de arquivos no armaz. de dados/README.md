@@ -1,26 +1,22 @@
-## Neste arquivo de informações e anotações iremos falar um pouco sobre quando usar um Data Lake como conceito para armazenamento de dados.
+## Neste arquivo de informações e anotações iremos falar um pouco sobre os formatos de arquivos para o armazenamento de dados e frequentemente usados em Engenharia de Dados.
 
 ---
 
-#### Abaixo conceitos importantes sobre quando usar um Data Lake como conceito para armazenamento de dados.
+#### Abaixo conceitos importantes sobre os formatos de arquivos para o armazenamento de dados e frequentemente usados em Engenharia de Dados.
+![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/5e34a42a-c279-47cb-a457-2e4433ebfafe)
 
-![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/a56e4517-443b-41e3-b387-11ec8c8ad22a)
+![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/5d7d8301-e9c1-4975-9d14-224d24a3e5d7)
 
-![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/507c5e19-cbab-4a61-a934-71becf588230)
+---
 
-![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/fec290d9-3328-416e-a2d7-44b0113a7b7d)
+#### Formato Parquet
+![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/15c2b24c-e846-4dd9-9558-0d6197339cfe)
 
-![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/ac041c09-60fb-451f-a5c6-554acc7f4432)
+![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/ca4d526d-1cc1-4c71-a2fe-7ab8a0feb430)
 
-![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/0e201e40-37cb-462a-9c74-3d29ccb263c3)
+![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/338877b0-c8bf-4768-bc9e-0c2c4da3ddd5)
 
-![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/19bf6451-68bb-4bcf-81a9-bbc9d312b47a)
-
-![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/213cc83c-d6d4-4a92-af9e-8ac52a1d8a03)
-
-![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/d8e6cba4-b99b-44c5-89ea-7f8bb494f124)
-
-![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/a0448a85-97d1-42d5-8241-43802ce522b1)
+![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/3b1af878-7884-4023-8f6c-313e657b100c)
 
 ---
 
