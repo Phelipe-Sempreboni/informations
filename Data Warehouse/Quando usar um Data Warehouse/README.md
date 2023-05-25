@@ -2,7 +2,7 @@
 
 ---
 
-#### Abaixo conceitos importantes sobre quando usar um Data Warehouse como tecnologia e ferramenta de armazenamento de dados.
+#### Abaixo conceitos importantes sobre quando usar um Data Warehouse como conceito para armazenamento de dados.
 
 ![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/cc960fc3-dc65-4521-84cb-5dc67278aa42)
 
