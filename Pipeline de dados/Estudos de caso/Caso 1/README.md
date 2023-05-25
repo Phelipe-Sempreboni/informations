@@ -51,7 +51,16 @@
 ---
 
 #### IaC - Infraestrutura como Código e CI/CD - Continuous Integration/Continuous Delivery
+![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/85d15d4d-1f8a-4a1d-bc13-b06f3cbc6607)
 
+![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/3182099b-3e8a-419d-96a5-122925146100)
+
+![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/86bf0a52-24bf-4577-b7a8-7e5d9cf6fc92)
+
+---
+
+#### Custo do Pipeline de Dados
+![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/ae0d8342-86d6-43ef-95e3-4ef0726fd943)
 
 ---
 
