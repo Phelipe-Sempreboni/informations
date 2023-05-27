@@ -20,4 +20,25 @@
 
 ---
 
+#### Formato Avro
+![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/25943382-9c8e-4e83-9864-c4fb927eb426)
+
+![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/edfa007c-fa1d-4a61-a058-6d4d382ef68d)
+
+![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/d3ac7978-39a2-468b-a47b-fe05d81aecd4)
+
+---
+
+#### Formato ORC
+![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/ced972cb-b348-46c2-81bb-7323fd26f66b)
+
+![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/cd895d40-f4b2-4ae7-a42a-7ce13a39d15b)
+
+---
+
+#### Formato JSON
+![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/89e301bc-f216-4974-a107-7edfbf0aa597)
+
+---
+
 _Espero ajudar_ :smiley:
