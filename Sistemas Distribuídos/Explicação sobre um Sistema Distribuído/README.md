@@ -27,6 +27,20 @@
 
 ![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/288dc384-7161-4bf7-89fd-5d512c653ae3)
 
+![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/e4f71a9c-403c-4b64-88a8-83df72feed1c)
+
+![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/21f9657d-adba-40ef-b506-f2defb75e432)
+
+![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/e0a8ac4b-494e-4e3a-a54a-501ae3cd4b5a)
+
+![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/c1848c29-689b-4da7-9c14-4294d4576158)
+
+![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/93f2e4e3-7ea4-4261-8332-c47a5588c8de)
+
+![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/bf7a16e5-1872-43f7-b67d-11796266418f)
+
+![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/ac39ca28-277f-4706-86e7-157fb4e52d22)
+
 ---
 
 _Espero ajudar_ :smiley:
