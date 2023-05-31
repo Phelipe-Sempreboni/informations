@@ -1,14 +1,12 @@
-## Neste arquivo de informações e anotações iremos falar um pouco sobre Definição de Dados.
+## Neste arquivo de informações e anotações iremos falar um pouco sobre Modelo Lógico.
 
 ---
 
-#### Abaixo conceitos importantes sobre Definição de Dados.
+#### Abaixo conceitos importantes sobre Modelo Lógico.
 
-![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/f858b33f-fd0d-48e2-bb64-2b182d3153db)
+![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/5fb0a52b-b1c9-48c9-91d3-77a4f1eb8caa)
 
-![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/862b3b19-f8ed-4d30-9dae-34949f9e8ee2)
-
-![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/4ee3380e-3e71-4a36-9cbe-75b1c04ae080)
+![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/17421c0d-038d-49a6-ba90-f20c5c520bd8)
 
 ---
 
