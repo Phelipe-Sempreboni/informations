@@ -1,14 +1,12 @@
-## Neste arquivo de informações e anotações iremos falar um pouco sobre o conceito de Data Hub. 
+## Neste arquivo de informações e anotações iremos falar um pouco sobre arquitetura do Data Mesh. 
 
 ---
 
-#### Abaixo conceitos importantes sobre Data Hub.
+#### Abaixo conceitos importantes sobre arquitetura do Data Mesh. 
 
-* Repositório de dados organizado, governado, a fim de permitir distribuição e compartilhamento destes dados.
+![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/0d679f1a-a857-4bcf-86ba-9838572c7a12)
 
-* O objetivo é integrar os diferentes silos de dados em uma única plataforma arquitetural.
-
-![image](https://user-images.githubusercontent.com/57469401/131054703-3b12d0b1-9c75-4eee-af71-c281dc6c2f08.png)
+![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/f77169c4-c9e0-4361-9818-a9c9381a61c7)
 
 ---
 
