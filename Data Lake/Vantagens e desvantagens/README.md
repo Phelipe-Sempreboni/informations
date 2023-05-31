@@ -1,12 +1,12 @@
-## Neste arquivo de informações e anotações iremos falar um pouco sobre as vantagens e desvantagens de um Data Warehouse.
+## Neste arquivo de informações e anotações iremos falar um pouco sobre as vantagens e desvantagens de um Data Lake.
 
 ---
 
-#### Abaixo conceitos importantes sobre as vantagens e desvantagens de um Data Warehouse.
+#### Abaixo conceitos importantes sobre as vantagens e desvantagens de um Data Lake.
 
-![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/98f77e6f-4dee-4a3f-ba30-f04522e85ad5)
+![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/fa259ab4-67be-4ee6-91e1-76a9475f21f1)
 
-![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/fc14ea2a-cc28-48e6-8ddf-80545934347c)
+![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/65c7bf92-40b4-44a1-b006-c4bceb2adba0)
 
 ---
 
