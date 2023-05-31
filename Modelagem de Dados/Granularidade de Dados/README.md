@@ -1,14 +1,12 @@
-## Neste arquivo de informações e anotações iremos falar um pouco sobre Modelo Conceitual.
+## Neste arquivo de informações e anotações iremos falar um pouco sobre Granularidade de Dados.
 
 ---
 
-#### Abaixo conceitos importantes sobre Modelo Conceitual.
+#### Abaixo conceitos importantes sobre Granularidade de Dados.
 
-![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/4cac5c0f-e0cb-45ab-86ba-da53f2a1d81f)
+#### [Saiba mais sobre Granularidade de Dados clicando aqui](https://arthur-aguiar.medium.com/modelo-de-dados-multidimensionais-cbcd19b6e98b)
 
-![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/07f5b1cd-8789-4f7c-86bf-54764108a2e3)
-
-![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/c3c75bb8-18a9-4683-a4a4-48b721dcd52c)
+![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/d02f1f16-1ad7-4b84-a2f1-66b3bf877052)
 
 ---
 
