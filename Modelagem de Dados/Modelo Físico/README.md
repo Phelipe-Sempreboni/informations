@@ -1,14 +1,12 @@
-## Neste arquivo de informações e anotações iremos falar um pouco sobre Definição de Dados.
+## Neste arquivo de informações e anotações iremos falar um pouco sobre Modelo Físico.
 
 ---
 
-#### Abaixo conceitos importantes sobre Definição de Dados.
+#### Abaixo conceitos importantes sobre Modelo Físico.
 
-![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/f858b33f-fd0d-48e2-bb64-2b182d3153db)
+![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/8256977e-25e0-420b-bcf8-4e89c844255d)
 
-![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/862b3b19-f8ed-4d30-9dae-34949f9e8ee2)
-
-![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/4ee3380e-3e71-4a36-9cbe-75b1c04ae080)
+![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/249a5347-b912-40c4-92e9-20c4e8f5f865)
 
 ---
 
