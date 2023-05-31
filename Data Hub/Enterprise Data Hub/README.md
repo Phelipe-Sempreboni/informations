@@ -1,14 +1,16 @@
-## Neste arquivo de informações e anotações iremos falar um pouco sobre o conceito de Data Hub. 
+## Neste arquivo de informações e anotações iremos falar um pouco sobre Enterprise Data Hub. 
 
 ---
 
-#### Abaixo conceitos importantes sobre Data Hub.
+#### Abaixo conceitos importantes sobre Enterprise Data Hub. 
 
-* Repositório de dados organizado, governado, a fim de permitir distribuição e compartilhamento destes dados.
+![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/64a143e3-840d-49a0-a47a-abf581dfe4e1)
 
-* O objetivo é integrar os diferentes silos de dados em uma única plataforma arquitetural.
+![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/1f6036b7-8f4e-4b5a-a6b0-b2dd4251abad)
 
-![image](https://user-images.githubusercontent.com/57469401/131054703-3b12d0b1-9c75-4eee-af71-c281dc6c2f08.png)
+![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/4f02ffb1-2ced-4bc1-a9d4-62e9f552f6c4)
+
+![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/9ea13ea3-8d8a-4ec8-b14f-173dc701a7c0)
 
 ---
 
