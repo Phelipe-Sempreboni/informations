@@ -1,19 +1,15 @@
-## Neste arquivo de informações e anotações iremos falar um pouco sobre as principais medidas de Qualidade de Dados.
+## Neste arquivo de informações e anotações iremos falar um pouco sobre o valor da Qualidade dos Dados.
 
 ---
 
-#### Abaixo conceitos importantes sobre as principais medidas de Qualidade de Dados.
-![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/fef0921a-e957-405b-8bd9-526775aae8b6)
+#### Abaixo conceitos importantes sobre o valor da Qualidade dos Dados.
+![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/fc7dde29-f25c-4009-b45d-3f9da6e2060f)
 
-![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/4a26b807-8a0d-4a8a-8298-e68164274e5d)
+![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/16660575-41b5-4513-9e3d-e8b57c79de31)
 
-![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/ddfd910a-02dd-471c-875d-57af2df2d133)
+![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/c6a9abe7-0be7-4183-b0fc-3b8d2b8f3c4a)
 
-![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/2bbd2870-7331-4ffb-8ed8-24b42bf423a1)
-
-![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/864652f0-747d-4e99-b1bc-975b3b3df731)
-
-![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/86519f5c-4040-4d29-80ab-da6caa401498)
+![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/4813c930-c502-41b0-94c5-ef23a9aa16b2)
 
 ---
 
