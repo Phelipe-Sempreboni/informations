@@ -10,6 +10,8 @@
 
 [Ferrtamenta SQL Flow - Clique aqui para saber mais](https://sqlflow.gudusoft.com/#/)
 
+![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/cc292475-9ca1-4f64-a6b0-a51c661a7c2c)
+
 ---
 
 _Espero ajudar_ :smiley:
