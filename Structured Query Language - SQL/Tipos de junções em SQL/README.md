@@ -55,6 +55,8 @@ INNER JOIN dsa_module_four.tb_clientes AS B USING (id_cliente);
 
 ![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/3f929766-146b-4045-bd97-a90f2cae3414)
 
+![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/6b0e307b-dfc0-4eeb-b39b-657cb12a0c39)
+
 ---
 
 _Espero ajudar_ :smiley:
