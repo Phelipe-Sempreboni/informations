@@ -2,6 +2,16 @@
 
 ---
 
+#### Você pode saber mais pelos links abaixo.
+
+- [x] [O que é a cláusula OVER() no SQL?](https://learnsql.com/blog/sql-over-clause/)
+
+- [x] [8 melhores artigos de função de janela SQL](https://learnsql.com/blog/best-window-functions-articles/)
+
+- [x] [Folha de dicas das funções da janela SQL](https://learnsql.com/blog/sql-window-functions-cheat-sheet/)
+
+---
+
 #### Abaixo conceitos importantes sobre Window Function ou Janela para os dados com a linguagem SQL.
 
 ![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/9cbb8a56-d881-49a1-a2b1-c692126e026c)
