@@ -50,4 +50,21 @@ ORDER BY
 
 -- ANÁLISE MULTIVARIADA
 
+-- Notar que aqui estamos avaliando DUAS VARIÁVEIS, onde realizamos a divisão do total de mortes pelo total de casos, multiplicamos por 100 para transformar em percentual e temos o resultado.
+
+-- Aqui temos o relacionamento de duas variáveis, ou seja, correlacionamos as variáveis em um cálculo, logo, temos uma análise multivariada, que é diferente do desafio acima, que as variáveis não possuem um relacionamento.
+
+SELECT
+	 location
+	,date
+	,total_cases
+    ,total_deaths
+    ,(total_deaths / total_cases) * 100 AS percentual_ocorrencias
+    
+FROM dsa_module_seven.covid_mortes
+
+WHERE location = 'Brazil'
+
+ORDER BY 2;
+
 ------------------------------------------------------------------------------------------------------------------ #
