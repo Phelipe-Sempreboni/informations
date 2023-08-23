@@ -1,8 +1,10 @@
 ------------------------------------------------------------------------------------------------------------------ #
 
--- Aqui deixaremos um script SQL de exemplo de uma análise univariada.
+-- Aqui deixaremos um script SQL de exemplo de uma análise univariada e multivariada.
 
 ------------------------------------------------------------------------------------------------------------------ #
+
+-- ANÁLISE UNIVARIADA
 
 -- Notar que aqui estamos avaliando somente UMA VARIÁVEL, ou seja, o cálculo de média foi realizado somente com essa e única variável.
 
@@ -20,11 +22,15 @@ ORDER BY
 
 ------------------------------------------------------------------------------------------------------------------ #
 
+-- ANÁLISE UNIVARIADA, DESAFIO
+
 -- Isso é uma análise univariada ou multivariada ?
 
 -- Notar que ainda é uma análise univariada, visto que, ainda estamos avaliando UMA VARIÁVEL. Mas como isso possível se temos duas variáveis na análise abaixo ?
 
 -- Isso se dá por conta que são variáveis independentes, ou seja, elas não possuem correlação direta ou cálculo entre ambas as variáveis, ainda não univariadas, ou seja, uma não depende da coexistência da outra.
+
+-- A análise multivariada é quando consideramos o relacionamento entre as variáveis. Você pode ver mais abaixo sobre esse assunto.
 
 SELECT
 	 location
@@ -39,5 +45,9 @@ GROUP BY
 ORDER BY
 	media_ocorrencias DESC;
 
+
+------------------------------------------------------------------------------------------------------------------ #
+
+-- ANÁLISE MULTIVARIADA
 
 ------------------------------------------------------------------------------------------------------------------ #
