@@ -9,6 +9,14 @@
 
 ---
 
-- [x] **O quê é Governança de Dados ?**
+- [x] **Modelos de Cloud: Privado, Publico e Hybrid**
 
-- Segundo o DAMA-DMBOK (Data Management Body of Knowledge), Governança de Dados é o exercicio de autoridade, controle, planejamento, monitoramento, disponibilidade, segurança e execução dos ativos de dados e seu respectivo consumo.
+**Public Cloud**: É a computação em nuvem fornecida pela Internet e compartilhada entre organizações. Qualquer usuário com acesso a internet pode ter acesso ao serviço de cloud oferecido de forma pública.
+
+**Private Cloud**: É a computação em nuvem dedicada exclusivamente à uma organização, ou seja, na nuvem privada, você não compartilha recursos de computação em nuvem com nenhuma outra organização.
+
+**Hybrid Cloud**: É qualquer ambiente que utiliza nuvens públicas e privadas combinando as soluções. A nuvem híbrida é qualquer ambiente de infraestrutura em nuvem que combina soluções de nuvem pública e privada.
+
+---
+
+
