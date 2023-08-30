@@ -56,11 +56,26 @@
   - east: Leste
   - 1: 1º região da área Leste dos Estados Unidos.
 
+- us-west-1
+  - us: Estados Unidos (United States)
+  - west: Oeste
+  - 1: 1º região da área Leste dos Estados Unidos.
+
+- ap-south-1
+  - ap: Ásia-Pacífico
+  - south: Sul
+  - 1: 1º região da área Leste da América do Sul.
+
+- eu-west-2
+  - eu: Europa
+  - west: Oeste
+  - 2: 2º região da área Leste da América do Sul.
+
 - sa-east-1
   - sa: América do Sul (South America)
   - east: Leste
   - 1: 1º região da área Leste da América do Sul.
- 
+
 - Cola:
   - Norte: North
   - Sul: South
@@ -70,9 +85,6 @@
 - [x] [Documentação: Regiões e zonas de disponibilidade](https://aws.amazon.com/pt/about-aws/global-infrastructure/regions_az/?p=ngi&loc=2&refid=fc81dabe-57e1-4c46-8d33-cfd3acf1ef08)
 
 ---
-
-
-
 
 
 
