@@ -31,4 +31,16 @@
 
 ---
 
+- [x] **Console AWS, AWS Command Line Interface (AWS CLI) e AWS CloudShell**
 
+**_AWS Command Line Interface (AWS CLI)_**: A AWS Command Line Interface (AWS CLI) é uma ferramenta unificada que fornece uma interface consistente para interagir com todas as partes da Amazon Web Services. Os comandos da AWS CLI para diferentes serviços são abordados no guia do usuário que o acompanha, incluindo descrições, sintaxe e exemplos de uso. Notar que esse é um serviço por linha comando, ou seja, você instala o (AWS CLI) na sua máquina, realiza as configurações e consegue acessar a AWS dessa maneira, via máquina local e linha de comando.
+
+**_AWS CloudShell_**: O AWS CloudShell é um shell baseado em navegador que você pode usar para gerenciar serviços da AWS usando a AWS Command Line Interface (AWS CLI) e uma variedade de ferramentas de desenvolvimento pré-instaladas. Notar que esse também uma alternativa para utilizar a linha de comando, mas aqui não é em máquina local, mas sim diretamente dentro da AWS pela Web.
+
+**_AWS Console_**: Você também pode executar ações como usuário diretamente pelo Console da AWS, ou seja, em vez de realizar um comando via (AWS CLI) ou (AWS CloudShell) para consultar arquivos em um bucket s3, você pode consultar diretamente o bucket s3 pelo Console da AWS.
+
+- [x] [Documentação: Interface de linha de comando da AWS (AWS CLU)](https://docs.aws.amazon.com/cli/)
+
+- [x] [Documentação: AWS CloudShell](https://docs.aws.amazon.com/cloudshell/)
+
+---
