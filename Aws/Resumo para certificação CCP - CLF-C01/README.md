@@ -77,10 +77,10 @@
   - 1: 1º região da área Leste da América do Sul.
 
 - Cola:
-  - Norte: North
-  - Sul: South
-  - Leste: East
-  - Oeste: West
+  - North: Norte
+  - South: Sul 
+  - East: Leste
+  - West: Oeste
 
 - [x] [Documentação: Regiões e zonas de disponibilidade](https://aws.amazon.com/pt/about-aws/global-infrastructure/regions_az/?p=ngi&loc=2&refid=fc81dabe-57e1-4c46-8d33-cfd3acf1ef08)
 
