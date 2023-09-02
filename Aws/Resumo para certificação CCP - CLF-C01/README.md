@@ -47,7 +47,7 @@
 
 - [x] **Regiões e zonas de disponibilidade**
 
-**_Regiões e zonas de disponibilidade:_**: A Nuvem AWS abrange 102 zonas de disponibilidade em 32 regiões geográficas por todo o mundo, com planos já divulgados para mais 12 zonas de disponibilidade e outras 4 regiões da AWS no Canadá, na Malásia, na Nova Zelândia e na Tailândia. Notar que essa informação sempre é atualizada, visto que a AWS pode lancçar novas regiões, zonas de disponibilidade, entre outros. Dados consultados diretamente no site da AWS em 29/08/2023. Consulte a documentação abaixo oficinal da AWS sobre esse assunto.
+**_Regiões e zonas de disponibilidade:_**: A Nuvem AWS abrange 102 zonas de disponibilidade em 32 regiões geográficas por todo o mundo, com planos já divulgados para mais 12 zonas de disponibilidade e outras 4 regiões da AWS no Canadá, na Malásia, na Nova Zelândia e na Tailândia. Notar que essa informação sempre é atualizada, visto que a AWS pode lançar novas regiões, zonas de disponibilidade, entre outros. Dados consultados diretamente no site da AWS em 29/08/2023. Consulte a documentação abaixo oficinal da AWS sobre esse assunto.
 
 **_Identificação pelo prefixo da AWS sobre uma região_**: A divisão de regiões da AWS segue uma lógica no seu prefixo, assim é possível identificar facilmente e até pelo próprio Console da AWS essa região. Veja o exemplo abaixo.
 
