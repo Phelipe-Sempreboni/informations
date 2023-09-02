@@ -59,17 +59,17 @@
 - us-west-1
   - us: Estados Unidos (United States)
   - west: Oeste
-  - 1: 1º região da área Leste dos Estados Unidos.
+  - 1: 1º região da área Oeste dos Estados Unidos.
 
 - ap-south-1
   - ap: Ásia-Pacífico
   - south: Sul
-  - 1: 1º região da área Leste da América do Sul.
+  - 1: 1º região da área Sul da Ásia-Pacífico.
 
 - eu-west-2
   - eu: Europa
   - west: Oeste
-  - 2: 2º região da área Leste da América do Sul.
+  - 2: 2º região da área Oeste da Europa.
 
 - sa-east-1
   - sa: América do Sul (South America)
