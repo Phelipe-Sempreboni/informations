@@ -41,7 +41,7 @@
 
 **_Budgets_**: É a parte de orçamentos. Nesse local você pode criar alertas personalizados sobre orçamentos, por exemplo, avisar no momento que o limite de orçamento de 20 dólares for alcançado, ou 70% desse valor, dessa maneira, você pode planejar as ações que serão tomadas para esse orçamentos.
 
-**_Costs_**: É a parte de custos. Nesse local você verificar os custos da sua conta na AWS. O interessante é que você pode verificar os custos de forma personalizada, ou seja, por serviço, local, entre outros.
+**_AWS Cost Explorer_**: É a parte de custos. Nesse local você verificar os custos da sua conta na AWS. O interessante é que você pode verificar os custos de forma personalizada, ou seja, por serviço, local, entre outros. Também podemos dizer (segundo a documentação da AWS) que é o **Explorador de Custos da AWS**, onde você pode visualizar, entender e gerenciar os custos e o uso da AWS ao longo do tempo da sua conta.
 
 ---
 
