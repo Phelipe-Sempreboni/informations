@@ -35,6 +35,16 @@
 
 ---
 
+- [x] **Faturamento da AWS - Palavras chaves para relembrar**
+
+**_Billing_**: É a parte de cobrança. Nesse local você consegue verificar o que já foi cobrado, suas faturas, entre outros.
+
+**_Budgets_**: É a parte de orçamentos. Nesse local você pode criar alertas personalizados sobre orçamentos, por exemplo, avisar no momento que o limite de orçamento de 20 dólares for alcançado, ou 70% desse valor, dessa maneira, você pode planejar as ações que serão tomadas para esse orçamentos.
+
+**_Costs_**: É a parte de custos. Nesse local você verificar os custos da sua conta na AWS. O interessante é que você pode verificar os custos de forma personalizada, ou seja, por serviço, local, entre outros.
+
+---
+
 - [x] **Console AWS, AWS Command Line Interface (AWS CLI) e AWS CloudShell**
 
 **_AWS Command Line Interface (AWS CLI)_**: A AWS Command Line Interface (AWS CLI) é uma ferramenta unificada que fornece uma interface consistente para interagir com todas as partes da Amazon Web Services. Os comandos da AWS CLI para diferentes serviços são abordados no guia do usuário que o acompanha, incluindo descrições, sintaxe e exemplos de uso. Notar que esse é um serviço por linha comando, ou seja, você instala o (AWS CLI) na sua máquina, realiza as configurações e consegue acessar a AWS dessa maneira, via máquina local e linha de comando.
