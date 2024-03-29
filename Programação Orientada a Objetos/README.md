@@ -1,1 +1,1 @@
-Melhoria de arquivo.
+Teste de novo arquivo gerenciador YAML.
