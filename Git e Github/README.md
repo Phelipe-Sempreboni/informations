@@ -29,6 +29,8 @@
 
 #### Materiais de apoio:
 
+[GIT: Mini Curso para Você Sair do Zero! (Aprenda em 45 Minutos)](https://www.youtube.com/watch?v=ts-H3W1uLMM)
+
 [Sobre repositórios remotos no Github](https://docs.github.com/pt/get-started/getting-started-with-git/about-remote-repositories)
 
 [Gerenciar repositórios remotos no Github](https://docs.github.com/pt/get-started/getting-started-with-git/managing-remote-repositories)
@@ -38,6 +40,10 @@
 [Remover um repositório remoto no Github](https://docs.github.com/pt/get-started/getting-started-with-git/managing-remote-repositories#removing-a-remote-repository)
 
 [Como trabalhar com repositórios remotos" do livro Pro Git](https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes)
+
+[Quando devo manter ou deletar um branch?](https://pt.stackoverflow.com/questions/93854/quando-devo-manter-ou-deletar-um-branch)
+
+[Projeto do Github com diversos tópicos importantes e interessantes](https://github.com/maniero/SOpt/blob/master/Conceptual.md)
 
 ---
 
@@ -151,8 +157,11 @@ git restore teste-unitario.py
 # Notar que para esse tipo de ação, é melhor que você visualize direto pelo seu editor.
 # Imagine que realizamos muitas alterações e até em em múltiplos arquivos. Quando formos aplicar o comando, o terminal ficará poluído para visualização.
 # Se forem pequena alterações, pode ser feito pelo terminal, mas para grandes alterações, aconselhamos utilizar o editor de sua preferência, como o (VS Code).
-
 git diff
+
+# Digamos que você queira visualizar uma alteração realizada entre duas branchs diferentes
+# Nesse caso, você iria visualizar uma ramificação da branch (developer) e a principal (main).
+git diff developer main
 
 ```
 
@@ -279,14 +288,71 @@ git reflog
 ```python
 
 # Digamos que você queria visualizar em qual branch você está atualmente no repositório.
+# Quando houver um (*) no nome da branch, significa que é nessa que você está dentro atualmente.
 git branch
 
 # Digamos que você queira criar uma nova branch para iniciar suas ações.
+# Notar que nesse cenário você cria a branch, mas ainda não está dentro dela.
 git branch "nome da branch"
-git branch "developer"
-git branch "developer-1"
+git branch developer
+git branch developer-1
 
-# 
+# Digamos que você queira criar uma nova branch para iniciar suas ações.
+# Notar que nesse cenário você cria a branch e já vai diretamente para dentro dela.
+# O comando (checkout) serve para navegar entre as branchs existentes.
+git checkout -b "nome da branch"
+git checkout -b developer
+git checkout -b developer-1
+
+# Digamos que você queira deletar uma branch que foi criada.
+git branch -D "nome da branch"
+git branch -D developer
+git branch -D developer-1
+
+# Digamos que você criou uma branch com o nome errado ou quer somente alterar o nome.
+git branch -m "novo nome da branch"
+git branch -m dev
+git branch -m dev-1
+
+# Digamos que você queria visualizar o logo de uma branch especifica.
+git log "nome da branch"
+git log dev
+git log dev-1
+
+```
+
+---
+
+```python
+
+
+```
+
+---
+
+```python
+
+
+```
+
+---
+
+```python
+
+
+```
+
+---
+
+```python
+
+
+```
+
+---
+
+```python
+
 
 ```
 
