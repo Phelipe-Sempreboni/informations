@@ -4,7 +4,17 @@
 
 #### Abaixo temos comandos que serão extremamente úteis no seu dia a dia como desenvolvedor de software ou dados.
 
-#### Iremos considerar que já possua o Git instalado em sua máquina e uma conta no Github, e que saiba pelo menos o conceito das ferramentas.
+#### Para esse conteúdo, iremos considerar que: 
+  - Já possua o Git instalado em sua máquina.
+  - Já possua uma conta no Github.
+  - Saiba comandos básicos para utilizar em terminais do sistema operacional, como, no (CMD - Windows) ou (Bash - Linux)
+  - Que saiba pelo menos o conceito das ferramentas, que é para armazenamentos e versionamentos.
+
+---
+
+#### Materiais de apoio:
+
+[Gerenciar repositórios remotos no Github](https://docs.github.com/pt/get-started/getting-started-with-git/managing-remote-repositories)
 
 ---
 
