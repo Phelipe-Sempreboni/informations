@@ -285,7 +285,24 @@ git shortlog
 # Com o comando abaixo, é possível realizar essa ação.
 git shortlog -sn
 
+# Digamos que você queira visualizar as ações realizadas dentro do repositório e não necessariamente as mudanças.
+# Notar que mudando de diretório, você vai conseguir ver as mudanças nele, e assim por diante.
+# Com o comando abaixo, é possível realizar essa ação.
+git reflog
+
+# Também é possível instalar uma extensão no Visual Studio Code chamada (Git Graph), que seria uma forma mais interativa de visualizar o parâmetro (--graph) visto acima.
+# 1) Com o seu Visual Studio Code aberto, vá até a aba de (Extensões).
+# 2) Procuce pela extensão chamada (Git Graph).
+# 3) Clique em (Install) e aguarde a instalação.
+# 5) Vá até a aba (Source Control), que é onde é possível manipular o Github pelo Visual Studio Code.
+# 6) Clique no símbolo gráfico que foi adicionado.
+# 7) Pronto, é possível enxergar de forma mais interativa e amigável o parâmetro (--graph).
+
 ```
+
+#### Imagem do (Git Graph) no Visual Studio Code:
+
+![image](https://github.com/Phelipe-Sempreboni/tutorials-informations-notes/assets/57469401/1877952e-8b90-42e9-a3b2-a84172da10c4)
 
 ---
 
