@@ -16,6 +16,13 @@
 
 ---
 
+#### Para se localizar quando essas nomeclaturas aparecerem no tutorial:
+  - Working Directory:
+  - Stage:
+  - Git Repository: 
+
+---
+
 #### Materiais de apoio:
 
 [Sobre repositórios remotos no Github](https://docs.github.com/pt/get-started/getting-started-with-git/about-remote-repositories)
@@ -31,6 +38,8 @@
 ---
 
 ```python
+
+# Normalmente nesse ponto você estará no ambiente (Working Directory).
 
 # Configurar o nome no Git, para que cada ação realizada fique registrada no seu nome.
 git config --global user.name "Jonaldo"
@@ -49,6 +58,9 @@ git config --list
 ---
 
 ```python
+
+# Normalmente nesse ponto você estará no ambiente (Working Directory).
+
 # Caso já tenha um repositório no Github, você pode clonar o projeto para sua máquina local.
 # Notar que o repositório será clonado para onde vocês estive atualmente, por exemplo, em (C:/Users/JONALDO/Desktop).
 # Você pode simplestemente copiar o endereço da barra de html do navegador e acrescentar no final um (.git), exemplo abaixo.
@@ -63,6 +75,8 @@ git clone https://github.com/Phelipe-Sempreboni/tutorials-informations-notes.git
 
 ```python
 
+# Normalmente nesse ponto você estará no ambiente (Working Directory).
+
 # Inicializar o Git em um repositório, para que seja possível ativar a ferramenta.
 git init
 
@@ -71,6 +85,8 @@ git init
 ---
 
 ```python
+
+# Normalmente nesse ponto você poderá estar em qualquer ambiente (Working Directory, Stage ou Git Repository).
 
 # Retorna o status de suas ações com o Git.
 # Mostra em qual branch você está atualmente, por exemplo, se você está na (main) ou em uma criada por você, como (developer).
@@ -88,7 +104,7 @@ git status
 
 ```python
 
-# Stage: É um local onde ainda não realizamos (commit - confirmação) do arquivo para o servidor, ou seja, ainda está em (stage).
+# Normalmente nesse ponto você estará no ambiente (Working Directory) entrando em (Stage).
 
 # Comando para adicionar em (stage) um arquivo que foi criado ou modificado.
 git add "nome do arquivo"
@@ -116,12 +132,14 @@ git add *.xlsx
 
 ```python
 
+# Normalmente nesse ponto você poderá estar em qualquer ambiente (Working Directory, Stage ou Git Repository).
+
 # Digamos que você já tenha adicionado um arquivo, por exemplo, (teste-unitario.py) em (stage).
 # Digamos que você realizou uma nova alteração nesse arquivo, e tem uma nova versão dele, e precisa adicionar, mas já tem a versão anterior em (stage).
 # Nesse caso, você precisa retirar o arquivo (teste-unitario.py) do (stage), para que consiga adicionar a nova versão modificada.
 # Notar que retornar esse arquivo, não irá voltar para a versão anterior, mas irá manter a versão atualizada recentemente.
 # Notar também que você não precisa mais adicionar o arquivo (git add), pois automaticamente ele retornar e volta para (stage) atualizado.
-# Este comando serve tanto enquanto o arquivo estiver somente local, quanto em (stage) ou em (servidor), mas abordaremos o assunto mais a frente.
+# Este comando serve tanto enquanto o arquivo estiver somente local (Working Directory), quanto em (Stage) ou em (Git Repository), mas abordaremos o assunto mais a frente.
 
 git reset "nome do arquivo"
 git reset teste-unitario.py
@@ -132,9 +150,11 @@ git reset teste-unitario.py
 
 ```python
 
+# Normalmente nesse ponto você poderá estar em qualquer ambiente (Working Directory, Stage ou Git Repository).
+
 # Digamos que você realizou uma modificação no arquivo, por exemplo, (teste-unitario.py) e quer reverter essa alteração.
 # Notar que o arquivo será alterado e voltará para sua versão anterior, e também será mantido normalmente em (stage).
-# Este comando serve tanto enquanto o arquivo estiver somente local, quanto em (stage) ou em (servidor), mas abordaremos o assunto mais a frente.
+# Este comando serve tanto enquanto o arquivo estiver somente local (Working Directory), quanto em (Stage) ou em (Git Repository), mas abordaremos o assunto mais a frente.
 
 git restore "nome do arquivo"
 git restore teste-unitario.py
@@ -144,6 +164,8 @@ git restore teste-unitario.py
 ---
 
 ```python
+
+# Normalmente nesse ponto você poderá estar em qualquer ambiente (Working Directory, Stage ou Git Repository).
 
 # Digamos que você queira visualizar uma alteração realizada no arquivo, ou seja, como estava antes e como está atualmente.
 # Notar que para esse tipo de ação, é melhor que você visualize direto pelo seu editor.
@@ -158,6 +180,10 @@ git diff
 
 ```python
 
+git commit -m "Texto breve resumindo sua ação"
+git commit -m "Criação do arquivo de configuração YAML"
+git commit -m "Criação do arquivo de variáveis em Python"
+git commit -m "Modificação do script de teste do Java"
 
 ```
 
