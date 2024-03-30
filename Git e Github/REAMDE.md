@@ -4,6 +4,10 @@
 
 #### Abaixo temos comandos que serão extremamente úteis no seu dia a dia como desenvolvedor de software ou dados.
 
+#### Notar que manteremos uma lógica a questão que cada bloco for escrito abaixo do outro, para que o aprendizado seja sequencial e lógico.
+
+---
+
 #### Para esse conteúdo, iremos considerar que: 
   - Já possua o Git instalado em sua máquina. Você também pode usar diretamente no Visual Studio Code, ou outra IDLE.
   - Já possua uma conta no Github.
@@ -69,6 +73,8 @@ git init
 ```python
 
 # Retorna o status de suas ações com o Git.
+# Mostra em qual branch você está atualmente, por exemplo, se você está na (main) ou em uma criada por você, como (developer).
+# Mostrar se temos commits realizados.
 # Caso você tenha, por exemplo, criado um novo arquivo, aparecerá que existe esse novo arquivo.
 # Caso você tenha, por exemplo, modificar um arquivo, aparecerá que você modificou esse novo arquivo.
 # Caso não tenha feito nenhuma ação, não será refletido nada, somente uma mensagem padrão do Git.
@@ -114,6 +120,8 @@ git add *.xlsx
 # Digamos que você realizou uma nova alteração nesse arquivo, e tem uma nova versão dele, e precisa adicionar, mas já tem a versão anterior em (stage).
 # Nesse caso, você precisa retirar o arquivo (teste-unitario.py) do (stage), para que consiga adicionar a nova versão modificada.
 # Notar que retornar esse arquivo, não irá voltar para a versão anterior, mas irá manter a versão atualizada recentemente.
+# Notar também que você não precisa mais adicionar o arquivo (git add), pois automaticamente ele retornar e volta para (stage) atualizado.
+# Este comando serve tanto enquanto o arquivo estiver somente local, quanto em (stage) ou em (servidor), mas abordaremos o assunto mais a frente.
 
 git reset "nome do arquivo"
 git reset teste-unitario.py
@@ -124,11 +132,25 @@ git reset teste-unitario.py
 
 ```python
 
+# Digamos que você realizou uma modificação no arquivo, por exemplo, (teste-unitario.py) e quer reverter essa alteração.
+# Notar que o arquivo será alterado e voltará para sua versão anterior, e também será mantido normalmente em (stage).
+# Este comando serve tanto enquanto o arquivo estiver somente local, quanto em (stage) ou em (servidor), mas abordaremos o assunto mais a frente.
+
+git restore "nome do arquivo"
+git restore teste-unitario.py
+
 ```
 
 ---
 
 ```python
+
+# Digamos que você queira visualizar uma alteração realizada no arquivo, ou seja, como estava antes e como está atualmente.
+# Notar que para esse tipo de ação, é melhor que você visualize direto pelo seu editor.
+# Imagine que realizamos muitas alterações e até em em múltiplos arquivos. Quando formos aplicar o comando, o terminal ficará poluído para visualização.
+# Se forem pequena alterações, pode ser feito pelo terminal, mas para grandes alterações, aconselhamos utilizar o editor de sua preferência, como o (VS Code).
+
+git diff
 
 ```
 
