@@ -20,9 +20,61 @@ git config -- global user.mail "jonaldo.git@outlook.com"
 # Caso você esteja conectado diretamente em no Github, pode ocorrer das configurações assumirem as informações do servidor.
 git config --global --list
 
+# Verificar a configuração geral realizada no Git.
+git config --list
+
+```
+---
+
+```python
+# Caso já tenha um repositório no Github, você pode clonar o projeto para sua máquina local.
+# Você pode simplestemente copiar o endereço da barra de html do navegador e acrescentar no final um (.git), exemplo abaixo.
+# Endereço: https://github.com/Phelipe-Sempreboni/tutorials-informations-notes
+# Endereço para usar no Git: https://github.com/Phelipe-Sempreboni/tutorials-informations-notes.git
+
+git clone "endereço do repositório"
+git clone https://github.com/Phelipe-Sempreboni/tutorials-informations-notes.git
+
+```
+---
+
+```python
+
+# Inicializar o Git em um repositório, para que seja possível ativar a ferramenta.
+git init
+
 ```
 
 ---
 
+```python
+
+```
+
+---
+
+```python
+
+```
+
+---
+
+```python
+
+```
+
+---
+
+```python
+
+```
+
+---
+
+```python
+
+```
+
+---
 
 _Espero ajudar_ :smiley:
