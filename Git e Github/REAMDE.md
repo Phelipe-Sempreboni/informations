@@ -17,9 +17,11 @@
 ---
 
 #### Para se localizar quando essas nomeclaturas aparecerem no tutorial:
-  - Working Directory:
-  - Stage:
-  - Git Repository: 
+  - _**Working Directory**_: O arquivo está na sua pasta de trabalho, ou localmente, ou seja, ainda não seguiu para (stage) ou servidor (git repository), logo, aqui você pode alterar, criar, excluir, fazer qualquer ação, que não irá refletir em (stage) ou (working directory).
+
+  - _**Stage**_: Local onde organizamos ou podemos falar que indexamos os arquivos que realizamos ações. Nesse momento, o arquivo está em (stage), ou seja, qualquer ação em (working directory) não irá modificar os arquivos que foram para (stage).
+
+  - _**Git Repository**_: Local onde realmente criamos o repositório com as ações que foram realizados no ou nos arquivos, onde já passou do ambiente (stage) e onde temos histórico das mudanças que foram realizadas. Por exemplo, caso já exista um arquivo chamado (teste-unitario.py) no repositório, será inserido um novo aquivo, que passará a ser o arquivo principal, ou seja, se você ou alguém de sua equipe precisar utilizar esse arquivo, ele estará na versão mais atual, isso a partir do momento que entrou em (git repository) e foi (comitado - confirmado).
 
 ---
 
