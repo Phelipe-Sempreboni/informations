@@ -6,6 +6,8 @@
 
 #### Notar que manteremos uma lógica a questão que cada bloco for escrito abaixo do outro, para que o aprendizado seja sequencial e lógico.
 
+#### Sabemos que existem ferramentas de interface gráfica como o Github Desktop, que inclusive utilizo, mas saber lidar com a linha de comando também melhora suas noções sobre as ferramentas.
+
 ---
 
 #### Para esse conteúdo, iremos considerar que: 
