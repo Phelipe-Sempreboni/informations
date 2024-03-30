@@ -5,7 +5,7 @@
 #### Abaixo temos comandos que serão extremamente úteis no seu dia a dia como desenvolvedor de software ou dados.
 
 #### Para esse conteúdo, iremos considerar que: 
-  - Já possua o Git instalado em sua máquina.
+  - Já possua o Git instalado em sua máquina. Você também pode usar diretamente no Visual Studio Code, ou outra IDLE.
   - Já possua uma conta no Github.
   - Saiba comandos básicos para utilizar em terminais do sistema operacional, como, no (CMD - Windows) ou (Bash - Linux)
   - Que saiba pelo menos o conceito das ferramentas, que é para armazenamentos e versionamentos.
@@ -14,7 +14,15 @@
 
 #### Materiais de apoio:
 
+[Sobre repositórios remotos no Github](https://docs.github.com/pt/get-started/getting-started-with-git/about-remote-repositories)
+
 [Gerenciar repositórios remotos no Github](https://docs.github.com/pt/get-started/getting-started-with-git/managing-remote-repositories)
+
+[Renomear um repositório remoto no Github](https://docs.github.com/pt/get-started/getting-started-with-git/managing-remote-repositories#renaming-a-remote-repository)
+
+[Remover um repositório remoto no Github](https://docs.github.com/pt/get-started/getting-started-with-git/managing-remote-repositories#removing-a-remote-repository)
+
+[Como trabalhar com repositórios remotos" do livro Pro Git](https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes)
 
 ---
 
@@ -38,6 +46,7 @@ git config --list
 
 ```python
 # Caso já tenha um repositório no Github, você pode clonar o projeto para sua máquina local.
+# Notar que o repositório será clonado para onde vocês estive atualmente, por exemplo, em (C:/Users/JONALDO/Desktop).
 # Você pode simplestemente copiar o endereço da barra de html do navegador e acrescentar no final um (.git), exemplo abaixo.
 # Endereço: https://github.com/Phelipe-Sempreboni/tutorials-informations-notes
 # Endereço para usar no Git: https://github.com/Phelipe-Sempreboni/tutorials-informations-notes.git
@@ -58,6 +67,13 @@ git init
 ---
 
 ```python
+
+# Retorna o status de suas ações com o Git.
+# Caso você tenha, por exemplo, criado um novo arquivo, aparecerá que existe esse novo arquivo.
+# Caso você tenha, por exemplo, modificar um arquivo, aparecerá que você modificou esse novo arquivo.
+# Isso te dá a visão do que foi ou não realizado, e posteriormente, você pode tomar ações, como, "comitar" o arquivo.
+
+git status
 
 ```
 
