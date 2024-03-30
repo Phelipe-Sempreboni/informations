@@ -118,7 +118,7 @@ git add "teste-unitario.py"
 git add .
 
 # Comando para adicionar o arquivo que ainda não entrou em (stage) e você quer adicioná-lo com outros arquivos. 
-git add -A
+git add -a
 
 # Comando para adicionar arquivos que foram criados ou modificados em (stage) por tipo de extensão.
 # Neste caso, se você tiver 4 arquivos do (.py) de Python, você pode adicioná-los de uma única vez pela extensão.
@@ -182,6 +182,11 @@ git diff
 
 ```python
 
+# Digamos que você já tenha realizado todas as ações que precisava em seu(s) arquivo(s), e agora é hora de confirmar (comitar) essas ações.
+# Esse comando passa os arquivos e suas alterações do ambiente (stage) para uma nova área.
+# Por boas práticas, sempre é bom inserir uma breve descriação conforme abaixo, nas suas ações.
+# Nesse ponto e após executar o (commit), se você utilizar o comando (git status), irá perceber que aqueles arquivos que foram adicionados (git add) já não estarão mais ali, ou seja, já não estão mais em (stage).
+
 git commit -m "Texto breve resumindo sua ação"
 git commit -m "Criação do arquivo de configuração YAML"
 git commit -m "Criação do arquivo de variáveis em Python"
@@ -193,6 +198,11 @@ git commit -m "Modificação do script de teste do Java"
 
 ```python
 
+# Digamos que você já realizou o commit em seu(s) arquivo(s), porém, realizou uma nova alteração e precisa que esse arquivo também seja confirmado (comitado).
+# Esse comando já adiciona essa nova ação e confirmar (comita) também, ou seja, esse arquivo também não estará mais em (stage).
+# Muita atenção, pois, caso tenha realizado uma ação em um arquivo que não tenha entrado nessa confirmação (commit), ele será inserido, e pode ser que você não queira que esse arquivo seja adicionado.
+
+git commit -a -m "Modificação do script de teste do Java"
 
 ```
 
