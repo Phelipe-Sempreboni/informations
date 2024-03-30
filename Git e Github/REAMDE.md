@@ -11,7 +11,7 @@
 ```python
 
 # Configurar o nome no Git, para que cada ação realizada fique registrada no seu nome.
-git config --global user.name "Phelipe"
+git config --global user.name "Jonaldo"
 
 # Configurar o e-mail no Git, para que cada ação realizada fique registrada no seu nome.
 git config -- global user.mail "github.general@outlook.com"
