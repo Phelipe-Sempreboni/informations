@@ -43,8 +43,6 @@
 
 ```python
 
-# Normalmente nesse ponto você estará no ambiente (Working Directory).
-
 # Configurar o nome no Git, para que cada ação realizada fique registrada no seu nome.
 git config --global user.name "Jonaldo"
 
@@ -63,8 +61,6 @@ git config --list
 
 ```python
 
-# Normalmente nesse ponto você estará no ambiente (Working Directory).
-
 # Caso já tenha um repositório no Github, você pode clonar o projeto para sua máquina local.
 # Notar que o repositório será clonado para onde vocês estive atualmente, por exemplo, em (C:/Users/JONALDO/Desktop).
 # Você pode simplestemente copiar o endereço da barra de html do navegador e acrescentar no final um (.git), exemplo abaixo.
@@ -79,8 +75,6 @@ git clone https://github.com/Phelipe-Sempreboni/tutorials-informations-notes.git
 
 ```python
 
-# Normalmente nesse ponto você estará no ambiente (Working Directory).
-
 # Inicializar o Git em um repositório, para que seja possível ativar a ferramenta.
 git init
 
@@ -89,8 +83,6 @@ git init
 ---
 
 ```python
-
-# Normalmente nesse ponto você poderá estar em qualquer ambiente (Working Directory, Stage ou Git Repository).
 
 # Retorna o status de suas ações com o Git.
 # Mostra em qual branch você está atualmente, por exemplo, se você está na (main) ou em uma criada por você, como (developer).
@@ -107,8 +99,6 @@ git status
 ---
 
 ```python
-
-# Normalmente nesse ponto você estará no ambiente (Working Directory) entrando em (Stage).
 
 # Comando para adicionar em (stage) um arquivo que foi criado ou modificado.
 git add "nome do arquivo"
@@ -136,8 +126,6 @@ git add *.xlsx
 
 ```python
 
-# Normalmente nesse ponto você poderá estar em qualquer ambiente (Working Directory, Stage ou Git Repository).
-
 # Digamos que você já tenha adicionado um arquivo, por exemplo, (teste-unitario.py) em (stage).
 # Digamos que você realizou uma nova alteração nesse arquivo, e tem uma nova versão dele, e precisa adicionar, mas já tem a versão anterior em (stage).
 # Nesse caso, você precisa retirar o arquivo (teste-unitario.py) do (stage), para que consiga adicionar a nova versão modificada.
@@ -154,8 +142,6 @@ git reset teste-unitario.py
 
 ```python
 
-# Normalmente nesse ponto você poderá estar em qualquer ambiente (Working Directory, Stage ou Git Repository).
-
 # Digamos que você realizou uma modificação no arquivo, por exemplo, (teste-unitario.py) e quer reverter essa alteração.
 # Notar que o arquivo será alterado e voltará para sua versão anterior, e também será mantido normalmente em (stage).
 # Este comando serve tanto enquanto o arquivo estiver somente local (Working Directory), quanto em (Stage) ou em (Git Repository), mas abordaremos o assunto mais a frente.
@@ -168,8 +154,6 @@ git restore teste-unitario.py
 ---
 
 ```python
-
-# Normalmente nesse ponto você poderá estar em qualquer ambiente (Working Directory, Stage ou Git Repository).
 
 # Digamos que você queira visualizar uma alteração realizada no arquivo, ou seja, como estava antes e como está atualmente.
 # Notar que para esse tipo de ação, é melhor que você visualize direto pelo seu editor.
@@ -240,6 +224,40 @@ git diff --staged
 
 ```python
 
+# Digamos que após a realização de algumas ações, ou até mesmo para verificação ou validação, você queira ver os logs do que foi feito.
+# Com os comandos abaixo é possível verificar os logs, que pode ser muito útil no seu dia a dia.
+
+# Visualizar os logs, onde, o valor que aparece mais acima sempre costuma ser a última ação realizada, e o que aparece mais abaixo, costuma ser a ação mais antiga.
+# É possível ver o (HEAD) do (commit) com seu identificador (id) e a (branch) utilizada.
+# É possível ver o (Author) do (commit).
+# É possível ver a (Date) do (commit).
+# É possível ver a breve descrição do (commit).
+git log
+
+# Digamos que tenhamos muitos logs e você não queira ver todos, mas queria ver somente os últimos 5 ou 3 logos disponíveis.
+# Com o comando abaixo, é possível realizar essa ação.
+git log -5
+git log -3
+
+# Digamos que você queria ver todos esses logs em uma única linha, onde é omitido essa informações completas apresentadas.
+# Com o comando abaixo, é possível realizar essa ação.
+git log --oneline
+
+# Digamos que você queria ver todos esses logs em uma única linha, onde é omitido essa informações completas apresentadas e somente dos últimos 5 ou 3 logs disponíveis.
+# Com o comando abaixo, é possível realizar essa ação.
+git log --oneline -5
+git log --oneline -3
+
+# Digamos que você queira ver como está a organização das branchs com um modelo gráfico.
+# Com o comando abaixo, é possível realizar essa ação.
+# Muito importante notar que você pode combinar e testar os comandos, onde, deixaremos algumas maneira de utilizar.
+# O último exemplo é uma forma bem resumida de analisar os resultados.
+git log --graph
+git log -5 --graph
+git log --oneline -5 --graph
+
+# Digamos que você queria ver quem foi o (Author) que executou ações.
+# Com o comando abaixo, é possível realizar essa ação.
 
 
 ```
