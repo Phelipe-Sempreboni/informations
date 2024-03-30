@@ -71,7 +71,8 @@ git init
 # Retorna o status de suas ações com o Git.
 # Caso você tenha, por exemplo, criado um novo arquivo, aparecerá que existe esse novo arquivo.
 # Caso você tenha, por exemplo, modificar um arquivo, aparecerá que você modificou esse novo arquivo.
-# Isso te dá a visão do que foi ou não realizado, e posteriormente, você pode tomar ações, como, "comitar" o arquivo.
+# Caso não tenha feito nenhuma ação, não será refletido nada, somente uma mensagem padrão do Git.
+# Isso te dará a visão do que foi ou não realizado, e posteriormente, você pode tomar ações, como, "comitar" o arquivo.
 
 git status
 
@@ -80,6 +81,28 @@ git status
 ---
 
 ```python
+
+# Stage: É um local onde ainda não realizamos (commit - confirmação) do arquivo para o servidor, ou seja, ainda está em (stage).
+
+# Comando para adicionar em (stage) um arquivo que foi criado ou modificado.
+git add "nome do arquivo"
+git add "teste-unitario.py"
+
+# Comando para adicionar em (stage) um arquivo que foi criado ou modificado.
+# Neste caso, conseguimos adicionar de uma única vez todos os arquivos que foram criados ou modificados em (stage).
+# Sempre se atentar para esse comando, pois, as vezes não queremos adicionar naquele momento todos os arquivos.
+git add .
+
+# Comando para adicionar o arquivo que ainda não entrou em (stage) e você quer adicioná-lo com outros arquivos. 
+git add -A
+
+# Comando para adicionar arquivos que foram criados ou modificados em (stage) por tipo de extensão.
+# Neste caso, se você tiver 4 arquivos do (.py) de Python, você pode adicioná-los de uma única vez pela extensão.
+git add *."extensão"
+git add *.py
+git add *.css
+git add *.html
+git add *.xlsx
 
 ```
 
