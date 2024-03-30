@@ -256,16 +256,40 @@ git log --graph
 git log -5 --graph
 git log --oneline -5 --graph
 
-# Digamos que você queria ver quem foi o (Author) que executou ações.
+# Digamos que você queria ver quem executou ações pelo (Author).
 # Com o comando abaixo, é possível realizar essa ação.
+# Muito importante notar que você pode combinar e testar os comandos, onde, deixaremos algumas maneira de utilizar.
+# Não se limite em testar e aprender combinações que vão atender as suas necessidades e até do seu time.
+git log --author="Jonaldo Jonas"
+git log --author="Jonaldo Jonas" --oneline -3
+git log --author="Jonaldo Jonas" --oneline -3 --graph
 
+# Digamos que você queria ver quem executou ações por (Date).
+# Com o comando abaixo, é possível realizar essa ação.
+# Muito importante notar que você pode combinar e testar os comandos, onde, deixaremos algumas maneira de utilizar.
+# Não se limite em testar e aprender combinações que vão atender as suas necessidades e até do seu time.
+git log --before="YYYY-MM-DD"
+git log --before="2024-03-30"
+git log --before="2024-03-30" --oneline -3
+git log --before="2024-03-30" --oneline -3 --graph
+
+# Digamos que você queria ver quem executou ações por (pasta).
+git log -- "Nome da pasta"/
+git log -- "Qualidade de Dados"/
+
+# Digamos que você queira visualizar os logs de uma maneira mais curta, ou seja, resumida.
+# Com o comando abaixo, é possível realizar essa ação.
+git shortlog
+
+# Digamos que você queira visualizar os logs de uma maneira mais curta, ou seja, resumida e somente a quantidade por (Author).
+# Com o comando abaixo, é possível realizar essa ação.
+git shortlog -sn
 
 ```
 
 ---
 
 ```python
-
 
 ```
 
