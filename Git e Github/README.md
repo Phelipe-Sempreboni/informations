@@ -132,20 +132,12 @@ git add *.xlsx
 # Notar que retornar esse arquivo, não irá voltar para a versão anterior, mas irá manter a versão atualizada recentemente.
 # Notar também que você não precisa mais adicionar o arquivo (git add), pois automaticamente ele retornar e volta para (stage) atualizado.
 # Este comando serve tanto enquanto o arquivo estiver somente local (Working Directory), quanto em (Stage) ou em (Git Repository), mas abordaremos o assunto mais a frente.
-
 git reset "nome do arquivo"
 git reset teste-unitario.py
-
-```
-
----
-
-```python
 
 # Digamos que você realizou uma modificação no arquivo, por exemplo, (teste-unitario.py) e quer reverter essa alteração.
 # Notar que o arquivo será alterado e voltará para sua versão anterior, e também será mantido normalmente em (stage).
 # Este comando serve tanto enquanto o arquivo estiver somente local (Working Directory), quanto em (Stage) ou em (Git Repository), mas abordaremos o assunto mais a frente.
-
 git restore "nome do arquivo"
 git restore teste-unitario.py
 
@@ -172,49 +164,27 @@ git diff
 # Esse comando passa os arquivos e suas alterações do ambiente (stage) para uma nova área.
 # Por boas práticas, sempre é bom inserir uma breve descriação conforme abaixo, nas suas ações.
 # Nesse ponto e após executar o (commit), se você utilizar o comando (git status), irá perceber que aqueles arquivos que foram adicionados (git add) já não estarão mais ali, ou seja, já não estão mais em (stage).
-
 git commit -m "Texto breve resumindo sua ação"
 git commit -m "Criação do arquivo de configuração YAML"
 git commit -m "Criação do arquivo de variáveis em Python"
 git commit -m "Modificação do script de teste do Java"
 
-```
-
----
-
-```python
-
 # Digamos que você já realizou o commit em seu(s) arquivo(s), porém, realizou uma nova alteração e precisa que esse arquivo também seja confirmado (comitado).
 # Esse comando já adiciona essa nova ação e confirmar (comita) também, ou seja, esse arquivo também não estará mais em (stage).
 # Muita atenção, pois, caso tenha realizado uma ação em um arquivo que não tenha entrado nessa confirmação (commit), ele será inserido, e pode ser que você não queira que esse arquivo seja adicionado.
-
 git commit -a -m "Modificação do script de teste do Java"
-
-```
-
----
-
-```python
 
 # Digamos que você acabou de realizar um (commit) e alterou o ano de (2023 para 2024), mas o correto é (2023) e precisa rapidamente alterar o último (commit) feito.
 # Com o mando abaixo é possível realizar essa ação, porém, lembre-se que é sempre para o último (commit) realizado.
 # Você precisa utilizar também o comando de adição para realizar a ação.
 # Notar que no comando de adição, você pode utilizar o nome do arquivo, a extensão ou todos os arquivos.
-
 git add .
 git commit --amend -m "Alteração do ano do script de teste do Java"
-
-```
-
----
-
-```python
 
 # Digamos que você, logo em seguida do último (commit), que alterou a data de (2024 para 2023), você precisa rapidamente alterar o parâmetro para (2030).
 # Você precisará novamente adicionar esse arquivo de (Working Directory) para (Stage), e em seguida executar novamente um (commit).
 # Nesse caso e usando o comando abaixo, você pode verificar a diferença entre o último (commit) realizado, que alterou a data de (2024 para 2023), com a última alteração que está em (stage) para (2030).
 # Notar que no comando de adição, você pode utilizar o nome do arquivo, a extensão ou todos os arquivos.
-
 git add .
 git diff --staged
 
@@ -307,6 +277,16 @@ git reflog
 ---
 
 ```python
+
+# Digamos que você queria visualizar em qual branch você está atualmente no repositório.
+git branch
+
+# Digamos que você queira criar uma nova branch para iniciar suas ações.
+git branch "nome da branch"
+git branch "developer"
+git branch "developer-1"
+
+# 
 
 ```
 
