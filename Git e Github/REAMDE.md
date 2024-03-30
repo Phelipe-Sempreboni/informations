@@ -110,6 +110,14 @@ git add *.xlsx
 
 ```python
 
+# Digamos que você já tenha adicionado um arquivo, por exemplo, (teste-unitario.py) em (stage).
+# Digamos que você realizou uma nova alteração nesse arquivo, e tem uma nova versão dele, e precisa adicionar, mas já tem a versão anterior em (stage).
+# Nesse caso, você precisa retirar o arquivo (teste-unitario.py) do (stage), para que consiga adicionar a nova versão modificada.
+# Notar que retornar esse arquivo, não irá voltar para a versão anterior, mas irá manter a versão atualizada recentemente.
+
+git reset "nome do arquivo"
+git reset teste-unitario.py
+
 ```
 
 ---
