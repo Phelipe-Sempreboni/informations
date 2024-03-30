@@ -210,6 +210,13 @@ git commit -a -m "Modificação do script de teste do Java"
 
 ```python
 
+# Digamos que você acabou de realizar um (commit) e alterou o ano de (2023 para 2024), mas o correto é (2023) e precisa rapidamente alterar o último (commit) feito.
+# Com o mando abaixo é possível realizar essa ação, porém, lembre-se que é sempre para o último (commit) realizado.
+# Você precisa utilizar também o comando de adição para realizar a ação.
+# Notar que no comando de adição, você pode utilizar o nome do arquivo, a extensão ou todos os arquivos.
+
+git add .
+git commit --amend -m "Alteração do ano do script de teste do Java"
 
 ```
 
@@ -217,12 +224,20 @@ git commit -a -m "Modificação do script de teste do Java"
 
 ```python
 
+# Digamos que você, logo em seguida do último (commit), que alterou a data de (2024 para 2023), você precisa rapidamente alterar o parâmetro para (2030).
+# Você precisará novamente adicionar esse arquivo de (Working Directory) para (Stage), e em seguida executar novamente um (commit).
+# Nesse caso e usando o comando abaixo, você pode verificar a diferença entre o último (commit) realizado, que alterou a data de (2024 para 2023), com a última alteração que está em (stage) para (2030).
+# Notar que no comando de adição, você pode utilizar o nome do arquivo, a extensão ou todos os arquivos.
+
+git add .
+git diff --staged
 
 ```
 
 ---
 
 ```python
+
 
 
 ```
