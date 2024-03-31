@@ -45,6 +45,12 @@
 
 [Projeto do Github com diversos tópicos importantes e interessantes](https://github.com/maniero/SOpt/blob/master/Conceptual.md)
 
+[Git Flow // Dicionário do Programadors](https://www.youtube.com/watch?v=oweffeS8TRc)
+
+[Deploy Automático com GITHUB ACTIONS em Hospedagem Compartilhada em 12 minutos](https://www.youtube.com/watch?v=3cLbh-k2qKk)
+
+[O que é CI e CD? Pra vc aprender e nunca mais esquecer! | Como usar GitHub Actions?](https://www.youtube.com/watch?v=IKjcdYQvcDo)
+
 ---
 
 ```python
