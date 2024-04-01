@@ -440,6 +440,14 @@ git log -1
 git pull "nome do repositório" "nome da branch"
 git pull origin main
 
+# 10: Agora que atualizou o repositório, você pode enviar (push - empurrar) suas ações para o Github (servidor).
+git push -u "nome do repositório" "nome da branch"
+git push -u origin main
+
+# 11: Em seguida, você pode ir ao Github e verificar se realmente o arquivo foi inserido e também pode verificar a sua ação na parte histórica de ações no Github.
+
+# Pronto, você realizou uma ação de intergrar um arquivo do seu projeto do Git local, passando por uma branch de ramifição (developer), na principal (main) até chegar ao Github.
+
 ```
 
 ---
