@@ -348,6 +348,8 @@ git remote add tutorial https://github.com/Phelipe-Sempreboni/tutorials-informat
 # Ou até alguém alterou algo diretamente no Github (servidor) e agora você precisa atualizar o seu repositório local e ter o projeto atualizado.
 # Notar que neste caso o repositório tem o nome de (origin), mas caso se repositório tenha outro nome, é necessário alterar esse comando com o nome correto.
 # Notar que sempre antes de enviar uma (push), ou seja, uma atualização das ações que você realizou em um arquivo, é boa prática puxar as atualizações do Github (servidor) antes de enviar as suas.
+# O ideal é que antes de iniciar seu dia de trabalho, se estiver em uma empresa com projetos compartilhados, é realizar essa ação de (pull - puxar), e antes de mandar suas ações para o Github (servidor), executar a ação novamente.
+# Lembre-se que você também pode simular e praticar esse tipo de cenário em seus estudos, não somente se estiver em uma empresa com projetos compartilhados, foi mais como exemplo.
 git pull "nome do repositório" "nome da branch"
 git pull origin main
 git pull projects main
@@ -425,12 +427,18 @@ git commit -m "Criação de arquivo de cálculo"
 # Nesse momento, se você executar um (git log -1) na branch (developer) e na branch (main), antes de realizar o merge, você irá notar que a ação só estará na branch (developer) e ainda não refletiu na (main).
 # Quando estiver na branch (main), você deve executar a mescla (merge) com a branch (developer).
 # Nesse momento, se você executar um (git log -1) na branch (main), após ter realizado o merge, você irá notar que a ação estará refletida na branch (main), igualmente está na branch (developer).
-
 git log -1
 git checkout main
 git log -1
 git merge developer
 git log -1
+
+# 9: Antes de realizar a integração dessas ações com o Github (servidor), como boas práticas, você deve tentar puxar (pull) possíveis atualizações que ocorreram no Github (servidor), visando manter os repositórios atualizados.
+# Lembre-se que, alguém pode ter realizado ações no mesmo arquivo que você e atualizado no Github (servidor), logo, se você não executar essa ação, podem haver conflitos.
+# O ideal é que antes de iniciar seu dia de trabalho, se estiver em uma empresa com projetos compartilhados, é realizar essa ação de (pull - puxar), e antes de mandar suas ações para o Github (servidor), executar a ação novamente.
+# Lembre-se que você também pode simular e praticar esse tipo de cenário em seus estudos, não somente se estiver em uma empresa com projetos compartilhados, foi mais como exemplo.
+git pull "nome do repositório" "nome da branch"
+git pull origin main
 
 ```
 
