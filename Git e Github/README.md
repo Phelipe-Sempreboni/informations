@@ -424,7 +424,7 @@ git commit -m "Criação de arquivo de cálculo"
 # Primeiro você irá voltar para a branch (main).
 # Nesse momento, se você executar um (git log -1) na branch (developer) e na branch (main), antes de realizar o merge, você irá notar que a ação só estará na branch (developer) e ainda não refletiu na (main).
 # Quando estiver na branch (main), você deve executar a mescla (merge) com a branch (developer).
-Nesse momento, se você executar um (git log -1) na branch (main), após ter realizado o merge, você irá notar que a ação estará refletida na branch (main), igualmente está na branch (developer).
+# Nesse momento, se você executar um (git log -1) na branch (main), após ter realizado o merge, você irá notar que a ação estará refletida na branch (main), igualmente está na branch (developer).
 
 git log -1
 git checkout main
