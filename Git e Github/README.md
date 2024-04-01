@@ -39,6 +39,8 @@
 
 [Remover um repositório remoto no Github](https://docs.github.com/pt/get-started/getting-started-with-git/managing-remote-repositories#removing-a-remote-repository)
 
+[Fazer push de commits para um repositório remote](https://docs.github.com/pt/get-started/using-git/pushing-commits-to-a-remote-repository)
+
 [Como trabalhar com repositórios remotos" do livro Pro Git](https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes)
 
 [Quando devo manter ou deletar um branch?](https://pt.stackoverflow.com/questions/93854/quando-devo-manter-ou-deletar-um-branch)
@@ -342,8 +344,38 @@ git remote add origin "Endereço do repositório no Github"
 git remote add origin https://github.com/Phelipe-Sempreboni/tutorials-informations-notes.git
 git remote add tutorial https://github.com/Phelipe-Sempreboni/tutorials-informations-notes.git
 
+# Digamos que vocÊ queria atualizar o seu repositório, ou seja, já tiveram alterações em outros repositórios de colegas localmente e foram para o Github (servidor).
+# Ou até alguém alterou algo diretamente no Github (servidor) e agora você precisa atualizar o seu repositório local e ter o projeto atualizado.
+# Notar que neste caso o repositório tem o nome de (origin), mas caso se repositório tenha outro nome, é necessário alterar esse comando com o nome correto.
+# Notar que sempre antes de enviar uma (push), ou seja, uma atualização das ações que você realizou em um arquivo, é boa prática puxar as atualizações do Github (servidor) antes de enviar as suas.
+git pull "nome do repositório" "nome da branch"
+git pull origin main
+git pull projects main
+
 # Digamos que você realizou alterações em um ou mais arquivos do seu repositório local, já os adicionou e comitou em (stage) e agora precisa envia-lo para o Github.
+# Notar que neste caso o repositório tem o nome de (origin), mas caso se repositório tenha outro nome, é necessário alterar esse comando com o nome correto.
+# Você precisa notar 2 coisas antes de executar esse comando que envia suas ações para o Github, e até para evitar erros na execução.
+# 1 - Observe que você está utilizando diretamente a branch (main), ou seja, você não criou nenhuma branch de ramificação, por exemplo (developer).
+# Se o servidor for configurado para não aceitar ações direto na (main), em casos de empresas até, haverá um erro, caso contrário, tudo prosseguirá.
+# 2 - Caso alguém tenha feitos alterações que já refletiram no Github (servidor) e você não tenha puxado as alterações para a sua pasta com comando (git pull origin main) pode dar erro.
+# Se você receber um erro, por exemplo, (![rejected] main -> main (fetch first)), pode ser que seja por falta de atualização no seu repositório local antes de (mergear) as ações.
+# Documentação para apoio: https://stackoverflow.com/questions/28429819/rejected-master-master-fetch-first
+git push -u "nome do repositório" "nome da branch"
 git push -u origin main
+git push -u projects main
+
+# Digamos que você queria visualiar algumas informações sobre o repositório remoto, como URL utilizada para conexão com o remoto e branchs utilizadas.
+git remote show "nome do repositório"
+git remote show origin
+git remote show projets
+
+# Digamos que a URL do seu repositório mudou e você precisa atualizar no Git, para conseguir continuar seu projeto e continuar conectado no repositório remoto.
+git remote set-url "nome do repositório" "url"
+git remote set-url origin https://github.com/PH/projects.git
+
+# Digamos que você queira visualizar o nome que seu repositório está no momento, que por padrão na documentação do Github é chamado de (origin) quando realizamos uma conexão.
+# Lembrando que você pode nomear do jeto que quiser e bem entender, porém, tente manter nomes fáceis e não complextos, igualmente o (origin), que é o padrão da documentação do Github.
+git remote -v
 
 ```
 
