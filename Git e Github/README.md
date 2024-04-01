@@ -331,6 +331,7 @@ git log dev-1
 
 ```python
 
+# Digamos que você queira utilizar um repositório remoto direto do Github, ou seja, você já possui um um criado.
 
 ```
 
