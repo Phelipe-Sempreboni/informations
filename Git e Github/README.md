@@ -29,6 +29,8 @@
 
 #### Materiais de apoio:
 
+[GIT: Mini Curso para Você Sair do Zero! (Aprenda em 45 Minutos)](https://www.youtube.com/watch?v=ts-H3W1uLMM)
+
 [Sobre repositórios remotos no Github](https://docs.github.com/pt/get-started/getting-started-with-git/about-remote-repositories)
 
 [Gerenciar repositórios remotos no Github](https://docs.github.com/pt/get-started/getting-started-with-git/managing-remote-repositories)
@@ -38,6 +40,16 @@
 [Remover um repositório remoto no Github](https://docs.github.com/pt/get-started/getting-started-with-git/managing-remote-repositories#removing-a-remote-repository)
 
 [Como trabalhar com repositórios remotos" do livro Pro Git](https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes)
+
+[Quando devo manter ou deletar um branch?](https://pt.stackoverflow.com/questions/93854/quando-devo-manter-ou-deletar-um-branch)
+
+[Projeto do Github com diversos tópicos importantes e interessantes](https://github.com/maniero/SOpt/blob/master/Conceptual.md)
+
+[Git Flow // Dicionário do Programadors](https://www.youtube.com/watch?v=oweffeS8TRc)
+
+[Deploy Automático com GITHUB ACTIONS em Hospedagem Compartilhada em 12 minutos](https://www.youtube.com/watch?v=3cLbh-k2qKk)
+
+[O que é CI e CD? Pra vc aprender e nunca mais esquecer! | Como usar GitHub Actions?](https://www.youtube.com/watch?v=IKjcdYQvcDo)
 
 ---
 
@@ -132,20 +144,12 @@ git add *.xlsx
 # Notar que retornar esse arquivo, não irá voltar para a versão anterior, mas irá manter a versão atualizada recentemente.
 # Notar também que você não precisa mais adicionar o arquivo (git add), pois automaticamente ele retornar e volta para (stage) atualizado.
 # Este comando serve tanto enquanto o arquivo estiver somente local (Working Directory), quanto em (Stage) ou em (Git Repository), mas abordaremos o assunto mais a frente.
-
 git reset "nome do arquivo"
 git reset teste-unitario.py
-
-```
-
----
-
-```python
 
 # Digamos que você realizou uma modificação no arquivo, por exemplo, (teste-unitario.py) e quer reverter essa alteração.
 # Notar que o arquivo será alterado e voltará para sua versão anterior, e também será mantido normalmente em (stage).
 # Este comando serve tanto enquanto o arquivo estiver somente local (Working Directory), quanto em (Stage) ou em (Git Repository), mas abordaremos o assunto mais a frente.
-
 git restore "nome do arquivo"
 git restore teste-unitario.py
 
@@ -159,8 +163,11 @@ git restore teste-unitario.py
 # Notar que para esse tipo de ação, é melhor que você visualize direto pelo seu editor.
 # Imagine que realizamos muitas alterações e até em em múltiplos arquivos. Quando formos aplicar o comando, o terminal ficará poluído para visualização.
 # Se forem pequena alterações, pode ser feito pelo terminal, mas para grandes alterações, aconselhamos utilizar o editor de sua preferência, como o (VS Code).
-
 git diff
+
+# Digamos que você queira visualizar uma alteração realizada entre duas branchs diferentes
+# Nesse caso, você iria visualizar uma ramificação da branch (developer) e a principal (main).
+git diff developer main
 
 ```
 
@@ -172,49 +179,27 @@ git diff
 # Esse comando passa os arquivos e suas alterações do ambiente (stage) para uma nova área.
 # Por boas práticas, sempre é bom inserir uma breve descriação conforme abaixo, nas suas ações.
 # Nesse ponto e após executar o (commit), se você utilizar o comando (git status), irá perceber que aqueles arquivos que foram adicionados (git add) já não estarão mais ali, ou seja, já não estão mais em (stage).
-
 git commit -m "Texto breve resumindo sua ação"
 git commit -m "Criação do arquivo de configuração YAML"
 git commit -m "Criação do arquivo de variáveis em Python"
 git commit -m "Modificação do script de teste do Java"
 
-```
-
----
-
-```python
-
 # Digamos que você já realizou o commit em seu(s) arquivo(s), porém, realizou uma nova alteração e precisa que esse arquivo também seja confirmado (comitado).
 # Esse comando já adiciona essa nova ação e confirmar (comita) também, ou seja, esse arquivo também não estará mais em (stage).
 # Muita atenção, pois, caso tenha realizado uma ação em um arquivo que não tenha entrado nessa confirmação (commit), ele será inserido, e pode ser que você não queira que esse arquivo seja adicionado.
-
 git commit -a -m "Modificação do script de teste do Java"
-
-```
-
----
-
-```python
 
 # Digamos que você acabou de realizar um (commit) e alterou o ano de (2023 para 2024), mas o correto é (2023) e precisa rapidamente alterar o último (commit) feito.
 # Com o mando abaixo é possível realizar essa ação, porém, lembre-se que é sempre para o último (commit) realizado.
 # Você precisa utilizar também o comando de adição para realizar a ação.
 # Notar que no comando de adição, você pode utilizar o nome do arquivo, a extensão ou todos os arquivos.
-
 git add .
 git commit --amend -m "Alteração do ano do script de teste do Java"
-
-```
-
----
-
-```python
 
 # Digamos que você, logo em seguida do último (commit), que alterou a data de (2024 para 2023), você precisa rapidamente alterar o parâmetro para (2030).
 # Você precisará novamente adicionar esse arquivo de (Working Directory) para (Stage), e em seguida executar novamente um (commit).
 # Nesse caso e usando o comando abaixo, você pode verificar a diferença entre o último (commit) realizado, que alterou a data de (2024 para 2023), com a última alteração que está em (stage) para (2030).
 # Notar que no comando de adição, você pode utilizar o nome do arquivo, a extensão ou todos os arquivos.
-
 git add .
 git diff --staged
 
@@ -307,6 +292,74 @@ git reflog
 ---
 
 ```python
+
+# Digamos que você queria visualizar em qual branch você está atualmente no repositório.
+# Quando houver um (*) no nome da branch, significa que é nessa que você está dentro atualmente.
+git branch
+
+# Digamos que você queira criar uma nova branch para iniciar suas ações.
+# Notar que nesse cenário você cria a branch, mas ainda não está dentro dela.
+git branch "nome da branch"
+git branch developer
+git branch developer-1
+
+# Digamos que você queira criar uma nova branch para iniciar suas ações.
+# Notar que nesse cenário você cria a branch e já vai diretamente para dentro dela.
+# O comando (checkout) serve para navegar entre as branchs existentes.
+git checkout -b "nome da branch"
+git checkout -b developer
+git checkout -b developer-1
+
+# Digamos que você queira deletar uma branch que foi criada.
+git branch -D "nome da branch"
+git branch -D developer
+git branch -D developer-1
+
+# Digamos que você criou uma branch com o nome errado ou quer somente alterar o nome.
+git branch -m "novo nome da branch"
+git branch -m dev
+git branch -m dev-1
+
+# Digamos que você queria visualizar o logo de uma branch especifica.
+git log "nome da branch"
+git log dev
+git log dev-1
+
+```
+
+---
+
+```python
+
+# Digamos que você queira utilizar um repositório remoto direto do Github, ou seja, você já possui um um criado.
+
+```
+
+---
+
+```python
+
+
+```
+
+---
+
+```python
+
+
+```
+
+---
+
+```python
+
+
+```
+
+---
+
+```python
+
 
 ```
 
