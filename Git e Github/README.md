@@ -383,6 +383,11 @@ git remote -v
 
 ```python
 
+# Digamos que você criou e agora possuí no seu projeto ainda localmente, uma branch chamada (dev), onde você irá realizar suas ações nessa branch antes de ir mesclar (merge) para a principal (main).
+# Notar que iremos mostrar como realizar um merge (mesclar) ações entre a branch (dev) e a principal (main), para que todas suas ações reflitam na (main).
+# Após mesclar (merge) as ações, é que faremos isso refletir no Github (servidor), onde os comandos estão ordenados para essas ações, desde a clonagem do repositório até sua ações para a (main).
+# Abaixo deixaremos uma sequência em ordem dos comandos para melhor entendimento.
+
 
 
 ```
