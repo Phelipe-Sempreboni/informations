@@ -331,7 +331,19 @@ git log dev-1
 
 ```python
 
-# Digamos que você queira utilizar um repositório remoto direto do Github, ou seja, você já possui um um criado.
+# Digamos que você queira utilizar um repositório remoto direto do Github, ou seja, você já possui um criado.
+# O nome (origin) é um padrão descrito na própria documentação do Github.
+# Esse (origin) é o nome que será dado ao repositório que você está conectando ao Github, logo, você pode colocar outro nome, não precisa ser exatamente (origin).
+# Lembre-se, se criar outro nome e não lembrar, você pode usar o comando (git remote -v) para ver os nomes dos repositórios que você para conexão com o Github.
+# Você pode simplestemente copiar o endereço da barra de html do navegador e acrescentar no final um (.git), exemplo abaixo.
+# Endereço: https://github.com/Phelipe-Sempreboni/tutorials-informations-notes
+# Endereço para usar no Git: https://github.com/Phelipe-Sempreboni/tutorials-informations-notes.git
+git remote add origin "Endereço do repositório no Github"
+git remote add origin https://github.com/Phelipe-Sempreboni/tutorials-informations-notes.git
+git remote add tutorial https://github.com/Phelipe-Sempreboni/tutorials-informations-notes.git
+
+# Digamos que você realizou alterações em um ou mais arquivos do seu repositório local, já os adicionou e comitou em (stage) e agora precisa envia-lo para o Github.
+git push -u origin main
 
 ```
 
