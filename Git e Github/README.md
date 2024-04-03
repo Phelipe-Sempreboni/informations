@@ -417,6 +417,41 @@ git add "nome do arquivo" ou git add .
 git add script.py
 git status
 
+--------------------------------------------------------------------------------------------------------- #
+
+# COMANDOS PARA RETORNAR AÇÕES EM UM ARQUIVO
+
+# Digamos que você já tenha adicionado um arquivo, por exemplo, (teste-unitario.py) em (stage).
+# Digamos que você realizou uma nova alteração nesse arquivo, e tem uma nova versão dele, e precisa adicionar, mas já tem a versão anterior em (stage).
+# Nesse caso, você precisa retirar o arquivo (teste-unitario.py) do (stage), para que consiga adicionar a nova versão modificada.
+# Notar que retornar esse arquivo, não irá voltar para a versão anterior, mas irá manter a versão atualizada recentemente.
+# Notar também que você não precisa mais adicionar o arquivo (git add), pois automaticamente ele retornar e volta para (stage) atualizado.
+# Este comando serve tanto enquanto o arquivo estiver somente local (Working Directory), quanto em (Stage) ou em (Git Repository), mas abordaremos o assunto mais a frente.
+git reset "nome do arquivo"
+git reset teste-unitario.py
+
+# Digamos que você realizou uma modificação no arquivo, por exemplo, (teste-unitario.py) e quer reverter essa alteração.
+# Notar que o arquivo será alterado e voltará para sua versão anterior, e também será mantido normalmente em (stage).
+# Este comando serve tanto enquanto o arquivo estiver somente local (Working Directory), quanto em (Stage) ou em (Git Repository), mas abordaremos o assunto mais a frente.
+git restore "nome do arquivo"
+git restore teste-unitario.py
+
+--------------------------------------------------------------------------------------------------------- #
+
+# COMANDOS PARA VERIFICAR A DIFERENÇA ENTRE ALTERAÇÕES REALIZADAS
+
+# Digamos que você queira visualizar uma alteração realizada no arquivo, ou seja, como estava antes e como está atualmente.
+# Notar que para esse tipo de ação, é melhor que você visualize direto pelo seu editor.
+# Imagine que realizamos muitas alterações e até em em múltiplos arquivos. Quando formos aplicar o comando, o terminal ficará poluído para visualização.
+# Se forem pequena alterações, pode ser feito pelo terminal, mas para grandes alterações, aconselhamos utilizar o editor de sua preferência, como o (VS Code).
+git diff
+
+# Digamos que você queira visualizar uma alteração realizada entre duas branchs diferentes
+# Nesse caso, você iria visualizar uma ramificação da branch (developer) e a principal (main).
+git diff developer main
+
+--------------------------------------------------------------------------------------------------------- #
+
 # 7: Agora iremos executar o commit no arquivo.
 git commit -m "breve descrição"
 git commit -m "Criação de arquivo de cálculo"
@@ -447,34 +482,6 @@ git push -u origin main
 # 11: Em seguida, você pode ir ao Github e verificar se realmente o arquivo foi inserido e também pode verificar a sua ação na parte histórica de ações no Github.
 
 # Pronto, você realizou uma ação de intergrar um arquivo do seu projeto do Git local, passando por uma branch de ramifição (developer), na principal (main) até chegar ao Github.
-
-```
-
----
-
-```python
-
-
-```
-
----
-
-```python
-
-
-```
-
----
-
-```python
-
-
-```
-
----
-
-```python
-
 
 ```
 
