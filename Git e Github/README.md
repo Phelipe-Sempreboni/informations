@@ -385,6 +385,51 @@ git remote -v
 
 ```python
 
+# Digamos que você queira marcar um ponto especifico no histórico do seu repositório, em algum projeto que vai ser lançado ou algo do tipo, geralmente para identificar versões de lançamento.
+# Para isso nós temos as (tags) no Git, que servem para rotular algo especifico.
+# Ao contrário de (branchs), que são mutáveis, as (tags) são fixas, ou seja, são imutáveis.
+# Existem dois tipos de (tags) no Git, a (tag leve) e a (tag anotada).
+# A (tag leve) é geralmente um (commit), ela é um ponteiro geralmente para um (commit) especifico. Não contém informações adicionais como autor da tag, mensagens ou datas.
+# A (taga anotada) é mais detalhada e contém metadados, como nome do autor, data e uma mensagem. É recomenada para marcar lançamentos.
+
+# Criação de uma tag leve no Git.
+git tag "nome da tag"
+git tag v2024
+
+# Para visualizar a tag.
+# git tag
+
+# Para remover a tag.
+git tag -d v2024
+
+# Criação de uma tag anotada no Git.
+git tag -a "nome da tag" -m "breve mensagem"
+git tag -a v2024 -m "Lançamento da versão 1 do projeto de Cloud"
+
+# Para visualizar a tag.
+git show v2024
+
+# Para enviar uma tag para o servidor (Github).
+git push origin "nome da tag"
+git push origin v2024
+
+# Para remover a tag do repositório remoto.
+git push origin --delete "nome da tag"
+git push origin --delete v2024
+
+```
+
+---
+
+```python
+
+
+```
+
+---
+
+```python
+
 # Digamos que você criou e agora possuí no seu projeto ainda localmente, uma branch chamada (dev), onde você irá realizar suas ações nessa branch antes de ir mesclar (merge) para a principal (main).
 # Notar que iremos mostrar como realizar um merge (mesclar) ações entre a branch (dev) e a principal (main), para que todas suas ações reflitam na (main).
 # Após mesclar (merge) as ações, é que faremos isso refletir no Github (servidor), onde os comandos estão ordenados para essas ações, desde a clonagem do repositório até sua ações para a (main).
