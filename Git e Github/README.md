@@ -423,6 +423,59 @@ git push origin --delete v2024
 
 ```python
 
+--------------------------------------------------------------------------------------------------------- #
+
+# COMANDOS PARA DESFAZER MUDANÇAS LOCAIS NÃO COMITADAS
+
+# Digamos que você acabou de modificar um texto ou o nome de um botão dentro do seu script, por exemplo, mudamos o nome do botão no arquivo (teste-unitario.py).
+# Agora você quer reverter essa ação, considerando que ainda você não executou nenhuma ação no Git, nem um (commit).
+# Com o comando abaixo, a ação será revertida.
+# Sempre se atente na branch que você estiver no momento.
+git checkout "nome do arquivo"
+git checkout teste-unitario.py
+
+# Digamos que você acabou de modificar um texto ou o nome de um botão dentro do seu script, por exemplo, mudamos o nome do botão no arquivo (teste-unitario.py).
+# Agora você quer reverter essa ação e considerando que o arquivo já está em (stage), ou seja, você já adicionou com o comando (git add .), por exemplo.
+# Com o comando abaixo, a ação será revertida, ou seja, iremos puxar as mudanças locais que estão em (stage) de volta para o (working directory).
+git reset --hard HEAD
+
+# COMANDOS PARA DESFAZER MUDANÇAS LOCAIS COMITADAS
+
+# Digamos que você acabou de modificar um texto ou o nome de um botão dentro do seu script, por exemplo, mudamos o nome do botão no arquivo (teste-unitario.py).
+# Agora você quer reverter essa ação e considerando que o arquivo foi comitado.
+# Para desfazer um (commit) que acabou de ser feito, você pode usar o comando abaixo.
+# Ele irá voltar para o (commit) anterior, ou seja, todas as mudanças realizadas e que você comitou, e que não queria que fossem ainda para o servidor, irão sumir.
+git reset --hard HEAD~1
+
+# Digamos que você acabou de modificar um texto ou o nome de um botão dentro do seu script, por exemplo, mudamos o nome do botão no arquivo (teste-unitario.py).
+# Agora você quer corrigir um (commit).
+# Quando você executar esse comando, será aberto um editor de texto, que no rodapé estará escrito (COMMIT_EDITMSG).
+# Neste local você pode modificar o texto do seu (commit), salvar o arquivo e fechar, e seu (commit) será atualizado com o novo texto.
+git commit --amend
+
+# Digamos que você queria reverter suas ações de um (commit) especifico e anterior, e pode ser 3 commits para trás.
+# Notar que essa ação irá criar um novo (commit) com a reversão, não irá simplesmente deletar tudo.
+# Você também terá que verificar o id do seu (commit), o mesmo que você quer voltar até aquele status de suas alterações, pois, será necessário.
+# Se você tiver o (git graph) instalado no VS Code, conseguirá facilmente verificar esse id do (commit).
+# Quando você executar esse comando, será aberto um editor de texto, que no rodapé estará escrito (COMMIT_EDITMSG) e nele haverá a mensagem de reversão o id do (commit).
+# Salve, feche o arquivo, e pronto, reversão realizada.
+git revert "id"
+git revert 34861d6775bcd06b87258ce86e9c550ad4c17510
+
+# Digamos que você realizou várias mudanças, por exemplo, no arquivo (teste-unitario.py), mas notou que fez tudo na branch principal (main) e era para ter feito na branch ramificada (developer).
+# Digamos que você não quer realizar novamente todas essas mudanças, mas queria criar e/ou mudar para branch ramificada (developer) e após isso, iria continuar e comitar as ações.
+# Com o comando abaixo é possível.
+# Notar que esse comando irá criar um local temporário, onde essas ações realizadas irão permanecer, até que você realoque para sua branch ramificada (developer).
+# Notar também que quando você executar o passo (2), as ações realizadas ainda não irão aparecer, pois, estão em um local temporário. Para que reflitam na branch ramificada, é necessário executar o comando (3).
+1) git stash
+2) git checkout -b "developer"
+3) git stash pop
+4) Pronto, agora você salvou suas mudanças e está trabalhando na branch ramificada (developer).
+
+# Digamos que você queira forçar um (push) no repositório remoto, ou seja, você quer desfazer um (commit) do repositório remoto, ou seja, no servidor (Github).
+git push origin main --force
+
+--------------------------------------------------------------------------------------------------------- #
 
 ```
 
