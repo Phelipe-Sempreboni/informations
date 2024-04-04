@@ -462,11 +462,48 @@ git commit -m "Criação de arquivo de cálculo"
 # Nesse momento, se você executar um (git log -1) na branch (developer) e na branch (main), antes de realizar o merge, você irá notar que a ação só estará na branch (developer) e ainda não refletiu na (main).
 # Quando estiver na branch (main), você deve executar a mescla (merge) com a branch (developer).
 # Nesse momento, se você executar um (git log -1) na branch (main), após ter realizado o merge, você irá notar que a ação estará refletida na branch (main), igualmente está na branch (developer).
-git log -1
-git checkout main
-git log -1
-git merge developer
-git log -1
+1) git log -1
+2) git checkout main
+3) git log -1
+4) git merge developer
+5) git log -1
+
+--------------------------------------------------------------------------------------------------------- #
+
+# COMANDOS PARA TRATAR CONFLITOS LOGO APÓS EXECUTAR O (MERGE)
+
+# Digamos que haja um conflito quando você executou o (git merge developer) e prefere sair sem realizar nenhuma ação.
+# Nesse caso, você poude executar o comando abaixo para sair sem enviar as ações utilizando o (merge).
+# Essa ação irá abortar a mescla (merge) das ações entre a branch (developer) e a (main).
+git merge --abort
+
+# Caso você consiga localizar o conflito e conseguir resolver direto no editor, por exemplo, no VS Code, onde já garantiu que não haverão conflitos, você pode usar o comando abaixo para continuar.
+# O comando abaixo possibilita continuar o (merge), mas você deve garantir que o conflito foi tratado.
+# Ou seja, será necessário resolver manualmente os conflitos para prosseguir com o (merge).
+git merge --continue
+
+# Digamos que está realizando ações no seu código, e adicionou uma nova feature, podendo ser um botão e alteração da lingual (Inglês para Português) na página.
+# Como boas práticas, você executou o comando (git pull origin main) para atualizar a branch (main) e todo o repositório, inclusive o seu código.
+# Você notou que após atualizar seu repositório e seu código, algum membro da equipe realizou ações antes de você.
+# Como você possuí uma ramificação de branch criada, como a (developer), você executa o comando (git log --oneline -3 --graph) e percebe que a branch (main) está a frente da sua branch (developer), mas você precisa enviar suas ações.
+# Com o comando de (rebase) abaixo, você poderá pegar suas ações realizadas no seu código e levar o histórico para a branch (main) sem fazer um (commit), ou seja, você continuará suas ações a partir da versão mais atualizada na (main).
+# Nesse caso, você não irá perder as ações que você realizou, mas sim irá conseguir continuar a partir da versão mais atualizada, ou simplesmente, ir para a versão mais atual e em seguida executar seu (commit).
+# Você precisará criar uma nova branch para realizar essa ação, que no exemplo, deixamos como (pre_developer).
+# Logo após, você pode pegar as ações que atualizou pela branch (pre_developer), inserir e atualizar essas ações na branch principal (main).
+1) git checkout pre_developer
+2) git rebase main
+3) git checkout main
+4) git rebase pre_developer
+
+# Digamos que você utilizou o (rebase), mas gostaria de abortar as ações, visto que houve um conflito e você terá que resolver manualmente.
+# Nesse caso, você pode utilizar o comando abaixo.
+git rebase --abort
+
+# Digamos que você resolveu um conflito e quer continuar com o comando (rebase).
+# Nesse caso, você pode utilizar o comando abaixo.
+git rebase --continue
+
+--------------------------------------------------------------------------------------------------------- #
 
 # 9: Antes de realizar a integração dessas ações com o Github (servidor), como boas práticas, você deve tentar puxar (pull) possíveis atualizações que ocorreram no Github (servidor), visando manter os repositórios atualizados.
 # Lembre-se que, alguém pode ter realizado ações no mesmo arquivo que você e atualizado no Github (servidor), logo, se você não executar essa ação, podem haver conflitos.
