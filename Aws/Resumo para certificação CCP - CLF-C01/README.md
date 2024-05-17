@@ -127,3 +127,270 @@
 - [x] [Documentação: Regiões e zonas de disponibilidade](https://aws.amazon.com/pt/about-aws/global-infrastructure/regions_az/?p=ngi&loc=2&refid=fc81dabe-57e1-4c46-8d33-cfd3acf1ef08)
 
 ---
+
+## Computação em Nuvem
+
+### Amazon EC2 (Elastic Compute Cloud)
+- **Resumo**: Um serviço que oferece capacidade de computação redimensionável na nuvem, permitindo a criação e execução de instâncias de servidores virtuais.
+
+### Amazon EC2 Auto Scaling
+- **Resumo**: Automatiza o processo de dimensionamento da capacidade das instâncias EC2 para atender às demandas variáveis de tráfego de aplicativos.
+
+### Amazon EC2 Reserved
+- **Resumo**: Oferece descontos significativos em troca de um compromisso de uso de longo prazo de instâncias EC2.
+
+### Amazon EC2 On-Demand
+- **Resumo**: Permite pagar apenas pelas instâncias EC2 usadas, sem compromissos de longo prazo.
+
+### Amazon EC2 Spot
+- **Resumo**: Permite aproveitar a capacidade não utilizada da AWS, oferecendo instâncias EC2 a preços mais baixos.
+
+### Savings Plans
+- **Resumo**: Oferece preços com desconto em troca de um compromisso de uso de longo prazo em uma ampla variedade de serviços da AWS.
+
+### Amazon ECS (Elastic Container Service)
+- **Resumo**: Facilita a execução e o gerenciamento de contêineres Docker em escala.
+
+### Amazon ECS Task
+- **Resumo**: Uma tarefa que representa uma única instância de um contêiner em execução no Amazon ECS.
+
+### Amazon ECS Registry
+- **Resumo**: Um registro de contêineres totalmente gerenciado para armazenar, gerenciar e implantar imagens de contêineres.
+
+### Amazon EKS (Elastic Kubernetes Service)
+- **Resumo**: Oferece uma maneira totalmente gerenciada de executar o Kubernetes na AWS.
+
+### AWS Fargate
+- **Resumo**: Permite executar contêineres sem a necessidade de gerenciar servidores ou clusters.
+
+### AWS Batch
+- **Resumo**: Permite executar facilmente trabalhos em escala em ambientes de computação na nuvem.
+
+## Armazenamento em Nuvem
+
+### Amazon S3 (Simple Storage Service)
+- **Resumo**: Oferece armazenamento de objetos altamente escalável, projetado para armazenar e recuperar qualquer quantidade de dados de qualquer lugar na web.
+
+### Glacier
+- **Resumo**: Um serviço de armazenamento de baixo custo para arquivamento de dados de longo prazo e backup.
+
+### Amazon Elastic File System (EFS)
+- **Resumo**: Um serviço de armazenamento de arquivos totalmente gerenciado que pode ser acessado de forma escalável e compartilhada a partir de qualquer instância EC2.
+
+### AWS Snowball
+- **Resumo**: Uma solução para transferir grandes quantidades de dados para dentro e para fora da AWS usando dispositivos físicos.
+
+### CloudFront
+- **Resumo**: Um serviço de CDN (Content Delivery Network) que distribui conteúdo estático e dinâmico para usuários finais com baixa latência e alto desempenho.
+
+### AWS Storage Gateway
+- **Resumo**: Um serviço de armazenamento híbrido que permite integrar de forma transparente a infraestrutura local com a nuvem da AWS.
+
+### Amazon Elastic Block Store (EBS)
+- **Resumo**: Um serviço de armazenamento de bloco persistente para uso com instâncias EC2.
+
+### Instance Storage
+- **Resumo**: Armazenamento temporário diretamente associado a uma instância EC2.
+
+## Banco de Dados
+
+### RDS (Relational Database Service)
+- **Resumo**: Um serviço de banco de dados relacional totalmente gerenciado que facilita a configuração, operação e escala de bancos de dados na nuvem.
+
+### Redshift
+- **Resumo**: Um serviço de data warehousing rápido e totalmente gerenciado que torna simples e econômico analisar grandes conjuntos de dados.
+
+### Amazon Neptune
+- **Resumo**: Um serviço de banco de dados de grafo totalmente gerenciado e otimizado para construir e executar aplicativos de gráficos.
+
+### Amazon Graph
+- **Resumo**: Um serviço de banco de dados de gráficos, utilizado para executar consultas complexas e explorar relacionamentos nos dados.
+
+### AWS Read Replicas
+- **Resumo**: Oferece réplicas de leitura para escalar horizontalmente a capacidade de leitura de bancos de dados.
+
+### AWS Database Migration Service
+- **Resumo**: Ajuda a migrar bancos de dados para a AWS com pouca ou nenhuma interrupção no aplicativo de origem.
+
+### Amazon Kinesis
+- **Resumo**: Processa e analisa dados de streaming em tempo real, permitindo obter insights e reagir rapidamente a novas informações.
+
+### Amazon Streaming
+- **Resumo**: Um serviço que permite transmissão de dados em tempo real para processamento e análise.
+
+### AWS EMR (Elastic MapReduce)
+- **Resumo**: Permite processar grandes quantidades de dados de forma rápida e econômica usando frameworks de big data como Apache Hadoop e Apache Spark.
+
+### AWS Macie
+- **Resumo**: Um serviço de segurança que usa machine learning para descobrir, classificar e proteger dados confidenciais na AWS.
+
+## Gerenciamento e Governança
+
+### AWS CloudFormation
+- **Resumo**: Um serviço que ajuda a modelar e configurar seus recursos da AWS para que você possa passar menos tempo gerenciando esses recursos e mais tempo focado nas suas aplicações.
+
+### AWS VPN
+- **Resumo**: Um serviço que cria conexões de rede privada virtual seguras entre sua rede local e a nuvem da AWS.
+
+### AWS Route 53
+- **Resumo**: Um serviço de web altamente disponível e escalável para o Domain Name System (DNS) e registro de nomes de domínio.
+
+### AWS Direct Connect
+- **Resumo**: Uma solução de rede que estabelece uma conexão dedicada entre suas instalações e a AWS.
+
+### AWS Shield
+- **Resumo**: Um serviço gerenciado de proteção DDoS que protege aplicações executadas na AWS.
+
+### AWS WAF (Web Application Firewall)
+- **Resumo**: Um firewall de aplicação web que ajuda a proteger suas aplicações web contra exploits da web comuns que podem afetar a disponibilidade da aplicação, comprometer a segurança ou consumir recursos excessivos.
+
+### AWS GuardDuty
+- **Resumo**: Um serviço de detecção de ameaças que monitora continuamente a atividade maliciosa e o comportamento anômalo para proteger suas contas da AWS e cargas de trabalho.
+
+### AWS Security Group
+- **Resumo**: Um conjunto de regras de firewall que controlam o tráfego de entrada e saída para instâncias da AWS.
+
+### AWS X-Ray
+- **Resumo**: Um serviço que ajuda os desenvolvedores a analisar e depurar aplicações distribuídas, como aquelas construídas usando uma arquitetura de microsserviços.
+
+### AWS KMS (Key Management Service)
+- **Resumo**: Um serviço de gerenciamento de chaves que facilita a criação e o controle de chaves criptográficas usadas para criptografar seus dados.
+
+### AWS Trusted Advisor
+- **Resumo**: Oferece recomendações em tempo real para ajudá-lo a provisionar seus recursos de acordo com as melhores práticas da AWS.
+
+### AWS Inspector
+- **Resumo**: Um serviço de avaliação de segurança automatizada que ajuda a melhorar a segurança e a conformidade de aplicações implantadas na AWS.
+
+### AWS CloudTrail
+- **Resumo**: Um serviço que possibilita a governança, conformidade e auditoria operacional de sua conta AWS.
+
+### AWS CloudWatch
+- **Resumo**: Um serviço de monitoramento para recursos e aplicações em execução na AWS.
+
+### AWS Audit Manager
+- **Resumo**: Ajuda a automatizar a coleta de evidências para auditorias para simplificar e acelerar o processo de auditoria.
+
+### AWS Certificate Manager
+- **Resumo**: Um serviço que permite provisionar, gerenciar e implantar facilmente certificados SSL/TLS para uso com os serviços da AWS e seus recursos internos conectados.
+
+### AWS Data Sync
+- **Resumo**: Um serviço que automatiza a transferência de dados entre armazenamento local e armazenamento da AWS.
+
+### AWS License Manager
+- **Resumo**: Ajuda a gerenciar suas licenças de software da Microsoft, Oracle, IBM e SAP para que você possa usá-las de maneira eficiente na AWS.
+
+## Ferramentas de Desenvolvimento
+
+### AWS CodeCommit
+- **Resumo**: Um serviço de controle de código-fonte que facilita a hospedagem segura e escalável de repositórios Git.
+
+### AWS CodePipeline
+- **Resumo**: Um serviço de integração e entrega contínua para automação de pipelines de lançamento.
+
+### AWS CodeBuild
+- **Resumo**: Um serviço de construção totalmente gerenciado que compila código-fonte, executa testes e produz pacotes de software prontos para implantação.
+
+### AWS CodeDeploy
+- **Resumo**: Automatiza a implantação de código para qualquer instância, incluindo instâncias do Amazon EC2 e instâncias locais.
+
+### AWS Lambda
+- **Resumo**: Permite executar código sem provisionar ou gerenciar servidores. Pague apenas pelo tempo de computação consumido.
+
+## Gestão de Custos
+
+### AWS Budgets
+- **Resumo**: Permite definir orçamentos personalizados que alertam quando seus custos ou uso excedem (ou estão previstos para exceder) os valores definidos.
+
+### AWS Cost Explorer
+- **Resumo**: Um serviço que permite visualizar, entender e gerenciar seus custos e uso da AWS ao longo do tempo.
+
+## Análise de Dados
+
+### Amazon OpenSearch Service
+- **Resumo**: Um serviço que facilita o provisionamento, a operação e a escalabilidade do Elasticsearch e Kibana para casos de uso de análise de log e busca.
+
+### Amazon CloudSearch
+- **Resumo**: Um serviço de busca gerenciado e escalável que facilita a configuração, o gerenciamento e a escalabilidade de uma solução de busca.
+
+## Gerenciamento de Aplicações
+
+### AWS Elastic Beanstalk
+- **Resumo**: Um serviço que facilita a implantação e a escalabilidade de aplicações web e serviços desenvolvidos com Java, .NET, PHP, Node.js, Python, Ruby, Go e Docker.
+
+## Integração de Aplicações
+
+### AWS SQS (Simple Queue Service)
+- **Resumo**: Um serviço de fila de mensagens que permite a desacoplagem e escalabilidade de microsserviços, sistemas distribuídos e aplicações sem servidor.
+
+### AWS SNS (Simple Notification Service)
+- **Resumo**: Um serviço de mensagens que facilita a coordenação e a entrega de mensagens de push a endpoints ou clientes distribuídos.
+
+### AWS SES (Simple Email Service)
+- **Resumo**: Um serviço de e-mail baseado na nuvem que permite enviar e-mails transacionais, de marketing e de notificação de forma econômica.
+
+### AWS API Gateway
+- **Resumo**: Um serviço gerenciado que facilita a criação, publicação, manutenção, monitoramento e proteção de APIs em qualquer escala.
+
+### AWS Step Functions
+- **Resumo**: Um serviço que facilita a coordenação de componentes de aplicações distribuídas e microsserviços usando fluxos de trabalho visuais.
+
+### Amazon EventBridge
+- **Resumo**: Um serviço de barramento de eventos que facilita a conexão de aplicações usando dados de suas próprias aplicações, aplicações SaaS e serviços da AWS.
+
+### Amazon Cognito
+- **Resumo**: Um serviço que facilita adicionar autenticação, autorização e controle de acesso às suas aplicações web e móveis.
+
+### Amazon Lightsail
+- **Resumo**: Um serviço que oferece tudo o que você precisa para construir uma aplicação ou website, com custo previsível e uma interface fácil de usar.
+
+### Amazon Simple Workflow Service (SWF)
+- **Resumo**: Um serviço para coordenar o trabalho entre componentes de aplicação, permitindo a execução de tarefas em sequência ou em paralelo.
+
+## Gerenciamento de Organização
+
+### AWS Organizations
+- **Resumo**: Um serviço que facilita o gerenciamento de múltiplas contas da AWS em uma organização centralizada.
+
+## Busca e Análise
+
+### Amazon OpenSearch Service (anteriormente Elasticsearch Service)
+- **Resumo**: Um serviço que facilita a implantação, operação e escalabilidade de clusters do Elasticsearch na AWS.
+
+## Computação de Desktop
+
+### Amazon Workspaces
+- **Resumo**: Um serviço de desktop como serviço (DaaS) que permite provisionar desktops Windows ou Linux na nuvem em minutos.
+
+## Ferramentas de Gerenciamento
+
+### AWS Config
+- **Resumo**: Um serviço que permite avaliar, auditar e avaliar as configurações dos recursos da AWS.
+
+### AWS Infrastructure as Code (IaC)
+- **Resumo**: Um modelo para provisionar e gerenciar infraestrutura de computação usando código e linguagens de programação.
+
+### AWS Global Accelerator
+- **Resumo**: Um serviço de rede que melhora a disponibilidade e a performance das aplicações com os usuários finais.
+
+## Segurança
+
+### AWS Security Group
+- **Resumo**: Um conjunto de regras de firewall que controla o tráfego de entrada e saída para instâncias da AWS.
+
+### AWS KMS (Key Management Service)
+- **Resumo**: Um serviço de gerenciamento de chaves que facilita a criação e o controle de chaves criptográficas usadas para criptografar seus dados.
+
+### AWS Trusted Advisor
+- **Resumo**: Oferece recomendações em tempo real para ajudá-lo a provisionar seus recursos de acordo com as melhores práticas da AWS.
+
+### AWS Inspector
+- **Resumo**: Um serviço de avaliação de segurança automatizada que ajuda a melhorar a segurança e a conformidade de aplicações implantadas na AWS.
+
+### AWS CloudTrail
+- **Resumo**: Um serviço que possibilita a governança, conformidade e auditoria operacional de sua conta AWS.
+
+### AWS GuardDuty
+- **Resumo**: Um serviço de detecção de ameaças que monitora continuamente a atividade maliciosa e o comportamento anômalo para proteger suas contas da AWS e cargas de trabalho.
+
+---
