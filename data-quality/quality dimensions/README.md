@@ -163,5 +163,134 @@
 
 **Frequência de uso da dimensão:** Frequente
 
+## 11. Interpretabilidade (Interpretability)
+**Definição e Descrição:** Grau em que os dados são compreensíveis e utilizáveis por usuários diferentes. Esta dimensão avalia a clareza e facilidade de compreensão dos dados para diferentes usuários.
+
+**Aplicabilidade:** Aplicável a nível tabela e atributo.
+
+**Tipo de dimensão:** Ambos
+
+**Exemplo:** Documentação clara e dicionários de dados para os campos de um banco de dados.
+
+**Exemplo de regra aplicável:** `SELECT * FROM dicionario_dados WHERE tabela = 'nome_tabela'`
+
+**Frequência de uso da dimensão:** Frequente
+
+## 12. Acessibilidade (Accessibility)
+**Definição e Descrição:** Facilidade com que os dados podem ser obtidos e utilizados. Esta dimensão verifica se os dados estão prontamente disponíveis e podem ser acessados por usuários autorizados.
+
+**Aplicabilidade:** Aplicável a nível tabela e atributo.
+
+**Tipo de dimensão:** Ambos
+
+**Exemplo:** Dados armazenados em sistemas com bons mecanismos de consulta e extração.
+
+**Exemplo de regra aplicável:** `SELECT * FROM dados WHERE usuario_autorizado = TRUE`
+
+**Frequência de uso da dimensão:** Frequente
+
+## 13. Portabilidade (Portability)
+**Definição e Descrição:** Capacidade de transferir dados de um ambiente para outro sem perda de integridade. Esta dimensão assegura a facilidade de movimentação dos dados entre diferentes sistemas e plataformas.
+
+**Aplicabilidade:** Aplicável a nível tabela e atributo.
+
+**Tipo de dimensão:** Ambos
+
+**Exemplo:** Dados exportados de um sistema de CRM para uma ferramenta de análise de marketing.
+
+**Exemplo de regra aplicável:** `EXPORT TABLE clientes TO 'sistema_analise'`
+
+**Frequência de uso da dimensão:** Não frequente
+
+## 14. Representatividade (Representativeness)
+**Definição e Descrição:** Grau em que os dados refletem a realidade ou a população que se deseja analisar. Esta dimensão avalia se a amostra de dados é representativa da população total.
+
+**Aplicabilidade:** Aplicável a nível tabela.
+
+**Tipo de dimensão:** Mais aplicadas em negócios
+
+**Exemplo:** Amostras de pesquisa que são representativas da população total.
+
+**Exemplo de regra aplicável:** `SELECT * FROM amostra_pesquisa WHERE representatividade >= 95%`
+
+**Frequência de uso da dimensão:** Não frequente
+
+## 15. Resolução (Granularity)
+**Definição e Descrição:** Nível de detalhe dos dados. Esta dimensão avalia o nível de detalhamento e especificidade dos dados.
+
+**Aplicabilidade:** Aplicável a nível atributo.
+
+**Tipo de dimensão:** Mais aplicadas tecnicamente
+
+**Exemplo:** Dados de vendas diárias versus dados de vendas horárias.
+
+**Exemplo de regra aplicável:** `SELECT * FROM vendas WHERE granularidade = 'horaria'`
+
+**Frequência de uso da dimensão:** Não frequente
+
+## 16. Credibilidade (Credibility)
+**Definição e Descrição:** Grau em que os dados são considerados verdadeiros e confiáveis. Esta dimensão avalia a confiança e confiabilidade dos dados com base em sua origem e histórico.
+
+**Aplicabilidade:** Aplicável a nível tabela e atributo.
+
+**Tipo de dimensão:** Mais aplicadas em negócios
+
+**Exemplo:** Fontes de dados verificáveis e bem reputadas.
+
+**Exemplo de regra aplicável:** `SELECT * FROM dados WHERE fonte = 'verificada'`
+
+**Frequência de uso da dimensão:** Frequente
+
+## 17. Rastreabilidade (Traceability)
+**Definição e Descrição:** Capacidade de rastrear a origem dos dados e suas transformações ao longo do tempo. Esta dimensão assegura a rastreabilidade completa das alterações e origens dos dados.
+
+**Aplicabilidade:** Aplicável a nível tabela e atributo.
+
+**Tipo de dimensão:** Ambos
+
+**Exemplo:** Registros de ETL que documentam todas as transformações aplicadas aos dados.
+
+**Exemplo de regra aplicável:** `SELECT * FROM log_etl WHERE tabela = 'nome_tabela'`
+
+**Frequência de uso da dimensão:** Frequente
+
+## 18. Flexibilidade (Flexibility)
+**Definição e Descrição:** Capacidade dos dados de se adaptarem a diferentes contextos e necessidades. Esta dimensão avalia a adaptabilidade dos dados para diferentes usos e requisitos.
+
+**Aplicabilidade:** Aplicável a nível tabela e atributo.
+
+**Tipo de dimensão:** Mais aplicadas em negócios
+
+**Exemplo:** Estruturas de dados que podem ser facilmente ajustadas para novos requisitos de negócios.
+
+**Exemplo de regra aplicável:** `ALTER TABLE nome_tabela ADD COLUMN novo_campo VARCHAR(255)`
+
+**Frequência de uso da dimensão:** Não frequente
+
+## 19. Segurança (Security)
+**Definição e Descrição:** Medidas que protegem os dados contra acesso não autorizado e corrupção. Esta dimensão avalia a proteção dos dados contra ameaças e acessos não autorizados.
+
+**Aplicabilidade:** Aplicável a nível tabela e atributo.
+
+**Tipo de dimensão:** Ambos
+
+**Exemplo:** Criptografia de dados sensíveis e controles de acesso robustos.
+
+**Exemplo de regra aplicável:** `ENCRYPT(nome_coluna) WHERE usuario_autorizado = TRUE`
+
+**Frequência de uso da dimensão:** Frequente
+
+## 20. Reputação (Reputation)
+**Definição e Descrição:** Percepção dos usuários sobre a qualidade dos dados com base em sua experiência passada. Esta dimensão avalia a percepção e confiança dos usuários nos dados com base em seu histórico de uso.
+
+**Aplicabilidade:** Aplicável a nível tabela e atributo.
+
+**Tipo de dimensão:** Mais aplicadas em negócios
+
+**Exemplo:** Dados de uma fonte conhecida por ser precisa e confiável.
+
+**Exemplo de regra aplicável:** `SELECT * FROM dados WHERE fonte = 'confiavel'`
+
+**Frequência de uso da dimensão:** Não frequente
 
 ---
