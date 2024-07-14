@@ -1,10 +1,10 @@
 ## Como funciona a web
 
-#### Abaixo temos um desenho conceitual de arquitetura e de forma simples, de como funciona a web.
+#### Abaixo temos um resumo e um desenho conceitual de uma arquitetura web, visando explicar como funciona esse tipo de solução.
 
 ---
 
-# Resumo Simples da Arquitetura da Web (HTTP) entre Cliente e Servidor
+# Resumo simples de uma arquitetura web entre cliente e servidor
 
 ## Funcionamento Básico
 
