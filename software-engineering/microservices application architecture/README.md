@@ -27,7 +27,7 @@
 - [Microsoft Learn - Microservices Architecture](https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/microservices)
 - [AWS - Microservices](https://aws.amazon.com/microservices/)
 - [Wikipedia - Microservices](https://en.wikipedia.org/wiki/Microservices)
-
+- [Aplicação Monolítica vs. Microserviços: Qual arquitetura de software é melhor para o seu projeto?](https://pt.linkedin.com/pulse/aplica%C3%A7%C3%A3o-monol%C3%ADtica-vs-microservi%C3%A7os-qual-de-%C3%A9-melhor-paulo-quaresma)
 
 ---
 
