@@ -72,3 +72,13 @@
 - [Wikipedia - API Gateway](https://en.wikipedia.org/wiki/API_gateway)
 
 ---
+
+![image](https://github.com/user-attachments/assets/508e9b1a-7f92-4b61-934e-faa74bac3647)
+
+![image](https://github.com/user-attachments/assets/9ce9cc05-a96f-4ecc-b958-8b8155095349)
+
+![image](https://github.com/user-attachments/assets/51d04d1b-d3e7-401b-b0cd-404db3653663)
+
+---
+
+
