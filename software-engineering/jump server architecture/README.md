@@ -41,8 +41,14 @@
 
 - [AWS - Bastion Hosts](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/access-a-bastion-host-by-using-session-manager-and-amazon-ec2-instance-connect.html)
 - [AWS - Example: VPC with servers in private subnets and NAT](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-example-private-subnets-nat.html)
+- [Como configurar um Jump Server para se conectar com segurança às suas VMs do Azure](https://jadsonalves.com.br/como-configurar-um-jump-server-para-se-conectar-com-seguranca-as-suas-vms-do-azure/)
 
 ---
 
+![image](https://github.com/user-attachments/assets/b3ad09e4-d9d2-46b3-923d-0f403cd31439)
+
+![image](https://github.com/user-attachments/assets/14c1395e-2134-4b9d-862d-14b888c1ea5b)
+
+![image](https://github.com/user-attachments/assets/217d7ecc-8313-4297-848f-c43305f04b8e)
 
 ---
