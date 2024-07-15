@@ -1,54 +1,68 @@
-## Arquitetura Jump Server
+## Arquitetura CyberArk
 
-#### Abaixo temos um resumo e um desenho conceitual de uma arquitetura jump server, visando explicar como funciona esse tipo de solução.
+#### Abaixo temos um resumo e um desenho conceitual de uma arquitetura cyber ark, visando explicar como funciona esse tipo de solução.
 
 ---
 
-# Resumo sobre uma Arquitetura Jump Server
+# Resumo da Arquitetura do CyberArk
 
-## Arquitetura Jump Server
+## 1. Definição
 
-1. **Definição**:
-   - Um Jump Server, também conhecido como bastion host, é um servidor intermediário utilizado para acessar e gerenciar dispositivos em redes privadas de alta segurança. Ele atua como um ponto de entrada seguro para administradores de sistemas que precisam acessar servidores internos sem expor esses sistemas diretamente à Internet.
-   - O Jump Server serve como um ponto de auditoria, onde todas as atividades são monitoradas e registradas para garantir a segurança e a conformidade com políticas internas e regulatórias.
+CyberArk é uma solução de segurança focada em Gerenciamento de Acesso Privilegiado (PAM - Privileged Access Management). É projetada para proteger as credenciais mais sensíveis e gerenciar o acesso privilegiado aos sistemas críticos de uma organização.
 
-2. **Funcionamento Básico**:
-   - **Acesso Controlado**: Administradores se conectam ao Jump Server usando métodos seguros, como SSH (Secure Shell) ou RDP (Remote Desktop Protocol). O acesso é frequentemente protegido por autenticação multifatorial (MFA) e outras medidas de segurança robustas.
-   - **Segurança Centralizada**: O Jump Server é altamente monitorado e protegido com políticas rigorosas de controle de acesso. Ele é configurado para permitir acesso apenas a administradores autorizados e pode estar localizado em uma rede DMZ (zona desmilitarizada) para fornecer uma camada adicional de segurança.
-   - **Registros de Atividades**: Todas as atividades realizadas através do Jump Server são registradas para auditoria e monitoramento. Isso inclui comandos executados, sessões iniciadas, e quaisquer alterações feitas nos sistemas internos. Essas logs são frequentemente revisadas para detectar atividades suspeitas.
+## 2. Funcionamento Básico
 
-3. **Exemplos**:
-   - **Empresa de Tecnologia**: Uma empresa pode usar um Jump Server para permitir que administradores acessem servidores de desenvolvimento e produção sem expor esses servidores diretamente à Internet. Isso garante que as operações de manutenção e atualização sejam seguras.
-   - **Instituição Financeira**: Bancos frequentemente utilizam Jump Servers para fornecer acesso seguro a sistemas críticos de transações financeiras, garantindo conformidade com regulamentos de segurança como PCI DSS.
-   - **Hospitais**: Hospitais podem usar Jump Servers para permitir acesso seguro a sistemas de registros eletrônicos de saúde (EHR), protegendo dados sensíveis de pacientes contra acessos não autorizados e ataques cibernéticos.
+### Componentes Principais:
+1. **Cofre Digital (Digital Vault)**:
+   - O núcleo da solução, onde todas as credenciais privilegiadas são armazenadas e protegidas com criptografia forte.
+   - Armazena senhas, chaves SSH, certificados e outros segredos de maneira segura.
 
-## Vantagens
+2. **Gerenciador de Sessão Privilegiada (PSM - Privileged Session Manager)**:
+   - Permite monitorar, gravar e controlar sessões privilegiadas em tempo real.
+   - Monitorar e registrar todas as atividades realizadas por usuários privilegiados para auditoria e conformidade.
 
-- **Segurança Aprimorada**: Centraliza o ponto de acesso, reduzindo a superfície de ataque e implementando controles de segurança rigorosos, como a autenticação multifatorial e políticas de acesso restrito.
-- **Auditoria e Monitoramento**: Facilita a rastreabilidade das ações dos administradores, melhorando a capacidade de auditoria e detecção de atividades suspeitas. Logs detalhados são mantidos para todas as atividades, proporcionando um histórico completo das operações.
-- **Acesso Controlado**: Permite políticas de controle de acesso mais granulares e monitoradas. Apenas administradores autorizados podem acessar o Jump Server, e as permissões podem ser configuradas de forma detalhada.
-- **Redução de Riscos**: Minimiza a exposição de servidores internos à Internet, reduzindo o risco de ataques. Os servidores internos são isolados do tráfego externo, acessíveis apenas através do Jump Server.
+3. **Gerenciador de Senhas (PVWA - Password Vault Web Access)**:
+   - Interface web que permite aos administradores e usuários gerenciar senhas e acessar credenciais armazenadas no cofre.
+   - Facilitar a rotação de senhas e o acesso seguro às credenciais.
 
-## Desvantagens
+4. **Controle de Acesso Just-In-Time (JIT - Just-In-Time Access)**:
+   - Implementa o acesso baseado em necessidades específicas de tempo.
+   - Minimizar o risco de comprometimento das credenciais ao limitar a duração do acesso.
 
-- **Ponto Único de Falha**: O Jump Server pode se tornar um ponto único de falha; se comprometido, pode expor toda a rede interna. Implementar alta disponibilidade e failover é crucial para mitigar esse risco.
-- **Manutenção e Gestão**: Requer configuração e manutenção contínuas para garantir a segurança e a funcionalidade. Isso inclui a aplicação regular de patches de segurança e a revisão das políticas de acesso.
-- **Latência**: Pode introduzir latência adicional no acesso a servidores internos devido ao roteamento através do Jump Server. Isso pode impactar a performance das operações realizadas.
-- **Custo**: Implementar e manter um Jump Server pode gerar custos adicionais, tanto em termos de infraestrutura quanto de licenciamento de software. Além disso, o treinamento de pessoal para gerenciar e monitorar o Jump Server pode ser necessário.
-- **Complexidade de Configuração**: Configurar um Jump Server para atender a todas as necessidades de segurança, roteamento, e transformações de dados pode ser complexo e demorado.
+## 3. Exemplos
+
+### Segurança de Contas Privilegiadas em Bancos:
+- **Cenário**: Bancos possuem contas privilegiadas que acessam sistemas financeiros críticos.
+- **Solução CyberArk**: Uso do cofre digital para armazenar senhas de contas administrativas, implementação do PSM para monitorar e registrar atividades, e uso do JIT para garantir que as credenciais só estejam ativas quando necessário.
+- **Benefícios**: Aumenta a segurança das transações financeiras, garante conformidade regulatória e reduz o risco de acesso não autorizado.
+
+### Gerenciamento de Acesso em Ambientes de Desenvolvimento de Software:
+- **Cenário**: Empresas de desenvolvimento de software precisam gerenciar acesso a servidores de desenvolvimento, teste e produção.
+- **Solução CyberArk**: Implementação do PVWA para gerenciar senhas e credenciais, uso do PSM para monitorar sessões de administradores e desenvolvedores, e JIT para limitar o tempo de acesso.
+- **Benefícios**: Protege os ambientes de desenvolvimento contra acessos indevidos, melhora a segurança do ciclo de desenvolvimento e facilita auditorias de conformidade.
+
+### Proteção de Dados em Organizações de Saúde:
+- **Cenário**: Hospitais e outras organizações de saúde precisam proteger dados sensíveis dos pacientes.
+- **Solução CyberArk**: Uso do cofre digital para armazenar credenciais de acesso aos sistemas de saúde, implementação do PSM para monitorar atividades e JIT para acesso limitado no tempo.
+- **Benefícios**: Protege dados sensíveis dos pacientes, garante conformidade com normas como HIPAA e reduz o risco de violações de dados.
+
+## 4. Vantagens
+
+- **Segurança Aprimorada**: Protege credenciais sensíveis com criptografia forte e políticas rigorosas de acesso.
+- **Monitoramento e Auditoria**: Registra e monitora todas as atividades de contas privilegiadas para auditoria e conformidade.
+- **Acesso Controlado**: Implementa políticas de acesso just-in-time e autenticação multifatorial para aumentar a segurança.
+- **Escalabilidade**: Adequado para organizações de todos os tamanhos, permitindo gerenciamento centralizado de acesso privilegiado.
+
+## 5. Desvantagens
+
+- **Complexidade de Implementação**: Requer um planejamento cuidadoso e pode ser complexo de implementar e gerenciar.
+- **Custo**: Pode ser caro para pequenas organizações devido ao custo de licenciamento e manutenção.
+- **Curva de Aprendizado**: Necessita treinamento para que os administradores entendam e utilizem todas as funcionalidades de maneira eficaz.
 
 ## Referências
 
-- [AWS - Bastion Hosts](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/access-a-bastion-host-by-using-session-manager-and-amazon-ec2-instance-connect.html)
-- [AWS - Example: VPC with servers in private subnets and NAT](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-example-private-subnets-nat.html)
-- [Como configurar um Jump Server para se conectar com segurança às suas VMs do Azure](https://jadsonalves.com.br/como-configurar-um-jump-server-para-se-conectar-com-seguranca-as-suas-vms-do-azure/)
+- [CyberArk Guided Tour: Workflows and Use Cases](https://www.cyberark.com)
+- [DevOpsSchool - What is CyberArk and use cases of CyberArk?](https://www.devopsschool.com)
 
 ---
 
-![image](https://github.com/user-attachments/assets/b3ad09e4-d9d2-46b3-923d-0f403cd31439)
-
-![image](https://github.com/user-attachments/assets/14c1395e-2134-4b9d-862d-14b888c1ea5b)
-
-![image](https://github.com/user-attachments/assets/217d7ecc-8313-4297-848f-c43305f04b8e)
-
----
