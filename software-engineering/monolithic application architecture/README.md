@@ -35,8 +35,14 @@
 
 - [GeeksforGeeks - Monolithic Architecture](https://www.geeksforgeeks.org/monolithic-architecture/)
 - [Wikipedia - Monolithic Application](https://en.wikipedia.org/wiki/Monolithic_application)
+- [Aplicação Monolítica vs. Microserviços: Qual arquitetura de software é melhor para o seu projeto?](https://pt.linkedin.com/pulse/aplica%C3%A7%C3%A3o-monol%C3%ADtica-vs-microservi%C3%A7os-qual-de-%C3%A9-melhor-paulo-quaresma)
 
 ---
 
 ![image](https://github.com/user-attachments/assets/d5f77299-6d3e-4338-9879-59d83c5d1ecf)
+
+![image](https://github.com/user-attachments/assets/6f1882d3-d4ae-4411-8d51-e98c4eeeeb82)
+
+![image](https://github.com/user-attachments/assets/c8210bcb-041f-4225-a727-5d0c6edcfd76)
+
 
