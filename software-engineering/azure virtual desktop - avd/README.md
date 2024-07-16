@@ -65,8 +65,8 @@
 
 ## Referências
 
-- [Azure Virtual Desktop - Azure Architecture Center](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/vdi/windows-virtual-desktop)
+- [Área de Trabalho Virtual do Azure](https://azure.microsoft.com/pt-br/products/virtual-desktop)
+- [O que é Azure Virtual Desktop (AVD)?](https://www.bhs.com.br/2022/11/30/o-que-e-azure-virtual-desktop/)
 - [What is Azure Virtual Desktop? - Microsoft Learn](https://learn.microsoft.com/en-us/azure/virtual-desktop/overview)
-- [Azure Virtual Desktop service architecture and resilience - Microsoft Learn](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/vdi/windows-virtual-desktop-architecture)
 
 ---
