@@ -1,6 +1,6 @@
 ## Diferenças entre Jump Server, CyberArk, Azure Virtual Desktop (AVD) e API Gateway
 
-#### Abaixo temos um resumo e desenhos conceituais sobre as diferenças entre (Jump Server, CyberArk, Azure Virtual Desktop (AVD) e API Gateway), visando explicar como funcionam esses tipos de solução.
+#### Abaixo temos um resumo sobre as diferenças entre (Jump Server, CyberArk, Azure Virtual Desktop (AVD) e API Gateway), visando explicar como funcionam esses tipos de solução.
 
 ---
 
