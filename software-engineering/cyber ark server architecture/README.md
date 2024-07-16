@@ -63,6 +63,25 @@ CyberArk é uma solução de segurança focada em Gerenciamento de Acesso Privil
 
 - [CyberArk Guided Tour: Workflows and Use Cases](https://www.cyberark.com)
 - [DevOpsSchool - What is CyberArk and use cases of CyberArk?](https://www.devopsschool.com)
+- [CyberArk Privileged Account Management Lab](https://www.wwt.com/lab/cyberark-privileged-account-management)
+- [CyberArk And Inside-Out Defense Are Partnering To Solve The Hidden Cybersecurity Dangers Stemming From Privilege Abuse](https://www.linkedin.com/pulse/cyberark-inside-out-defense-partnering-solve-hidden)
+- [CyberArk breidt Identity Security Platform uit met nieuwe diensten](https://www.techzine.nl/nieuws/security/461131/cyberark-breidt-identity-security-platform-uit-met-nieuwe-diensten/)
+
+---
+
+![image](https://github.com/user-attachments/assets/3b7c4754-1f4a-41d4-9dbc-8abea56089e5)
+
+![image](https://github.com/user-attachments/assets/50053f9f-b6e8-4e88-952d-ca4b16b0f007)
+
+![image](https://github.com/user-attachments/assets/cb212f30-fc7c-4115-bd2a-b06dfac86bed)
+
+![image](https://github.com/user-attachments/assets/2c3e9517-6b21-4df6-ba4e-3d0da6e56124)
+
+![image](https://github.com/user-attachments/assets/3315dbaf-46ca-455e-9a9c-c8b6958a5759)
+
+![image](https://github.com/user-attachments/assets/29519619-24f5-4f5e-a53a-bde6f0d9d508)
+
+![image](https://github.com/user-attachments/assets/a3d48be5-af72-4787-a3a6-521ff44ea9fe)
 
 ---
 
