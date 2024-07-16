@@ -68,5 +68,9 @@
 - [Área de Trabalho Virtual do Azure](https://azure.microsoft.com/pt-br/products/virtual-desktop)
 - [O que é Azure Virtual Desktop (AVD)?](https://www.bhs.com.br/2022/11/30/o-que-e-azure-virtual-desktop/)
 - [What is Azure Virtual Desktop? - Microsoft Learn](https://learn.microsoft.com/en-us/azure/virtual-desktop/overview)
+- 
+---
+
+![image](https://github.com/user-attachments/assets/1844680a-2318-4a5b-a13f-25f751aa2e1d)
 
 ---
