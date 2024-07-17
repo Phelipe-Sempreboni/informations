@@ -90,7 +90,6 @@
 
 ### Referências
 
-- [Red Hat Documentation - OpenShift Data Foundation](https://docs.redhat.com/docs/en-us/openshift-data-foundation)
 - [Microsoft Documentation - Azure Red Hat OpenShift](https://docs.microsoft.com/en-us/azure/openshift/)
 
 Esses passos e considerações devem fornecer uma visão clara sobre como implementar o ODF em um ambiente ARO na Azure, garantindo um armazenamento de dados eficiente e escalável para diversas aplicações e casos de uso.
