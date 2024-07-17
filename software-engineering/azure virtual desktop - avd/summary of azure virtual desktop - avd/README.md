@@ -1,76 +1,54 @@
-## Arquitetura Azure Virtual Desktop (AVD)
+## Habilitação de uma WLS2 para utilizar uma distribuição Linux
 
-#### Abaixo temos um resumo e um desenho conceitual de uma arquitetura azure virtual desktop (avd), visando explicar como funciona esse tipo de solução.
+#### Abaixo temos um resumo sobre a habilitação de uma wls2 para utilizar uma distribuição linux, visando explicar como funciona esse tipo de solução.
 
 ---
 
-# Resumo da Arquitetura do Azure Virtual Desktop (AVD)
+# Habilitando WSL2 no Azure Virtual Desktop (AVD)
 
-## 1. Definição
+Sim, é possível habilitar o Windows Subsystem for Linux 2 (WSL2) no Azure Virtual Desktop (AVD), mas existem algumas considerações e requisitos que devem ser atendidos.
 
-**Azure Virtual Desktop (AVD)** é um serviço de virtualização de desktops e aplicativos que roda na nuvem da Microsoft Azure. Ele permite que usuários acessem remotamente um ambiente de desktop completo e aplicativos Windows de qualquer lugar, utilizando qualquer dispositivo. AVD proporciona uma experiência de desktop segura, escalável e flexível, ideal para trabalho remoto e ambientes de aprendizado.
+## Requisitos para Habilitar WSL2 no AVD
 
-## 2. Funcionamento Básico
+1. **Suporte à Virtualização Aninhada**:
+   - O VM do Azure deve suportar virtualização aninhada (nested virtualization). Isso geralmente significa escolher um tamanho de VM que ofereça suporte a essa funcionalidade, como a série Dsv3.
+   
+2. **Configuração da Máquina Virtual**:
+   - A máquina virtual deve ter o recurso "Virtual Machine Platform" habilitado. Além disso, o Hyper-V também precisa estar ativado para suportar o WSL2.
+   
+3. **Desativação de Trusted Launch**:
+   - Em algumas configurações, o uso de Secure Boot e vTPM pode impedir o funcionamento correto do WSL2. Desativar esses recursos pode resolver problemas de instalação e operação do WSL2.
 
-### Componentes Principais:
-1. **Host Pools**:
-   - Coleções de máquinas virtuais (VMs) configuradas para hospedar desktops e aplicativos.
-   - Distribuem a carga de trabalho entre várias VMs, oferecendo flexibilidade e escalabilidade.
+## Passos para Instalação
 
-2. **Application Groups**:
-   - Conjuntos de aplicativos que podem ser atribuídos a usuários ou grupos.
-   - Facilitam a publicação de desktops e aplicativos específicos para diferentes conjuntos de usuários.
+1. **Escolha uma VM compatível**:
+   - Selecione uma VM que suporte virtualização aninhada, como D2s_v3, que tem o suporte necessário para executar WSL2.
 
-3. **Workspaces**:
-   - Contêm um ou mais application groups.
-   - Simplificam a administração e o acesso ao agrupar aplicativos e desktops em um único ponto de entrada.
+2. **Habilite os Recursos Necessários**:
+   - Execute os seguintes comandos no PowerShell com privilégios de administrador para habilitar os recursos necessários:
+     ```powershell
+     Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+     Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform
+     ```
+   - Reinicie a VM após habilitar esses recursos.
 
-4. **Azure Virtual Desktop Broker**:
-   - Serviço gerenciado que orquestra as conexões de usuário para os desktops e aplicativos.
-   - Garante que os usuários se conectem às VMs apropriadas com base na localização e disponibilidade.
-
-5. **Gateway**:
-   - Gerencia o tráfego de rede e as conexões dos usuários.
-   - Facilita conexões seguras e eficientes para os recursos hospedados.
-
-## 3. Exemplos
-
-### Trabalho Remoto em Empresas:
-- **Cenário**: Uma empresa com funcionários distribuídos globalmente precisa fornecer acesso seguro a desktops e aplicativos corporativos.
-- **Solução AVD**: Utiliza host pools para criar ambientes de trabalho virtualizados que são acessíveis de qualquer lugar, garantindo segurança e conformidade.
-- **Benefícios**: Aumenta a produtividade ao permitir trabalho remoto seguro, reduz custos com infraestrutura física e facilita a gestão centralizada dos recursos.
-
-### Educação e Laboratórios Virtuais:
-- **Cenário**: Instituições de ensino precisam fornecer acesso a software especializado para alunos em cursos remotos.
-- **Solução AVD**: Implementa workspaces com application groups que incluem os softwares necessários, acessíveis por estudantes de qualquer dispositivo.
-- **Benefícios**: Oferece um ambiente de aprendizado flexível e acessível, reduz custos com laboratórios físicos e melhora a acessibilidade dos recursos educacionais.
-
-### Testes e Desenvolvimento:
-- **Cenário**: Empresas de desenvolvimento de software precisam de ambientes isolados para testes e desenvolvimento.
-- **Solução AVD**: Cria host pools dedicados para desenvolvimento e teste, permitindo que desenvolvedores acessem e compartilhem recursos de maneira segura.
-- **Benefícios**: Acelera o ciclo de desenvolvimento, melhora a colaboração entre equipes e oferece um ambiente seguro para testes.
-
-## 4. Vantagens
-
-- **Flexibilidade**: Permite que usuários acessem desktops e aplicativos de qualquer lugar e dispositivo.
-- **Segurança**: Inclui autenticação multifator, políticas de acesso condicional e criptografia de dados.
-- **Escalabilidade**: Facilita a adição e remoção de recursos conforme necessário, otimizando custos.
-- **Gerenciamento Centralizado**: Simplifica a administração de recursos e políticas através de uma interface unificada.
-
-## 5. Desvantagens
-
-- **Complexidade de Configuração**: Pode exigir um planejamento cuidadoso e expertise para configurar corretamente.
-- **Custo**: Embora otimizado, pode ser caro para pequenas empresas ou instituições com orçamentos limitados.
-- **Dependência de Conectividade**: Requer uma conexão de internet estável e rápida para uma experiência de usuário ideal.
+3. **Instale a Distribuição Linux**:
+   - Após reiniciar, instale a distribuição Linux desejada (por exemplo, Ubuntu) usando o comando:
+     ```powershell
+     wsl --install -d <DistroName>
+     ```
+   - Certifique-se de definir a versão padrão do WSL para 2:
+     ```powershell
+     wsl --set-default-version 2
+     ```
 
 ## Referências
 
-- [Área de Trabalho Virtual do Azure](https://azure.microsoft.com/pt-br/products/virtual-desktop)
-- [O que é Azure Virtual Desktop (AVD)?](https://www.bhs.com.br/2022/11/30/o-que-e-azure-virtual-desktop/)
-- [What is Azure Virtual Desktop? - Microsoft Learn](https://learn.microsoft.com/en-us/azure/virtual-desktop/overview)
-- 
----
+- [Microsoft Q&A - Installing WSL2 on Azure Virtual Desktop](https://learn.microsoft.com/en-us/answers/questions/1150896/wsl2-issue-on-windows-11-azure-virtual-machine)
+- [XenithIT - How to deploy WSL2 with WVD](https://xenithit.blogspot.com/2020/07/how-to-deploy-linux-in-wvd-when-you.html)
 
-![image](https://github.com/user-attachments/assets/1844680a-2318-4a5b-a13f-25f751aa2e1d)
+## Considerações Finais
+
+Embora seja tecnicamente possível habilitar e usar o WSL2 em um AVD, a funcionalidade depende fortemente do suporte à virtualização aninhada na VM selecionada e da correta configuração dos recursos necessários. Portanto, garantir que sua VM atende a esses requisitos é crucial para o sucesso da operação.
 
 ---
