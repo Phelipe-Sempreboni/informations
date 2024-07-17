@@ -73,5 +73,6 @@ OpenShift facilita a implantação e gerenciamento de aplicações em contêiner
 ## Referências
 
 - [DevOpsSchool - What is OpenShift and How it works?](https://www.devopsschool.com/blog/what-is-openshift-and-how-it-works-an-overview-and-its-use-cases/)
+- [O que é OpenShift?](https://cursos.alura.com.br/extra/alura-mais/o-que-e-openshift--c262)
 
 ---
