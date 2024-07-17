@@ -1,119 +1,85 @@
-## Arquitetura de uma API
+## Continuous Integration (CI), Continuous Delivery (CD), Build e Deploy
 
-#### Abaixo temos um resumo e um desenho conceitual de uma arquitetura de api, visando explicar como funciona esse tipo de solução.
+#### Abaixo temos um resumo explicando como ci, cd, build e deploy, visando explicar como funciona esse tipo de solução.
 
 ---
 
-# Arquitetura e tipos de APIs: Um Resumo Detalhado
+# Build e Deploy
 
 ## 1. Definição
 
-Uma API (Application Programming Interface) é um conjunto de regras e protocolos que permite a comunicação entre diferentes softwares. As APIs definem os métodos e dados que os desenvolvedores podem usar para interagir com os serviços ou componentes de um aplicativo.
+**Build:**
+O processo de build refere-se à conversão do código-fonte de um programa em uma forma executável. Durante o build, várias etapas podem ser envolvidas, incluindo compilação do código-fonte, execução de testes automatizados, e empacotamento dos artefatos resultantes em um formato adequado para distribuição ou implantação. O objetivo é garantir que o código escrito pelos desenvolvedores seja transformado em um software funcional e testado.
+
+**Deploy:**
+Deploy (ou implantação) refere-se ao processo de colocar uma aplicação em um ambiente de produção, onde ela estará disponível para os usuários finais. O deploy pode envolver várias etapas, incluindo a cópia dos artefatos de build para servidores de produção, configuração de ambientes, e monitoramento para garantir que a aplicação funcione corretamente após a implantação.
 
 ## 2. Tipos
 
-Existem vários tipos de APIs, cada um com seus casos de uso específicos e características únicas:
-
-### 1. REST APIs
-
-- **Descrição**: Usam o protocolo HTTP para comunicação, sendo altamente escaláveis e fáceis de usar.
-- **Exemplo de Uso**: Interação com serviços web, como redes sociais (Twitter API) e serviços de mapas (Google Maps API).
-
-### 2. SOAP APIs
-
-- **Descrição**: Utilizam XML para enviar e receber mensagens, sendo conhecidas por sua segurança e confiabilidade.
-- **Exemplo de Uso**: Serviços bancários e de saúde onde a segurança é crucial.
-
-### 3. GraphQL APIs
-
-- **Descrição**: Permitem que os clientes solicitem exatamente os dados que precisam, reduzindo a quantidade de dados transferidos.
-- **Exemplo de Uso**: Aplicações que necessitam de consultas complexas e flexíveis, como plataformas de e-commerce.
-
-### 4. Webhook APIs
-
-- **Descrição**: Enviam dados em tempo real para outras aplicações quando eventos específicos ocorrem.
-- **Exemplo de Uso**: Envio de notificações em tempo real em aplicativos de mensagens e sistemas de monitoramento.
-
-### 5. gRPC APIs
-
-- **Descrição**: Usam o protocolo HTTP/2 e são conhecidos por sua eficiência e desempenho em comunicações de baixo atraso.
-- **Exemplo de Uso**: Serviços que requerem comunicação rápida e eficiente entre microsserviços.
-
-### 6. Open APIs (Public APIs)
-
-- **Descrição**: APIs públicas acessíveis a qualquer desenvolvedor, normalmente usadas para expandir os serviços de uma empresa para um público externo.
-- **Exemplo de Uso**: APIs de pagamento (Stripe API) e APIs de redes sociais (Facebook API).
-
-### 7. Internal APIs (Private APIs)
-
-- **Descrição**: Projetadas para uso interno dentro de uma organização, melhorando a integração entre sistemas internos.
-- **Exemplo de Uso**: Integração de sistemas de RH com diretórios de funcionários.
-
-### 8. Partner APIs
-
-- **Descrição**: APIs compartilhadas entre parceiros estratégicos para facilitar a integração e colaboração entre empresas.
-- **Exemplo de Uso**: Integração de sistemas de cadeia de suprimentos entre empresas parceiras.
-
-### 9. Composite APIs
-
-- **Descrição**: Combinam várias APIs em uma única interface, simplificando o acesso a dados de diferentes fontes.
-- **Exemplo de Uso**: Agregação de serviços em arquiteturas de microsserviços.
+- **Continuous Integration (CI):** Prática de integrar código frequentemente, geralmente várias vezes ao dia, com o objetivo de detectar erros rapidamente.
+- **Continuous Delivery (CD):** Prática de manter o código em um estado em que ele possa ser implantado em produção a qualquer momento.
+- **Continuous Deployment:** Extensão da entrega contínua onde cada alteração que passa em todos os estágios do pipeline de build e teste é implantada automaticamente em produção.
+- **Testing:** Inclui testes unitários, testes de integração, testes de sistema e testes de aceitação para garantir a qualidade do código.
+- **Staging Environment:** Um ambiente de teste que replica o ambiente de produção para verificar a integridade do software antes do deploy final.
+- **Version Control:** Sistema que registra alterações no código ao longo do tempo, permitindo que versões específicas possam ser recuperadas.
+- **Artifact Repository:** Repositório onde os artefatos de build (pacotes, bibliotecas, etc.) são armazenados e gerenciados.
 
 ## 3. Funcionamento Básico
 
-APIs funcionam como intermediários que permitem que diferentes sistemas se comuniquem. Elas recebem solicitações de clientes (outras aplicações) e respondem com os dados ou ações solicitados. As APIs definem um conjunto de endpoints (URLs) através dos quais os recursos podem ser acessados, cada um com métodos HTTP específicos (GET, POST, PUT, DELETE).
+Uma esteira de CI/CD típica pode incluir as seguintes etapas:
+
+1. **Commit e Integração Contínua (CI):**
+   - Desenvolvedores fazem commits de código para o sistema de controle de versão.
+   - O servidor de CI monitora o repositório e inicia um build quando detecta novas alterações.
+   - O código é compilado e testado automaticamente.
+
+2. **Testes Automatizados:**
+   - Execução de testes automatizados (unitários, integração, etc.) para garantir que as alterações não introduzam bugs.
+
+3. **Build:**
+   - Geração de artefatos de build que podem ser implantados.
+   - Publicação dos artefatos em um repositório de artefatos.
+
+4. **Entrega Contínua (CD):**
+   - Desdobramento dos artefatos para um ambiente de staging para testes adicionais.
+   - Validação no ambiente de staging para garantir que o software funciona conforme esperado.
+
+5. **Deploy Contínuo:**
+   - Implantação automática dos artefatos de staging para o ambiente de produção após a validação bem-sucedida.
 
 ## 4. Exemplos
 
-### REST API em E-commerce
+**Exemplo 1: Aplicação Web**
+- **Cenário:** Uma equipe de desenvolvimento web realiza mudanças frequentes no código da aplicação.
+- **Solução:** Utilizar CI/CD para automatizar a integração e implantação do código.
+- **Benefícios:** Redução do tempo de lançamento de novas funcionalidades e correções de bugs.
 
-- **Cenário**: Uma plataforma de e-commerce precisa permitir que desenvolvedores externos integrem suas lojas com a plataforma.
-- **Solução**: Usar uma REST API que permita a criação, atualização e exclusão de produtos, bem como a gestão de pedidos.
-- **Benefícios**: Facilita a integração de terceiros, aumentando o ecossistema de desenvolvedores e serviços ao redor da plataforma.
+**Exemplo 2: Aplicação Mobile**
+- **Cenário:** Uma empresa precisa entregar atualizações regulares para sua aplicação mobile.
+- **Solução:** Implementar CI/CD para garantir builds consistentes e testes automatizados em diferentes dispositivos.
+- **Benefícios:** Melhoria na qualidade do software e entrega contínua de novas versões.
 
-### SOAP API em Bancos
-
-- **Cenário**: Um banco precisa transferir dados financeiros entre diferentes sistemas de forma segura.
-- **Solução**: Implementar uma SOAP API para garantir a segurança e confiabilidade nas transações.
-- **Benefícios**: Alta segurança e conformidade com regulamentos financeiros rigorosos.
-
-### GraphQL API em Plataformas de Conteúdo
-
-- **Cenário**: Uma plataforma de conteúdo precisa fornecer dados personalizados e específicos para cada usuário.
-- **Solução**: Usar uma GraphQL API que permita consultas precisas e flexíveis, retornando apenas os dados necessários.
-- **Benefícios**: Reduz a quantidade de dados transferidos, melhorando o desempenho e a experiência do usuário.
-
-### Webhook API em Aplicativos de Mensagens
-
-- **Cenário**: Um aplicativo de mensagens precisa notificar os usuários em tempo real sobre novas mensagens.
-- **Solução**: Implementar Webhooks que enviam notificações quando novos eventos ocorrem.
-- **Benefícios**: Atualizações em tempo real, melhorando a interatividade e a experiência do usuário.
-
-### gRPC API em Aplicações de IoT
-
-- **Cenário**: Dispositivos IoT precisam se comunicar rapidamente e de forma eficiente.
-- **Solução**: Usar gRPC APIs para enviar e receber dados com baixo atraso.
-- **Benefícios**: Alta eficiência e desempenho em comunicações máquina-a-máquina.
+**Exemplo 3: DataOps**
+- **Cenário:** Uma equipe de cientistas de dados precisa automatizar o fluxo de trabalho de análise de dados.
+- **Solução:** Utilizar CI/CD para orquestrar pipelines de dados, incluindo ingestão, processamento e visualização de dados.
+- **Benefícios:** Maior eficiência e repetibilidade nos processos de análise de dados.
 
 ## 5. Vantagens
 
-- **Eficiência**: APIs permitem a automação e integração de sistemas, aumentando a eficiência operacional.
-- **Flexibilidade**: Oferecem uma maneira flexível de acessar e interagir com serviços e dados.
-- **Escalabilidade**: Facilitam a criação de aplicações escaláveis, distribuídas e baseadas em microsserviços.
+- **Automação:** Reduz a intervenção manual, minimizando erros e aumentando a eficiência.
+- **Rapidez:** Acelera o processo de desenvolvimento e entrega de software.
+- **Qualidade:** Melhora a qualidade do software através de testes automatizados e feedback rápido.
+- **Escalabilidade:** Facilita a escalabilidade das operações de desenvolvimento e implantação.
 
 ## 6. Desvantagens
 
-- **Complexidade**: Implementar e gerenciar APIs pode ser complexo e exigir um alto nível de expertise.
-- **Segurança**: APIs expostas publicamente podem ser alvos de ataques, exigindo medidas robustas de segurança.
-- **Manutenção**: A manutenção e a atualização contínua das APIs são essenciais para garantir sua funcionalidade e segurança.
+- **Complexidade:** Implementar CI/CD pode ser complexo e exigir um esforço inicial significativo.
+- **Custo:** Pode envolver custos adicionais com ferramentas e infraestrutura.
+- **Dependência de Ferramentas:** Requer a escolha e integração de várias ferramentas, o que pode ser desafiador.
 
 ## Referências
 
-- [Katalon - 10 Popular API Examples](https://katalon.com)
-- [Postman Blog - A guide to the different types of APIs](https://blog.postman.com)
-- [Nylas API Guide - Dive into the Different Types of APIs](https://www.nylas.com)
-- [Kong Inc. - What are The Different Types of APIs and Protocols?](https://konghq.com)
+- [Red Hat - What is CI/CD?](https://www.redhat.com/en/topics/devops/what-is-ci-cd)
+- [IBM Cloud - CI/CD Concepts](https://www.ibm.com/cloud/learn/continuous-integration-continuous-delivery)
 
 ---
-
-
