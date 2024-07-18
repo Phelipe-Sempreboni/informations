@@ -159,6 +159,66 @@ Kubernetes gerencia o ciclo de vida dos containers, incluindo agendamento de pod
 
 ---
 
+Organização em formato de diretórios para representar a hierarquia entre container, Kubernetes, cluster, pod, node e master node:
+
+```plaintext
+/Cluster
+  /Master_Node
+    /API_Server
+    /Controller_Manager
+    /Scheduler
+    /etcd
+  /Worker_Node_1
+    /Pod_1
+      /Container_1
+      /Container_2
+    /Pod_2
+      /Container_3
+  /Worker_Node_2
+    /Pod_3
+      /Container_4
+      /Container_5
+    /Pod_4
+      /Container_6
+```
+
+# Explicação dos Diretórios
+
+## /Cluster
+Diretório raiz representando o cluster Kubernetes.
+
+## /Master_Node
+Diretório representando o master node que coordena o cluster. Contém subdiretórios para os componentes principais do master node.
+- **/API_Server**: Gerencia todas as interações via API com o cluster.
+- **/Controller_Manager**: Controla os controladores que regulam o estado do cluster.
+- **/Scheduler**: Responsável por agendar os pods nos nodes apropriados.
+- **/etcd**: Armazena todos os dados do cluster como um armazenamento de chave-valor distribuído.
+
+## /Worker_Node_1
+Diretório representando um worker node no cluster. Pode haver múltiplos worker nodes.
+- **/Pod_1**: Diretório representando um pod, que pode conter um ou mais containers.
+  - **/Container_1**: Container dentro do pod.
+  - **/Container_2**: Outro container dentro do mesmo pod.
+- **/Pod_2**: Outro pod no mesmo worker node.
+  - **/Container_3**: Container dentro deste pod.
+
+## /Worker_Node_2
+Outro worker node no cluster.
+- **/Pod_3**: Pod dentro deste worker node.
+  - **/Container_4**: Container dentro deste pod.
+  - **/Container_5**: Outro container dentro do mesmo pod.
+- **/Pod_4**: Outro pod no mesmo worker node.
+  - **/Container_6**: Container dentro deste pod.
+
+## Referências
+- [Docker Documentation](https://docs.docker.com/)
+- [Kubernetes Documentation](https://kubernetes.io/docs/home/)
+- [Google Cloud - Kubernetes Engine](https://cloud.google.com/kubernetes-engine)
+- [Red Hat - Kubernetes and Containers](https://www.redhat.com/en/topics/containers/what-is-kubernetes)
+- [IBM Cloud - Kubernetes Overview](https://www.ibm.com/cloud/learn/kubernetes)
+
+---
+
 ![image](https://github.com/user-attachments/assets/bb62bee7-a36b-45b4-b5b9-86a495b71aa8)
 ![image](https://github.com/user-attachments/assets/7ef1ab7c-49c8-4fd1-ab34-3c44de062c82)
 ![image](https://github.com/user-attachments/assets/9c29b1a9-2a43-4657-831f-44e7cbecdad1)
