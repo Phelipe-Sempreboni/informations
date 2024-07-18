@@ -158,3 +158,9 @@ Kubernetes gerencia o ciclo de vida dos containers, incluindo agendamento de pod
 - [IBM Cloud - Kubernetes Overview](https://www.ibm.com/cloud/learn/kubernetes)
 
 ---
+
+![image](https://github.com/user-attachments/assets/bb62bee7-a36b-45b4-b5b9-86a495b71aa8)
+![image](https://github.com/user-attachments/assets/7ef1ab7c-49c8-4fd1-ab34-3c44de062c82)
+![image](https://github.com/user-attachments/assets/9c29b1a9-2a43-4657-831f-44e7cbecdad1)
+
+---
